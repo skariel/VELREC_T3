@@ -81,29 +81,57 @@ end
     end
 end
 
+function in_place_add!(a,v)
+    @inbounds for i in eachindex(a)
+        a[i] += v
+    end
+    a
+end
+
 function from_cic_dx(x_arr,y_arr,z_arr,grid,grid_min::Number,side_len::Number)
     const dx = side_len / size(grid)[1]
-    const pos1 = from_cic!(x_arr+dx,y_arr,z_arr,grid,grid_min,side_len)
-    const neg1 = from_cic!(x_arr-dx,y_arr,z_arr,grid,grid_min,side_len)
-    const pos2 = from_cic!(x_arr+2dx,y_arr,z_arr,grid,grid_min,side_len)
-    const neg2 = from_cic!(x_arr-2dx,y_arr,z_arr,grid,grid_min,side_len)
-    1.0/dx*(2/3*(pos1-neg1)-1/12*(pos2-neg2))
+    in_place_add!(x_arr, dx)   # x_arr + dx
+    const pos1 = from_cic!(x_arr,y_arr,z_arr,grid,grid_min,side_len)
+    in_place_add!(x_arr, -2dx) # x_arr-dx
+    const neg1 = from_cic!(x_arr,y_arr,z_arr,grid,grid_min,side_len)
+    in_place_add!(x_arr, 3dx) # x_arr+2dx
+    const pos2 = from_cic!(x_arr,y_arr,z_arr,grid,grid_min,side_len)
+    in_place_add!(x_arr, -4dx) # x_arr-2dx
+    const neg2 = from_cic!(x_arr,y_arr,z_arr,grid,grid_min,side_len)
+    idx = 1.0/dx
+    @inbounds for i in eachindex(pos1)
+        pos1[i] = idx*(2/3*(pos1[i]-neg1[i])-1/12*(pos2[i]-neg2[i]))
+    end
 end
 
 function from_cic_dy(x_arr,y_arr,z_arr,grid,grid_min::Number,side_len::Number)
     const dx = side_len / size(grid)[1]
-    const pos1 = from_cic!(x_arr,y_arr+dx,z_arr,grid,grid_min,side_len)
-    const neg1 = from_cic!(x_arr,y_arr-dx,z_arr,grid,grid_min,side_len)
-    const pos2 = from_cic!(x_arr,y_arr+2dx,z_arr,grid,grid_min,side_len)
-    const neg2 = from_cic!(x_arr,y_arr-2dx,z_arr,grid,grid_min,side_len)
-    1.0/dx*(2/3*(pos1-neg1)-1/12*(pos2-neg2))
+    in_place_add!(y_arr, dx)   # x_arr + dx
+    const pos1 = from_cic!(x_arr,y_arr,z_arr,grid,grid_min,side_len)
+    in_place_add!(y_arr, -2dx) # x_arr-dx
+    const neg1 = from_cic!(x_arr,y_arr,z_arr,grid,grid_min,side_len)
+    in_place_add!(y_arr, 3dx) # x_arr+2dx
+    const pos2 = from_cic!(x_arr,y_arr,z_arr,grid,grid_min,side_len)
+    in_place_add!(y_arr, -4dx) # x_arr-2dx
+    const neg2 = from_cic!(x_arr,y_arr,z_arr,grid,grid_min,side_len)
+    idx = 1.0/dx
+    @inbounds for i in eachindex(pos1)
+        pos1[i] = idx*(2/3*(pos1[i]-neg1[i])-1/12*(pos2[i]-neg2[i]))
+    end
 end
 
 function from_cic_dz(x_arr,y_arr,z_arr,grid,grid_min::Number,side_len::Number)
     const dx = side_len / size(grid)[1]
-    const pos1 = from_cic!(x_arr,y_arr,z_arr+dx,grid,grid_min,side_len)
-    const neg1 = from_cic!(x_arr,y_arr,z_arr-dx,grid,grid_min,side_len)
-    const pos2 = from_cic!(x_arr,y_arr,z_arr+2dx,grid,grid_min,side_len)
-    const neg2 = from_cic!(x_arr,y_arr,z_arr-2dx,grid,grid_min,side_len)
-    1.0/dx*(2/3*(pos1-neg1)-1/12*(pos2-neg2))
+    in_place_add!(z_arr, dx)   # x_arr + dx
+    const pos1 = from_cic!(x_arr,y_arr,z_arr,grid,grid_min,side_len)
+    in_place_add!(z_arr, -2dx) # x_arr-dx
+    const neg1 = from_cic!(x_arr,y_arr,z_arr,grid,grid_min,side_len)
+    in_place_add!(z_arr, 3dx) # x_arr+2dx
+    const pos2 = from_cic!(x_arr,y_arr,z_arr,grid,grid_min,side_len)
+    in_place_add!(z_arr, -4dx) # x_arr-2dx
+    const neg2 = from_cic!(x_arr,y_arr,z_arr,grid,grid_min,side_len)
+    idx = 1.0/dx
+    @inbounds for i in eachindex(pos1)
+        pos1[i] = idx*(2/3*(pos1[i]-neg1[i])-1/12*(pos2[i]-neg2[i]))
+    end
 end
