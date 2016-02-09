@@ -44,23 +44,23 @@ function save_realization(x,y,z,vx,vy,vz,m)
     end
 end
 
-function load_realization()
+function load_chunked_array(fn)
     x = Float32[]
-    y = Float32[]
-    z = Float32[]
-    vx = Float32[]
-    vy = Float32[]
-    vz = Float32[]
-    m = Float32[]
     for fix in 1:10
         snum = string(fix)*".gitignore"
-        append!(x , load_arr_f32("realization/x"*snum))
-        append!(y , load_arr_f32("realization/y"*snum))
-        append!(z , load_arr_f32("realization/z"*snum))
-        append!(vx,  load_arr_f32("realization/vx"*snum))
-        append!(vy,  load_arr_f32("realization/vy"*snum))
-        append!(vz,  load_arr_f32("realization/vz"*snum))
-        append!(m , load_arr_f32("realization/m"*snum))
+        append!(x , load_arr_f32("realization/"*fn*snum))
     end
-    x,y,z,vx,vy,vz,m
+    sx = SharedArray(Float32, length(x))
+    sx[:] = x
+    sx
+end
+
+function load_realization()
+    load_chunked_array("x"),
+    load_chunked_array("y"),
+    load_chunked_array("z"),
+    load_chunked_array("vx"),
+    load_chunked_array("vy"),
+    load_chunked_array("vz"),
+    load_chunked_array("m")
 end
