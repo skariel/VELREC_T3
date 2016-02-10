@@ -17,14 +17,13 @@ function to_cic!(x_arr,y_arr,z_arr,v_arr,grid,grid_min::Number,side_len::Number)
     fill!(grid, 0)
     @sync begin
         for p in workers()
-            @async remotecall_wait(p, to_cic_single_worker!,
+            @async remotecall_wait(p, _to_cic_single_worker!,
                 x_arr, y_arr, z_arr, v_arr, grid, grid_min, side_len)
         end
     end
 end
 
-@everywhere function to_cic_single_worker!(x_arr,y_arr,z_arr,v_arr,grid,grid_min::Number,side_len::Number)
-    fill!(grid, 0.0)
+@everywhere function _to_cic_single_worker!(x_arr,y_arr,z_arr,v_arr,grid,grid_min::Number,side_len::Number)
     const N = size(grid)[1]
     const g_dx = side_len / N
     @inbounds for i in myrange(x_arr)
@@ -47,18 +46,18 @@ end
     end
 end
 
-function from_cic!(x_arr,y_arr,z_arr,grid,grid_min::Number,side_len::Number)
-    v_arr = SharedArray(eltype(grid), length(x_arr))
+function from_cic!(v_arr,x_arr,y_arr,z_arr,grid,grid_min::Number,side_len::Number)
+    fill!(v_arr, 0)
     @sync begin
         for p in workers()
-            @async remotecall_wait(p, from_cic_single_worker!,
+            @async remotecall_wait(p, _from_cic_single_worker!,
                 v_arr, x_arr, y_arr, z_arr, grid, grid_min, side_len)
         end
     end
     v_arr
 end
 
-@everywhere function from_cic_single_worker!(v_arr,x_arr,y_arr,z_arr,grid,grid_min::Number,side_len::Number)
+@everywhere function _from_cic_single_worker!(v_arr,x_arr,y_arr,z_arr,grid,grid_min::Number,side_len::Number)
     const N = size(grid)[1]
     const g_dx = side_len / eltype(x_arr)(N)
     @inbounds for i in myrange(v_arr)
@@ -68,7 +67,6 @@ end
         x_ix = 1 + round(Int, trunc(x/g_dx))
         y_ix = 1 + round(Int, trunc(y/g_dx))
         z_ix = 1 + round(Int, trunc(z/g_dx))
-        v_arr[i] = 0
         @inbounds for d_ix_x in 0:1, d_ix_y in 0:1, d_ix_z in 0:1
             const lever_x = abs(x_ix-d_ix_x - x/g_dx)
             const lever_y = abs(y_ix-d_ix_y - y/g_dx)
@@ -88,22 +86,37 @@ function in_place_add!(a,v)
     a
 end
 
-function from_cic_dx(x_arr,y_arr,z_arr,grid,grid_min::Number,side_len::Number)
+function from_cic_dx(v_arr,x_arr,y_arr,z_arr,grid,grid_min::Number,side_len::Number)
     const dx = side_len / size(grid)[1]
+    cum_tmp = zeros(eltype(grid), length(x_arr))
+
     in_place_add!(x_arr, dx)   # +dx
-    const pos1 = from_cic!(x_arr,y_arr,z_arr,grid,grid_min,side_len)
+    from_cic!(v_arr,x_arr,y_arr,z_arr,grid,grid_min,side_len)
+    @inbounds for i in eachindex(tmp)
+        cum_tmp1[i] += tmp[i]
+    end
     in_place_add!(x_arr, -2dx) # -dx
-    const neg1 = from_cic!(x_arr,y_arr,z_arr,grid,grid_min,side_len)
+    tmp = from_cic!(x_arr,y_arr,z_arr,grid,grid_min,side_len)
+    @inbounds for i in eachindex(tmp)
+        cum_tmp1[i] -= tmp[i]
+    end
     in_place_add!(x_arr, 3dx)  # +2dx
-    const pos2 = from_cic!(x_arr,y_arr,z_arr,grid,grid_min,side_len)
+    tmp = from_cic!(x_arr,y_arr,z_arr,grid,grid_min,side_len)
+    @inbounds for i in eachindex(tmp)
+        cum_tmp2[i] += tmp[i]
+    end
     in_place_add!(x_arr, -4dx) # -2dx
-    const neg2 = from_cic!(x_arr,y_arr,z_arr,grid,grid_min,side_len)
+    tmp = from_cic!(x_arr,y_arr,z_arr,grid,grid_min,side_len)
+    @inbounds for i in eachindex(tmp)
+        cum_tmp2[i] -= tmp[i]
+    end
     in_place_add!(x_arr, 2dx) # back to original...
     idx = 1.0/dx
+    res = SharedArray(eltype(grid), length(x_arr))
     @inbounds for i in eachindex(pos1)
-        pos1[i] = idx*(2/3*(pos1[i]-neg1[i])-1/12*(pos2[i]-neg2[i]))
+        res[i] = idx*(2/3*cum_tmp1[i]-1/12*cum_tmp2[i])
     end
-    pos1
+    res[i]
 end
 
 function from_cic_dy(x_arr,y_arr,z_arr,grid,grid_min::Number,side_len::Number)

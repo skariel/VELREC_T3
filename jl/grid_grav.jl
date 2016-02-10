@@ -31,10 +31,10 @@ function to_g_fft!(ρ, side_len::Number, smth_len=1.0)
     ρ
 end
 
-function to_delta!(rho)
-    mn = mean(rho)
-    @inbounds for i in CartesianRange(size(rho))
-        rho[i] = rho[i]/mn - 1.0
+function to_delta!(ρ)
+    mn = mean(rρ)
+    @inbounds for i in CartesianRange(size(ρ))
+    ρ[i] = ρ[i]/mn - 1.0
     end
-    rho
+    ρ
 end
