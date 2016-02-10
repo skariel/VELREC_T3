@@ -89,68 +89,101 @@ end
 function from_cic_dx(v_arr,x_arr,y_arr,z_arr,grid,grid_min::Number,side_len::Number)
     const dx = side_len / size(grid)[1]
     cum_tmp = zeros(eltype(grid), length(x_arr))
+    idx = 1.0/dx
 
     in_place_add!(x_arr, dx)   # +dx
     from_cic!(v_arr,x_arr,y_arr,z_arr,grid,grid_min,side_len)
-    @inbounds for i in eachindex(tmp)
-        cum_tmp1[i] += tmp[i]
+    @inbounds for i in eachindex(v_arr)
+        cum_tmp[i] += v_arr[i]*idx*2/3
     end
     in_place_add!(x_arr, -2dx) # -dx
-    tmp = from_cic!(x_arr,y_arr,z_arr,grid,grid_min,side_len)
-    @inbounds for i in eachindex(tmp)
-        cum_tmp1[i] -= tmp[i]
+    tmp = from_cic!(v_arr,x_arr,y_arr,z_arr,grid,grid_min,side_len)
+    @inbounds for i in eachindex(v_arr)
+        cum_tmp[i] -= v_arr[i]*idx*2/3
     end
     in_place_add!(x_arr, 3dx)  # +2dx
-    tmp = from_cic!(x_arr,y_arr,z_arr,grid,grid_min,side_len)
-    @inbounds for i in eachindex(tmp)
-        cum_tmp2[i] += tmp[i]
+    tmp = from_cic!(v_arr,x_arr,y_arr,z_arr,grid,grid_min,side_len)
+    @inbounds for i in eachindex(v_arr)
+        cum_tmp[i] += v_arr[i]*idx* ( -1/12)
     end
     in_place_add!(x_arr, -4dx) # -2dx
-    tmp = from_cic!(x_arr,y_arr,z_arr,grid,grid_min,side_len)
-    @inbounds for i in eachindex(tmp)
-        cum_tmp2[i] -= tmp[i]
+    tmp = from_cic!(v_arr,x_arr,y_arr,z_arr,grid,grid_min,side_len)
+    @inbounds for i in eachindex(v_arr)
+        cum_tmp[i] -= v_arr[i]*idx* (-1/12)
     end
+
+    # finalizing...
     in_place_add!(x_arr, 2dx) # back to original...
-    idx = 1.0/dx
-    res = SharedArray(eltype(grid), length(x_arr))
-    @inbounds for i in eachindex(pos1)
-        res[i] = idx*(2/3*cum_tmp1[i]-1/12*cum_tmp2[i])
+    @inbounds for i in eachindex(v_arr)
+        v_arr[i] = cum_tmp[i]
     end
-    res[i]
+    v_arr
 end
 
-function from_cic_dy(x_arr,y_arr,z_arr,grid,grid_min::Number,side_len::Number)
+function from_cic_dy(v_arr,x_arr,y_arr,z_arr,grid,grid_min::Number,side_len::Number)
     const dx = side_len / size(grid)[1]
-    in_place_add!(y_arr, dx)   # + dx
-    const pos1 = from_cic!(x_arr,y_arr,z_arr,grid,grid_min,side_len)
+    cum_tmp = zeros(eltype(grid), length(x_arr))
+    idx = 1.0/dx
+
+    in_place_add!(y_arr, dx)   # +dx
+    from_cic!(v_arr,x_arr,y_arr,z_arr,grid,grid_min,side_len)
+    @inbounds for i in eachindex(v_arr)
+        cum_tmp[i] += v_arr[i]*idx*2/3
+    end
     in_place_add!(y_arr, -2dx) # -dx
-    const neg1 = from_cic!(x_arr,y_arr,z_arr,grid,grid_min,side_len)
-    in_place_add!(y_arr, 3dx)  # +2dx
-    const pos2 = from_cic!(x_arr,y_arr,z_arr,grid,grid_min,side_len)
-    in_place_add!(y_arr, -4dx) # -2dx
-    const neg2 = from_cic!(x_arr,y_arr,z_arr,grid,grid_min,side_len)
-    in_place_add!(y_arr, 2dx) # back to original...
-    idx = 1.0/dx
-    @inbounds for i in eachindex(pos1)
-        pos1[i] = idx*(2/3*(pos1[i]-neg1[i])-1/12*(pos2[i]-neg2[i]))
+    tmp = from_cic!(v_arr,x_arr,y_arr,z_arr,grid,grid_min,side_len)
+    @inbounds for i in eachindex(v_arr)
+        cum_tmp[i] -= v_arr[i]*idx*2/3
     end
-    pos1
+    in_place_add!(y_arr, 3dx)  # +2dx
+    tmp = from_cic!(v_arr,x_arr,y_arr,z_arr,grid,grid_min,side_len)
+    @inbounds for i in eachindex(v_arr)
+        cum_tmp[i] += v_arr[i]*idx* ( -1/12)
+    end
+    in_place_add!(y_arr, -4dx) # -2dx
+    tmp = from_cic!(v_arr,x_arr,y_arr,z_arr,grid,grid_min,side_len)
+    @inbounds for i in eachindex(v_arr)
+        cum_tmp[i] -= v_arr[i]*idx* (-1/12)
+    end
+
+    # finalizing...
+    in_place_add!(y_arr, 2dx) # back to original...
+    @inbounds for i in eachindex(v_arr)
+        v_arr[i] = cum_tmp[i]
+    end
+    v_arr
 end
 
-function from_cic_dz(x_arr,y_arr,z_arr,grid,grid_min::Number,side_len::Number)
+function from_cic_dz(v_arr,x_arr,y_arr,z_arr,grid,grid_min::Number,side_len::Number)
     const dx = side_len / size(grid)[1]
-    in_place_add!(z_arr, dx)   # + dx
-    const pos1 = from_cic!(x_arr,y_arr,z_arr,grid,grid_min,side_len)
-    in_place_add!(z_arr, -2dx) # -dx
-    const neg1 = from_cic!(x_arr,y_arr,z_arr,grid,grid_min,side_len)
-    in_place_add!(z_arr, 3dx)  # +2dx
-    const pos2 = from_cic!(x_arr,y_arr,z_arr,grid,grid_min,side_len)
-    in_place_add!(z_arr, -4dx) # -2dx
-    const neg2 = from_cic!(x_arr,y_arr,z_arr,grid,grid_min,side_len)
-    in_place_add!(z_arr, 2dx) # back to original...
+    cum_tmp = zeros(eltype(grid), length(x_arr))
     idx = 1.0/dx
-    @inbounds for i in eachindex(pos1)
-        pos1[i] = idx*(2/3*(pos1[i]-neg1[i])-1/12*(pos2[i]-neg2[i]))
+
+    in_place_add!(z_arr, dx)   # +dx
+    from_cic!(v_arr,x_arr,y_arr,z_arr,grid,grid_min,side_len)
+    @inbounds for i in eachindex(v_arr)
+        cum_tmp[i] += v_arr[i]*idx*2/3
     end
-    pos1
+    in_place_add!(z_arr, -2dx) # -dx
+    tmp = from_cic!(v_arr,x_arr,y_arr,z_arr,grid,grid_min,side_len)
+    @inbounds for i in eachindex(v_arr)
+        cum_tmp[i] -= v_arr[i]*idx*2/3
+    end
+    in_place_add!(z_arr, 3dx)  # +2dx
+    tmp = from_cic!(v_arr,x_arr,y_arr,z_arr,grid,grid_min,side_len)
+    @inbounds for i in eachindex(v_arr)
+        cum_tmp[i] += v_arr[i]*idx* ( -1/12)
+    end
+    in_place_add!(z_arr, -4dx) # -2dx
+    tmp = from_cic!(v_arr,x_arr,y_arr,z_arr,grid,grid_min,side_len)
+    @inbounds for i in eachindex(v_arr)
+        cum_tmp[i] -= v_arr[i]*idx* (-1/12)
+    end
+
+    # finalizing...
+    in_place_add!(z_arr, 2dx) # back to original...
+    @inbounds for i in eachindex(v_arr)
+        v_arr[i] = cum_tmp[i]
+    end
+    v_arr
 end
