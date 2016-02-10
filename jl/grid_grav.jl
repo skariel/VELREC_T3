@@ -19,7 +19,7 @@ function to_g_fft!(ρ, side_len=SIDE_LEN, smth_len=SMTH)
         const kz = z<=N2 ? z : z - N
         k2 = kx*kx+ky*ky+kz*kz
         if k2 > 0
-            smth = -exp(-k2*asmth2);
+            smth = -exp(-k2*asmth2); # TODO: remove this minus sign!
             ρ[x+1,y+1,z+1] *= fac/k2/fac2*smth
         end
     end
