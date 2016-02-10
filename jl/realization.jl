@@ -14,10 +14,10 @@ function load_arr_f32(fn)
     arr
 end
 
-function save_realization(x,y,z,vx,vy,vz,m)
+function save_realization(pos,vx,vy,vz,m)
     # breaking data into chunks so github doesn't complain of files larger than 100Mb
     # github doesn't like it anyway... ignoring them in git now
-    const N = length(x)
+    const N = length(m)
     i = 1
     f = 1
     dix = div(N, 10)
@@ -32,9 +32,9 @@ function save_realization(x,y,z,vx,vy,vz,m)
         end
         rng = i:f
 
-        save_arr(x[rng], "realization/x"*snum)
-        save_arr(y[rng], "realization/y"*snum)
-        save_arr(z[rng], "realization/z"*snum)
+        save_arr(pos[1,rng], "realization/x"*snum)
+        save_arr(pos[2,rng], "realization/y"*snum)
+        save_arr(pos[3,rng], "realization/z"*snum)
         save_arr(vx[rng], "realization/vx"*snum)
         save_arr(vy[rng], "realization/vy"*snum)
         save_arr(vz[rng], "realization/vz"*snum)
@@ -44,21 +44,33 @@ function save_realization(x,y,z,vx,vy,vz,m)
     end
 end
 
-function load_chunked_array(fn)
+function load_chunked_array(fn, shared=true)
     x = Float32[]
     for fix in 1:10
         snum = string(fix)*".gitignore"
         append!(x , load_arr_f32("realization/"*fn*snum))
     end
-    sx = SharedArray(Float32, length(x))
-    sx[:] = x
-    sx
+    if shared
+        sx = SharedArray(Float32, length(x))
+        sx[:] = x
+        return sx
+    else
+        sx = Array(Float32, length(x))
+        sx[:] = x
+        return sx
+    end
 end
 
 function load_realization()
-    load_chunked_array("x"),
-    load_chunked_array("y"),
-    load_chunked_array("z"),
+    x = load_chunked_array("x", false)
+    y = load_chunked_array("y", false)
+    z = load_chunked_array("z", false)
+    pos = SharedArray(Float32, (3,length(x)))
+    pos[1,:] = x
+    pos[2,:] = y
+    pos[3,:] = z
+
+    pos,
     load_chunked_array("vx"),
     load_chunked_array("vy"),
     load_chunked_array("vz"),

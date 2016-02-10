@@ -87,5 +87,9 @@ function load_raw_halos1600(minimalmass=10.0, substructure=false)
     _y *= 1000.0
     _z *= 1000.0
     _m /= 1f10
-    _x, _y, _z, _vx, _vy, _vz, _m
+    _pos = zeros(eltype(_x), (3, length(_x)))
+    _pos[1,:] = _x
+    _pos[2,:] = _y
+    _pos[3,:] = _z
+    _pos, _vx, _vy, _vz, _m
 end
