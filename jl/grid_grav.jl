@@ -4,7 +4,7 @@ doc"""
 Given a 3D cubed box represented by $\rho$, solves the poisson equation
 $\nabla^2\phi=-4\pi\rho$ in a periodic fashion
 """
-function to_g_fft!(ρ, side_len::Number, smth_len=1.0)
+function to_g_fft!(ρ, side_len=SIDE_LEN, smth_len=SMTH)
     fft!(ρ)
     const N = size(ρ)[1]
     const N1 = N-1
@@ -32,9 +32,16 @@ function to_g_fft!(ρ, side_len::Number, smth_len=1.0)
 end
 
 function to_delta!(ρ)
-    mn = mean(rρ)
+    mn = mean(ρ)
     @inbounds for i in CartesianRange(size(ρ))
-    ρ[i] = ρ[i]/mn - 1.0
+        ρ[i] = ρ[i]/mn - 1.0
     end
     ρ
+end
+
+function in_place_multiply!(m, fac)
+    @inbounds for i in eachindex(m)
+        m[i] *= fac
+    end
+    m
 end

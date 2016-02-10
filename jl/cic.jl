@@ -13,7 +13,7 @@ end
     splits[idx]+1:splits[idx+1]
 end
 
-function to_cic!(data,v_arr,grid,grid_min::Number,side_len::Number)
+function to_cic!(data,v_arr,grid,grid_min=0.0,side_len=SIDE_LEN)
     fill!(grid, 0)
     @sync begin
         for p in workers()
@@ -46,7 +46,7 @@ end
     end
 end
 
-function from_cic!(v_arr,data,grid,grid_min::Number,side_len::Number)
+function from_cic!(v_arr,data,grid,grid_min=0.0,side_len=SIDE_LEN)
     fill!(v_arr, 0)
     @sync begin
         for p in workers()
@@ -86,7 +86,7 @@ function _in_place_add!(a,v,dim)
     a
 end
 
-function from_cic_dim!(v_arr,data,grid,grid_min::Number,side_len::Number, dim::Integer)
+function from_cic_dim!(v_arr,data,grid,dim::Integer, grid_min=0.0, side_len=SIDE_LEN)
     const dx = side_len / size(grid)[1]
     cum_tmp = zeros(eltype(grid), length(v_arr))
     idx = 1.0/dx
