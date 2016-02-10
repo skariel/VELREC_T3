@@ -13,7 +13,7 @@ function to_g_fft!(ρ, side_len::Number, smth_len=1.0)
     const fac2 = side_len/N
     asmth2 = 2*pi*smth_len/side_len;
     asmth2 *= asmth2;
-    @inbounds for x in 0:N1, y in 0:N1, z in 0:N1
+    @inbounds for z in 0:N1, y in 0:N1, x in 0:N1
         const kx = x<=N2 ? x : x - N
         const ky = y<=N2 ? y : y - N
         const kz = z<=N2 ? z : z - N
@@ -25,7 +25,7 @@ function to_g_fft!(ρ, side_len::Number, smth_len=1.0)
     end
     ifft!(ρ)
     const mn = ρ[end,end,end]
-    @inbounds for x in 1:N, y in 1:N, z in 1:N
+    @inbounds for z in 1:N, y in 1:N, x in 1:N
         ρ[x,y,z] -= mn
     end
     ρ

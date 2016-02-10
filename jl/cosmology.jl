@@ -50,3 +50,8 @@ function F(a)
 end
 
 F2(a) = 2*OM(a)^(6/11)
+
+BOX_N = 512
+SMTH = 3000.0
+MEAN_SEP = 3010.314648627409
+PARTICLE_NUM = 150149632
