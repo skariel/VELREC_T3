@@ -86,7 +86,7 @@ function in_place_add!(a,v)
     a
 end
 
-function from_cic_dx(v_arr,x_arr,y_arr,z_arr,grid,grid_min::Number,side_len::Number)
+function from_cic_dx!(v_arr,x_arr,y_arr,z_arr,grid,grid_min::Number,side_len::Number)
     const dx = side_len / size(grid)[1]
     cum_tmp = zeros(eltype(grid), length(x_arr))
     idx = 1.0/dx
@@ -120,7 +120,7 @@ function from_cic_dx(v_arr,x_arr,y_arr,z_arr,grid,grid_min::Number,side_len::Num
     v_arr
 end
 
-function from_cic_dy(v_arr,x_arr,y_arr,z_arr,grid,grid_min::Number,side_len::Number)
+function from_cic_dy!(v_arr,x_arr,y_arr,z_arr,grid,grid_min::Number,side_len::Number)
     const dx = side_len / size(grid)[1]
     cum_tmp = zeros(eltype(grid), length(x_arr))
     idx = 1.0/dx
@@ -154,7 +154,7 @@ function from_cic_dy(v_arr,x_arr,y_arr,z_arr,grid,grid_min::Number,side_len::Num
     v_arr
 end
 
-function from_cic_dz(v_arr,x_arr,y_arr,z_arr,grid,grid_min::Number,side_len::Number)
+function from_cic_dz!(v_arr,x_arr,y_arr,z_arr,grid,grid_min::Number,side_len::Number)
     const dx = side_len / size(grid)[1]
     cum_tmp = zeros(eltype(grid), length(x_arr))
     idx = 1.0/dx
