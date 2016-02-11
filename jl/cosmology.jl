@@ -16,6 +16,11 @@ const SIDE_LEN = 1.6e6
 const RHO_CRIT = 3*H0^2/8/π/G
 const BOX_VOLUME = SIDE_LEN^3
 const MASS_IN_BOX = RHO_CRIT*BOX_VOLUME*Ω0
+const BOX_N = 512
+const SMTH = 3000.0
+const MEAN_SEP = 3010.314648627409
+const PARTICLE_NUM = 150149632
+const DX = SIDE_LEN / BOX_N
 
 # Hubble as function of scale factor a
 Ha(a) = H0*sqrt(Ω0/a/a/a+ΩΛ)
@@ -50,8 +55,3 @@ function F(a)
 end
 
 F2(a) = 2*OM(a)^(6/11)
-
-const BOX_N = 512
-const SMTH = 3000.0
-const MEAN_SEP = 3010.314648627409
-const PARTICLE_NUM = 150149632

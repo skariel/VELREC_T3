@@ -23,6 +23,13 @@ function to_cic!(data,v_arr,grid,grid_min=0.0,side_len=SIDE_LEN)
     end
 end
 
+function to_rho!(data,v_arr,grid,grid_min=0.0,side_len=SIDE_LEN)
+    const N = size(grid)[1]
+    const DX = side_len/N
+    to_cic!(data,v_arr,grid,grid_min,side_len)
+    in_place_multiply!(rho, 1.0/DX/DX/DX)
+end
+
 @everywhere function _to_cic_single_worker!(data,v_arr,grid,grid_min::Number,side_len::Number)
     const N = size(grid)[1]
     const g_dx = side_len / eltype(data)(N)
@@ -79,17 +86,10 @@ end
     end
 end
 
-function _in_place_add!(a,v,dim)
-    @inbounds for i in 1:size(a)[2]
-        a[dim,i] += v
-    end
-    a
-end
-
 function from_cic_dim!(v_arr,data,grid,dim::Integer, grid_min=0.0, side_len=SIDE_LEN)
     const dx = side_len / size(grid)[1]
+    const idx = 1.0/dx
     cum_tmp = zeros(eltype(grid), length(v_arr))
-    idx = 1.0/dx
 
     _in_place_add!(data, dx, dim)   # +dx
     from_cic!(v_arr,data,grid,grid_min,side_len)
