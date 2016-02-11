@@ -28,6 +28,7 @@ function to_rho!(data,v_arr,grid,grid_min=0.0,side_len=SIDE_LEN)
     const DX = side_len/N
     to_cic!(data,v_arr,grid,grid_min,side_len)
     in_place_multiply!(rho, 1.0/DX/DX/DX)
+    nothing
 end
 
 @everywhere function _to_cic_single_worker!(data,v_arr,grid,grid_min::Number,side_len::Number)
@@ -86,7 +87,10 @@ end
     end
 end
 
-function from_cic_dim!(v_arr,data,grid,dim::Integer, grid_min=0.0, side_len=SIDE_LEN)
+doc"""
+    finited diference diff accurate to 4th order
+"""
+function from_cic_dim4!(v_arr,data,grid,dim::Integer, grid_min=0.0, side_len=SIDE_LEN)
     const dx = side_len / size(grid)[1]
     const idx = 1.0/dx
     cum_tmp = zeros(eltype(grid), length(v_arr))
@@ -114,6 +118,33 @@ function from_cic_dim!(v_arr,data,grid,dim::Integer, grid_min=0.0, side_len=SIDE
 
     # finalizing...
     _in_place_add!(data, 2dx, dim) # back to original...
+    @inbounds for i in eachindex(v_arr)
+        v_arr[i] = cum_tmp[i]
+    end
+    v_arr
+end
+
+doc"""
+    finited diference diff accurate to 2nd order
+"""
+function from_cic_dim2!(v_arr,data,grid,dim::Integer, grid_min=0.0, side_len=SIDE_LEN)
+    const dx = side_len / size(grid)[1]
+    const idx2 = 1.0/2.0/dx
+    cum_tmp = zeros(eltype(grid), length(v_arr))
+
+    _in_place_add!(data, dx, dim)   # +dx
+    from_cic!(v_arr,data,grid,grid_min,side_len)
+    @inbounds for i in eachindex(v_arr)
+        cum_tmp[i] += v_arr[i]*idx2
+    end
+    _in_place_add!(data, -2dx, dim) # -dx
+    tmp = from_cic!(v_arr,data,grid,grid_min,side_len)
+    @inbounds for i in eachindex(v_arr)
+        cum_tmp[i] -= v_arr[i]*idx2
+    end
+
+    # finalizing...
+    _in_place_add!(data, dx, dim) # back to original...
     @inbounds for i in eachindex(v_arr)
         v_arr[i] = cum_tmp[i]
     end

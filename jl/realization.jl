@@ -14,7 +14,7 @@ function load_arr_f32(fn)
     arr
 end
 
-function save_realization(pos,vx,vy,vz,m)
+function save_realization(pos,vx,vy,vz,m,realtype="small")
     # breaking data into chunks so github doesn't complain of files larger than 100Mb
     # github doesn't like it anyway... ignoring them in git now
     const N = length(m)
@@ -32,23 +32,23 @@ function save_realization(pos,vx,vy,vz,m)
         end
         rng = i:f
 
-        save_arr(pos[1,rng], "realization/x"*snum)
-        save_arr(pos[2,rng], "realization/y"*snum)
-        save_arr(pos[3,rng], "realization/z"*snum)
-        save_arr(vx[rng], "realization/vx"*snum)
-        save_arr(vy[rng], "realization/vy"*snum)
-        save_arr(vz[rng], "realization/vz"*snum)
-        save_arr(m[rng], "realization/m"*snum)
+        save_arr(pos[1,rng], "realization_$(realtype)/x"*snum)
+        save_arr(pos[2,rng], "realization_$(realtype)/y"*snum)
+        save_arr(pos[3,rng], "realization_$(realtype)/z"*snum)
+        save_arr(vx[rng], "realization_$(realtype)/vx"*snum)
+        save_arr(vy[rng], "realization_$(realtype)/vy"*snum)
+        save_arr(vz[rng], "realization_$(realtype)/vz"*snum)
+        save_arr(m[rng], "realization_$(realtype)/m"*snum)
 
         i = f+1
     end
 end
 
-function load_chunked_array(fn, shared=true)
+function load_chunked_array(fn, shared=true, realtype="small")
     x = Float32[]
     for fix in 1:10
         snum = string(fix)*".gitignore"
-        append!(x , load_arr_f32("realization/"*fn*snum))
+        append!(x , load_arr_f32( "realization_$(realtype)/"*fn*snum))
     end
     if shared
         sx = SharedArray(Float32, length(x))
@@ -61,18 +61,18 @@ function load_chunked_array(fn, shared=true)
     end
 end
 
-function load_realization()
-    x = load_chunked_array("x", false)
-    y = load_chunked_array("y", false)
-    z = load_chunked_array("z", false)
+function load_realization(realtype="small")
+    x = load_chunked_array("x", false, realtype)
+    y = load_chunked_array("y", false, realtype)
+    z = load_chunked_array("z", false, realtype)
     pos = SharedArray(Float32, (3,length(x)))
     pos[1,:] = x
     pos[2,:] = y
     pos[3,:] = z
 
     pos,
-    load_chunked_array("vx"),
-    load_chunked_array("vy"),
-    load_chunked_array("vz"),
-    load_chunked_array("m")
+    load_chunked_array("vx", true, realtype),
+    load_chunked_array("vy", true, realtype),
+    load_chunked_array("vz", true, realtype),
+    load_chunked_array("m", true, realtype)
 end

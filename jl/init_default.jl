@@ -2,7 +2,7 @@ addprocs(8)
 
 include("all.jl")
 
-pos,vx,vy,vz,m = load_realization();
+pos,vx,vy,vz,m = load_realization("small");
 m.s[:] *= MASS_IN_BOX/sum(m);
 
 rho = SharedArray(Complex64, (BOX_N,BOX_N,BOX_N));
