@@ -1,5 +1,8 @@
+using Logging
 using Winston
 using NearestNeighbors
+
+Logging.configure(level=INFO)
 
 include("utils.jl")
 include("realization.jl")

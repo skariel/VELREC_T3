@@ -59,7 +59,7 @@ function load_raw_halos1600(minimalmass=10.0, substructure=false)
                 push!(_vz, h.vz)
                 push!(_m, h.m200b)
             end
-            println("percentage read: ",(position(f)-HEADER_SIZE)/sz*100.0," fraction surviving mass filter: ",tot/N," halos#: ",length(_x))
+            info("percentage read: ",(position(f)-HEADER_SIZE)/sz*100.0," fraction surviving mass filter: ",tot/N," halos#: ",length(_x))
         end
         # eat whatever remains
         tmp_halos2 = Array(Halo1600, round(Int, (sz-position(f))/sizeof(Halo1600)))
@@ -79,7 +79,7 @@ function load_raw_halos1600(minimalmass=10.0, substructure=false)
                 push!(_vz, h.vz)
                 push!(_m, h.m200b)
             end
-            println(position(f)/sz*100.0)
+            info(position(f)/sz*100.0)
         end
     end
     # translate units to G2
