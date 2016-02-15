@@ -42,6 +42,12 @@ function back_in_box!(pos, box_min=0.0, side_len=SIDE_LEN)
     end
 end
 
+function move_periodic!(pos, dim, vel, fac, side_len=SIDE_LEN)
+    @inbounds for i in eachindex(vel)
+        pos[dim,i]= mod1(pos[dim,i] + vel[i]*fac, side_len)
+    end
+end
+
 function rho_to_1st_order_vel_pot!(rho)
     to_delta!(rho);
     to_g_fft!(rho);
@@ -57,6 +63,10 @@ function get_1st_order_vel!(c, a, dim, first_order_vel_pot)
     end
 end
 
+function get_1st_order_s!(c, a_from, a_to, dim, first_order_vel_pot)
+    # TODO: implement!
+end
+
 function first_order_vel_pot_to_sencond_order!(vpot)
     to_tlpt_delta!(vpot);
     to_g_fft!(vpot);
@@ -70,4 +80,8 @@ function get_2nd_order_vel!(c, a, dim, second_order_vel_pot)
     @inbounds for i in eachindex(c)
         c[i] = fac * real(c[i])
     end
+end
+
+function get_2nd_order_s!(c, a_from, a_to, dim, second_order_vel_pot)
+    # TODO: implement!
 end
