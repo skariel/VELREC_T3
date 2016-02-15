@@ -1,36 +1,50 @@
+
 function to_tlpt_delta!(grid, side_len=SIDE_LEN)
-    dx = similar(grid)
-    dy = similar(grid)
-    dz = similar(grid)
+    res = similar(grid)
+    fill!(res, 0.0)
     const N = size(grid)[1]
     const GRID_DX = side_len/N
-    @inbounds for z in 1:N, y in 1:N, x in 1:N
-        const nx = x+1 > N ? 1 : x+1
-        const px = x-1 < 1 ? N : x-1
-        dx[x,y,z] = (grid[nx,y,z] - grid[px,y,z])/2/GRID_DX
-        const ny = y+1 > N ? 1 : y+1
-        const py = y-1 < 1 ? N : y-1
-        dy[x,y,z] = (grid[x,ny,z] - grid[x,py,z])/2/GRID_DX
-        const nz = z+1 > N ? 1 : z+1
-        const pz = z-1 < 1 ? N : z-1
-        dz[x,y,z] = (grid[x,y,nz] - grid[x,y,pz])/2/GRID_DX
+    const fac = 16*GRID_DX^4
+
+    @inbounds @fastmath for z in 1:N
+        for y in 1:N
+            @simd for x in 1:N
+
+                const xp1 = mod1(x+1,N)
+                const xm1 = mod1(x-1,N)
+                const xp2 = mod1(x+2,N)
+                const xm2 = mod1(x-2,N)
+
+                const yp1 = mod1(y+1,N)
+                const ym1 = mod1(y-1,N)
+                const yp2 = mod1(y+2,N)
+                const ym2 = mod1(y-2,N)
+
+                const zp1 = mod1(z+1,N)
+                const zm1 = mod1(z-1,N)
+                const zp2 = mod1(z+2,N)
+                const zm2 = mod1(z-2,N)
+
+                const g02 = 2*grid[x,y,z]
+                const dxx = grid[xp2,y,z] - g02 + grid[xm2,y,z]
+                const dyy = grid[x,yp2,z] - g02 + grid[x,ym2,z]
+                const dzz = grid[x,y,zp2] - g02 + grid[x,y,zm2]
+
+                const dyx = grid[xp1,yp1,z]-grid[xp1,ym1,z] - (grid[xm1,yp1,z]-grid[xm1,ym1,z])
+                const dzx = grid[xp1,y,zp1]-grid[xp1,y,zm1] - (grid[xm1,y,zp1]-grid[xm1,y,zm1])
+                const dzy = grid[x,yp1,zp1]-grid[x,yp1,zm1] - (grid[x,ym1,zp1]-grid[x,ym1,zm1])
+
+                res[x,y,z] = (dyy*dxx + dzz*dxx + dzz*dyy  -  dyx*dyx - dzx*dzx - dzy*dzy)/fac
+            end
+        end
     end
-    @inbounds for z in 1:N, y in 1:N, x in 1:N
-        const nx = x+1 > N ? 1 : x+1
-        const px = x-1 < 1 ? N : x-1
-        const ny = y+1 > N ? 1 : y+1
-        const py = y-1 < 1 ? N : y-1
-        const nz = z+1 > N ? 1 : z+1
-        const pz = z-1 < 1 ? N : z-1
 
-        const dxx = (dx[nx,y,z] - dx[px,y,z])/2/GRID_DX
-        const dyy = (dy[x,ny,z] - dy[x,py,z])/2/GRID_DX
-        const dzz = (dz[x,y,nz] - dz[x,y,pz])/2/GRID_DX
-
-        const dyx = (dy[nx,y,z] - dy[px,y,z])/2/GRID_DX
-        const dzx = (dz[nx,y,z] - dz[px,y,z])/2/GRID_DX
-        const dzy = (dz[x,ny,z] - dz[x,py,z])/2/GRID_DX
-
-        grid[x,y,z] = dyy*dxx + dzz*dxx + dzz*dyy  -  dyx*dyx - dzx*dzx - dzy*dzy
+    @inbounds @fastmath for z in 1:N
+        for y in 1:N
+            @simd for x in 1:N
+                grid[x,y,z] = res[x,y,z]
+            end
+        end
     end
+
 end

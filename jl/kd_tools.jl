@@ -17,7 +17,7 @@ function get_slope_std_smoothed(v_rec, v_real, pos, smth, n)
     get_slope_std(_v_rec_smth, _v_real_smth)
 end
 
-get_kd(pos) = KDTree(pos.s)
+get_kd(pos) = KDTree(pos.s, reorder=false)
 
 function measure_mass_density_th(kd, m, where_pos, smth=8000.0)
     const vol = 4/3*π*smth*smth*smth

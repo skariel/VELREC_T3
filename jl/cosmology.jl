@@ -48,12 +48,7 @@ function unnormalizedD(a)
     a*up/2down
 end
 D(a) = unnormalizedD(a) / unnormalizedD(1.0)
-D2(a) = -3*D(a)^2/7
+D2(a) = -3/7*D(a)^2
 
-function F(a)
-    o0 = OM(a)
-    ol = OL(a)
-    o0^(4/7) + (1+o0/2)*ol/70
-end
-
+F(a) = OM(a)^(5/9)
 F2(a) = 2*OM(a)^(6/11)

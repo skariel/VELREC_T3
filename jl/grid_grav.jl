@@ -11,7 +11,7 @@ function to_g_fft!(ρ, side_len=SIDE_LEN, smth_len=SMTH)
     const N2 = div(N, 2)
     const fac = side_len*side_len/π
     const ksmth2 = (2π*smth_len/side_len)^2
-    @inbounds for z in 0:N-1, y in 0:N-1, x in 0:N-1
+    @fastmath @inbounds for z in 0:N-1, y in 0:N-1, x in 0:N-1
         const kx = x<=N2 ? x : x - N
         const ky = y<=N2 ? y : y - N
         const kz = z<=N2 ? z : z - N
@@ -30,7 +30,7 @@ end
 
 function to_delta!(ρ)
     mn = mean(ρ)
-    @inbounds for i in CartesianRange(size(ρ))
+    @fastmath @inbounds for i in CartesianRange(size(ρ))
         ρ[i] = ρ[i]/mn - 1.0
     end
     ρ

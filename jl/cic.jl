@@ -88,7 +88,7 @@ end
 end
 
 doc"""
-    finited diference diff accurate to 4th order
+    finit diference diff accurate to 4th order
 """
 function from_cic_dim4!(v_arr,data,grid,dim::Integer, grid_min=0.0, side_len=SIDE_LEN)
     const dx = side_len / size(grid)[1]
