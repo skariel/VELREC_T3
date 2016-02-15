@@ -5,7 +5,7 @@ function get_slope_std(v_rec, v_real)
     b, std(v_real - v_rec*b)
 end
 
-function get_slope_std_smoothed(v_rec, v_real, pos, smth, n)
+function get_slope_std_smoothed(kd, v_rec, v_real, pos, smth, n)
     ixs = rand(1:size(pos)[2], n);
     rngs = inrange(kd, pos[:,ixs], smth);
     _v_real_smth = zeros(length(rngs))

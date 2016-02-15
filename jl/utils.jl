@@ -57,7 +57,7 @@ function get_1st_order_vel!(c, a, dim, first_order_vel_pot)
     end
 end
 
-function firsrt_order_vel_pot_to_sencond_order!(vpot)
+function first_order_vel_pot_to_sencond_order!(vpot)
     to_tlpt_delta!(vpot);
     to_g_fft!(vpot);
     in_place_multiply!(vpot, -1.0/4π);
