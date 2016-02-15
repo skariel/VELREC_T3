@@ -41,3 +41,33 @@ function back_in_box!(pos, box_min=0.0, side_len=SIDE_LEN)
         pos[i] = mod1(pos[i], SIDE_LEN)
     end
 end
+
+function rho_to_1st_order_vel_pot!(rho)
+    to_delta!(rho);
+    to_g_fft!(rho);
+    in_place_multiply!(rho, -1.0/4π);
+    rho
+end
+
+function get_1st_order_vel!(c, a, dim, first_order_vel_pot)
+    from_cic_dim2!(c,pos,first_order_vel_pot,dim);
+    const fac = -D(a)*F(a)*Ha(a)
+    @inbounds for i in eachindex(c)
+        c[i] = fac * real(c[i])
+    end
+end
+
+function firsrt_order_vel_pot_to_sencond_order!(vpot)
+    to_tlpt_delta!(vpot);
+    to_g_fft!(vpot);
+    in_place_multiply!(vpot, -1.0/4π);
+    vpot
+end
+
+function get_2nd_order_vel!(c, a, dim, second_order_vel_pot)
+    from_cic_dim2!(c,pos,second_order_vel_pot,dim);
+    const fac = D2(a)*F2(a)*Ha(a)
+    @inbounds for i in eachindex(c)
+        c[i] = fac * real(c[i])
+    end
+end
