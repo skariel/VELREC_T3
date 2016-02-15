@@ -23,6 +23,7 @@ const PARTICLE_NUM_FULL_REALIZATION = 150149632
 const MEAN_SEP_SMALL_REALIZATION = 3806.0162249593727
 const PARTICLE_NUM_SMALL_REALIZATION = 74293025
 const DX = SIDE_LEN / BOX_N
+const xl = linspace(0,SIDE_LEN,BOX_N)
 
 # Hubble as function of scale factor a
 Ha(a) = H0*sqrt(Ω0/a/a/a+ΩΛ)

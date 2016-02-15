@@ -3,7 +3,14 @@ addprocs(8)
 include("all.jl")
 
 pos,vx,vy,vz,m = load_realization("small");
+@show length(m), minimum(m), maximum(m)
+
+#pos,vx,vy,vz,m = filter_mass_above(pos,vx,vy,vz,m,310.0)
+#@show length(m), minimum(m), maximum(m)
+
 m.s[:] *= MASS_IN_BOX/sum(m);
+#m.s[:] = MASS_IN_BOX/length(m);
+@show length(m), minimum(m), maximum(m)
 
 rho = SharedArray(Complex64, (BOX_N,BOX_N,BOX_N));
 c = SharedArray(eltype(rho), length(m));
