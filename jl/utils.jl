@@ -51,9 +51,10 @@ function move_periodic_all_dims!(pos, vx, vy, vz, fac, side_len=SIDE_LEN)
 end
 
 function mean_std_dx_vs_pushed_pos(pos, side_len=SIDE_LEN)
-    dx = zeros(Float32, size(pos)[2])
+    dx = zeros(Float32, div(size(pos)[2], 50))
     @inbounds for i in 1:length(dx)
-        dx[i] = abs(pos[1,i]-_s_pos[1,i])
+        i50 = i*50
+        dx[i] = abs(pos[1,i50]-_s_pos[1,i50])
         if dx[i] > side_len/2
             dx[i] = abs(dx[i]-side_len)
         end
