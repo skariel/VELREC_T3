@@ -18,12 +18,12 @@ c = SharedArray(eltype(rho), length(m));
 
 to_rho!(pos,m, rho);
 
-_s_pos = nothing
-_s_vx = nothing
-_s_vy = nothing
-_s_vz = nothing
-_s_m = nothing
-_s_rho = nothing
+_s_pos = SharedArray(Float32, size(pos))
+_s_vx = SharedArray(Float32, length(vx))
+_s_vy = SharedArray(Float32, length(vx))
+_s_vz = SharedArray(Float32, length(vx))
+_s_m = SharedArray(Float32, length(vx))
+_s_rho = SharedArray(Complex64, size(rho))
 
 function push_realization()
     global _s_pos
@@ -32,12 +32,12 @@ function push_realization()
     global _s_vz
     global _s_m
     global _s_rho
-    _s_pos = pos.s[:,:]
-    _s_vx = vx.s[:]
-    _s_vy = vy.s[:]
-    _s_vz = vz.s[:]
-    _s_m = m.s[:]
-    _s_rho = rho.s[:,:,:]
+    _s_pos.s[:,:] = pos.s[:,:]
+    _s_vx.s[:] = vx.s[:]
+    _s_vy.s[:] = vy.s[:]
+    _s_vz.s[:] = vz.s[:]
+    _s_m.s[:] = m.s[:]
+    _s_rho.s[:] = rho.s[:,:,:]
     nothing
 end
 
