@@ -10,7 +10,7 @@
     d
 end
 
-@everywhere function _move_opos_i_inregards_to_pushed_target_single_worker!(opos_i, opos_f, frac_of_way, side_len=SIDE_LEN)
+@everywhere function _move_opos_i_inregards_to_pushed_target_single_worker!(opos_i, opos_f, _s_pos, frac_of_way, side_len=SIDE_LEN)
     @inbounds for i in myrange(opos_i)
         d = _get_periodic_d(opos_f[i], _s_pos[i], side_len)
         opos_i[i] = mod1(opos_i[i] + frac_of_way * d, side_len)
@@ -21,7 +21,7 @@ function _move_opos_i_inregards_to_pushed_target!(opos_i, opos_f, frac_of_way, s
     @sync begin
         for p in workers()
             @async remotecall_wait(p, _move_opos_i_inregards_to_pushed_target_single_worker!,
-                opos_i, opos_f, frac_of_way, side_len)
+                opos_i, opos_f, _s_pos, frac_of_way, side_len)
         end
     end
 end
