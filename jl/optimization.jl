@@ -1,6 +1,6 @@
 # TODO: implement!
 
-function _get_periodic_d(from, to, side_len=SIDE_LEN)
+@everywhere function _get_periodic_d(from, to, side_len=SIDE_LEN)
     d = to-from
     if d > side_len/2
         d -= side_len
