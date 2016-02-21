@@ -22,22 +22,36 @@ function simulate_zeld!(rho, pos, m, a_from, a_to, side_len=SIDE_LEN)
 end
 
 function simulate_2lpt!(rho, pos, m, a_from, a_to, fac2=1.0, side_len=SIDE_LEN)
-    TODO: FIX as above!!!
+    # TEST!
     info("sim2lpt start from a=",a_from," to a=",a_to)
     to_rho!(pos,m, rho);
     rho_to_1st_order_vel_pot!(rho);
-    fac1 = 1.0
-    for dim in 1:3
-        info("sim2lpt 1st order dim ",dim)
-        get_1st_order_s!(c, a_from, a_to, dim, rho)
-        move_periodic!(pos, dim, c, fac1, side_len)
-    end
+
+    info("sim2lpt 1st order dim 1")
+    get_1st_order_s!(c, a_from, a_to, 1, pos, rho)
+    dx = real(c)
+    info("sim2lpt 1st order dim 2")
+    get_1st_order_s!(c, a_from, a_to, 2, pos, rho)
+    dy = real(c)
+    info("sim2lpt 1st order dim 3")
+    get_1st_order_s!(c, a_from, a_to, 3, pos, rho)
+    dz = real(c)
+
     first_order_vel_pot_to_sencond_order!(rho)
-    for dim in 1:3
-        info("sim2lpt 2nd order dim ",dim)
-        get_2nd_order_s!(c, a_from, a_to, dim, rho)
-        move_periodic!(pos, dim, c, fac2, side_len)
-    end
+
+    info("sim2lpt 2nd order dim 1")
+    get_2nd_order_s!(c, a_from, a_to, 1, pos, rho)
+    dx += real(c)*fac2
+    info("sim2lpt 2nd order dim 2")
+    get_2nd_order_s!(c, a_from, a_to, 2, pos, rho)
+    dy += real(c)*fac2
+    info("sim2lpt 2nd order dim 3")
+    get_2nd_order_s!(c, a_from, a_to, 3, pos, rho)
+    dz += real(c)*fac2
+
+    move_periodic!(pos, 1, dx, 1.0, side_len)
+    move_periodic!(pos, 2, dy, 1.0, side_len)
+    move_periodic!(pos, 3, dz, 1.0, side_len)
     info("sim2lpt end")
 end
 
