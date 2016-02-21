@@ -14,41 +14,37 @@ m.s[:] *= MASS_IN_BOX/sum(m);
 info("N=",length(m), " min(m)=",minimum(m)," max(m)=", maximum(m))
 
 rho = SharedArray(Complex64, (BOX_N,BOX_N,BOX_N));
+
+# just a utility array
 c = SharedArray(eltype(rho), length(m));
 
 to_rho!(pos,m, rho);
 
 _s_pos = SharedArray(Float32, size(pos))
-_s_vx = SharedArray(Float32, length(vx))
-_s_vy = SharedArray(Float32, length(vx))
-_s_vz = SharedArray(Float32, length(vx))
-_s_m = SharedArray(Float32, length(vx))
-_s_rho = SharedArray(Complex64, size(rho))
+_s_vx = Array(Float32, length(vx))
+_s_vy = Array(Float32, length(vx))
+_s_vz = Array(Float32, length(vx))
 
-function push_realization()
+function push_posv()
     global _s_pos
     global _s_vx
     global _s_vy
     global _s_vz
     global _s_m
     global _s_rho
-    _s_pos.s[:,:] = pos.s[:,:]
-    _s_vx.s[:] = vx.s[:]
-    _s_vy.s[:] = vy.s[:]
-    _s_vz.s[:] = vz.s[:]
-    _s_m.s[:] = m.s[:]
-    _s_rho.s[:] = rho.s[:,:,:]
+    copy_into!(_s_pos, pos)
+    copy_into!(_s_vx, vx)
+    copy_into!(_s_vy, vy)
+    copy_into!(_s_vz, vz)
     nothing
 end
 
-function pop_realization()
-    pos.s[:,:] = _s_pos
-    vx.s[:] = _s_vx
-    vy.s[:] = _s_vy
-    vz.s[:] = _s_vz
-    m.s[:] = _s_m
-    rho.s[:,:,:] = _s_rho
+function pop_posv()
+    copy_into!(pos, _s_pos)
+    copy_into!(vx.s[:],_s_vx)
+    copy_into!(vy.s[:],_s_vy)
+    copy_into!(vz.s[:],_s_vz)
     nothing
 end
 
-push_realization()
+push_posv()
