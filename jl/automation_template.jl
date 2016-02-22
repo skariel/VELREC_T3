@@ -35,8 +35,22 @@ open(run_sim_name,"w") do f
     """)
 end
 
-open(run_sim_name,"w") do f
+open(queue_sim_name,"w") do f
     write(f, """
     sbatch --partition=$(PARTITION) -N1 -n$(PROCS_NUM) --output=realization_$(sim_name)/log.out ./$(run_sim_name)
     """)
 end
+
+try
+    rm( "realization_$(sim_name)", recursive=true)
+catch e
+end
+
+try
+    mkdir( "realization_$(sim_name)")
+catch e
+end
+
+run(`chmod +x $(run_sim_name)`)
+run(`chmod +x $(queue_sim_name)`)
+run(`./$(queue_sim_name)`)
