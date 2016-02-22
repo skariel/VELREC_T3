@@ -55,78 +55,138 @@ function simulate_2lpt!(rho, pos, m, a_from, a_to, fac2=1.0, side_len=SIDE_LEN)
     info("sim2lpt end")
 end
 
-# doc"""
-# returns dynamical allowed `da`
-# this uses a few conservative approximations for speed:
-# 1. 3D accel is approximated using a 1D accel
-# 2. particles are skipped with the `skp` parameter
-# """
-# function get_min_dt(accel_x, a, smth=SMTH, skp=16)
-#     minda = 1.e30 # infinity, ha!
-#     hat = Ha(a)*a
-#     const DTFRAC = 0.07
-#     a4 = a*a*a*a
-#     phys_smth = smth*a
-#     @inbounds for i in 1:skp:length(accel_x)
-#         const accel2 = accel_x[i]*accel_x[i]*3
-#         const phys_accel2 = accel2/a4
-#
-#         const dyn_phys_dt2 = 2.0*DTFRAC*phys_smth/sqrt(phys_accel2)
-#
-#         const da = sqrt(dyn_phys_dt2)*hat
-#
-#         if da < minda
-#             minda = da
-#         end
-#     end
-#     if minda > 0.05
-#         minda = 0.05
-#     end
-#     minda
-# end
-#
-# function _kick_single_worker!(accel, v, a, da)
-#     const fac1 = FK(a,a+da)
-#     @inbounds for i in myrange(v)
-#         v[i] += accel[i]*fac1
-#     end
-# end
-#
-# function kick!(accel, v, a, da)
-#     @sync begin
-#         for p in workers()
-#             @async remotecall_wait(p, _kick_single_worker!,
-#             accel, v, a, da)
-#         end
-#     end
-# end
-#
-# function _drift_single_worker!(vel, pos, a, da, dim, side_len=SIDE_LEN)
-#     const fac1 = FD(a,a+da)
-#     @inbounds for i in myrange(v)
-#         pos[dim,i] = mod1(pos[dim,i] + vel[i]*fac1, side_len)
-#         pos[1,i] = mod1(pos[1,i] + real(vx[i])*fac, side_len)
-#     end
-# end
-#
-# function drift!(vel, pos, a, da, dim, side_len=SIDE_LEN)
-#     @sync begin
-#         for p in workers()
-#             @async remotecall_wait(p, _drift_single_worker!,
-#             vel, pos, a, da, dim, side_len)
-#         end
-#     end
-# end
-#
-# function simulate_dyn!(rho, c, vx,vy,vz, pos, m, a_from, a_to, side_len=SIDE_LEN)
-#     info("simdyn start from a=",a_from," to a=",a_to)
-#     to_rho!(pos,m, rho);
-#     rho_to_1st_order_vel_pot!(rho);
-#     fac1 = 1.0
-#     for dim in 1:3
-#         info("simdyn dim ",dim)
-#         get_1st_order_s!(c, a_from, a_to, dim, rho)
-#         move_periodic!(pos, dim, c, fac1, side_len)
-#     end
-#     info("simdyn end")
-# end
+doc"""
+returns dynamical allowed `da`
+this uses a few conservative approximations for speed:
+1. 3D accel is approximated using a 1D accel
+2. particles are skipped with the `skp` parameter
+"""
+function get_min_dt(accel_x, a, smth=SMTH, skp=16)
+    minda = 1.e30 # infinity, ha!
+    hat = Ha(a)*a
+    const DTFRAC = 0.07
+    a4 = a*a*a*a
+    phys_smth = smth*a
+    @inbounds for i in 1:skp:length(accel_x)
+        const accel2 = abs2(accel_x[i])*3
+        const phys_accel2 = accel2/a4
+
+        const dyn_phys_dt2 = 2.0*DTFRAC*phys_smth/sqrt(phys_accel2)
+
+        const da = sqrt(dyn_phys_dt2)*hat
+
+        if da < minda
+            minda = da
+        end
+    end
+    if minda > 0.05
+        minda = 0.05
+    end
+    minda
+end
+
+@everywhere function _kick_single_worker!(accel, v, fk)
+    @inbounds for i in myrange(v)
+        v[i] += real(accel[i])*fk
+    end
+end
+
+function kick!(accel, v, a, da)
+    const fk = FK(a,a+da)
+    @sync begin
+        for p in workers()
+            @async remotecall_wait(p, _kick_single_worker!,
+            accel, v, fk)
+        end
+    end
+end
+
+@everywhere function _drift_single_worker!(vel, pos, fd, dim, side_len=SIDE_LEN)
+    @inbounds for i in myrange(v)
+        pos[dim,i] = mod1(pos[dim,i] + vel[i]*fd, side_len)
+    end
+end
+
+function drift!(vel, pos, a, da, dim, side_len=SIDE_LEN)
+    const fd = FD(a,a+da)
+    @sync begin
+        for p in workers()
+            @async remotecall_wait(p, _drift_single_worker!,
+            vel, pos, fd, dim, side_len)
+        end
+    end
+end
+
+function simulate_dyn!(rho, c, vx,vy,vz, pos, m, a_from, a_to)
+    info("simdyn start from a=",a_from," to a=",a_to)
+
+    # Initial velocity
+    info("simdyn initial vel")
+    fac = 2 * F(a_from) / 3 / OM(a_from) / Ha(a_from) / a_from
+    to_rho!(pos,m, rho);
+    rho_to_1st_order_vel_pot!(rho);
+    get_1st_order_comoving_vel!(c, a_from, 1, pos, rho)
+    vx.s[:] = real(c)*fac
+    get_1st_order_comoving_vel!(c, a_from, 2, pos, rho)
+    vy.s[:] = real(c)*fac
+    get_1st_order_comoving_vel!(c, a_from, 3, pos, rho)
+    vz.s[:] = real(c)*fac
+
+    # Initial accel...
+    info("simdyn initial accel")
+    to_rho!(pos,m, rho)
+    to_g_fft!(rho)
+    in_place_multiply!(rho ,G)
+    from_cic_dim2!(c,pos,rho,1)
+    step = 0
+    a = a_from
+
+    finished = false
+    while !finished
+
+        # calc da
+        da = get_min_dt(c,a,SMTH,16)
+        if a+da > a_to
+            finished = true
+            da = a_to - a
+        end
+
+        info("simdyn step=",step," a=",a," da=",da)
+
+        # kick da/2
+        info("simdyn kick da/2")
+        from_cic_dim2!(c,pos,rho,1)
+        kick!(c, vx, a, da/2)
+        from_cic_dim2!(c,pos,rho,2)
+        kick!(c, vy, a, da/2)
+        from_cic_dim2!(c,pos,rho,3)
+        kick!(c, vz, a, da/2)
+
+        # drift da
+        info("simdyn drift da")
+        drift!(vx, pos, a, da, 1)
+        drift!(vy, pos, a, da, 2)
+        drift!(vz, pos, a, da, 3)
+
+        # accel
+        info("simdyn accel")
+        to_rho!(pos,m, rho)
+        to_g_fft!(rho)
+        in_place_multiply(rho ,G)
+
+        # kick da/2
+        info("simdyn kick da/2")
+        from_cic_dim2!(c,pos,rho,1)
+        kick!(c, vx, a, da/2)
+        from_cic_dim2!(c,pos,rho,2)
+        kick!(c, vy, a, da/2)
+        from_cic_dim2!(c,pos,rho,3)
+        kick!(c, vz, a, da/2)
+
+        # just advance time...
+        a += da
+        step += 1
+    end
+
+    info("simdyn end")
+end
