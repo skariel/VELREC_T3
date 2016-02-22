@@ -105,4 +105,4 @@ else
     throw("BAD OPT_TYPE AND/OR SIM_TYPE PARAMETERS: "*string(OPT_TYPE)+", "*string(SIM_TYPE))
 end
 
-save_realization(opos_i,vx,vy,vz,m,realtype=LOGGING_FOLDER)
+save_realization(opos_i,vx,vy,vz,m,LOGGING_FOLDER)
