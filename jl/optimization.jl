@@ -125,3 +125,26 @@ function back_optimize_2lpt_vs_pushed_pos!(rho, opos_i, pos, m, a_from, a_to, a_
     end
     info("backopt2lpt end")
 end
+
+function back_optimize_dyn_vs_pushed_pos!(rho, opos_i, pos, m, a_from, a_to, a_steps_num=20, frac_mov=0.15, end_meandx=400.0)
+    info("backopt2lpt start a_from=",a_from," a_to=",a_to," end_meandx=",end_meandx, " fracmov=",frac_mov)
+    for a_i in linspace(a_to,a_from,a_steps_num)
+        a_i==a_to && continue
+        step = 0
+        info("backopt2lpt a_i=",a_i)
+        fac2 = 1.0
+        while true
+            step += 1
+
+            copy_into!(pos, opos_i)
+            simulate_dyn!(rho, c, vx,vy,vz, pos, m, a_i, a_to)
+
+            (mdx,sdx) = mean_std_dx_vs_pushed_pos(pos)
+            _move_opos_i_inregards_to_pushed_target!(opos_i, pos, frac_mov, side_len)
+            info("backopt2lpt step=", step, " mdx=",mdx)
+            mdx < end_meandx && break
+
+        end
+    end
+    info("backopt2lpt end")
+end
