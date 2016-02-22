@@ -11,7 +11,7 @@ addprocs(PROCS_NUM)
 include("all.jl")
 
 try
-    mkdir( "realization_$(LOGGING_FN)")
+    mkdir( "realization_$(LOGGING_FOLDER)")
 catch e
 end
 
