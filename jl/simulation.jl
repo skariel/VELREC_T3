@@ -67,6 +67,7 @@ function get_min_dt(accel_x, a, smth=SMTH, skp=16)
     const DTFRAC = 0.07
     a4 = a*a*a*a
     phys_smth = smth*a
+    das = Float64[]
     @inbounds for i in 1:skp:length(accel_x)
         const accel2 = abs2(accel_x[i])*3
         const phys_accel2 = accel2/a4
@@ -75,12 +76,14 @@ function get_min_dt(accel_x, a, smth=SMTH, skp=16)
 
         const da = sqrt(dyn_phys_dt2)*hat
 
-        if da < minda
-            minda = da
-        end
+        # if da < minda
+        #     minda = da
+        # end
+        push!(das, da)
     end
-    if minda > 0.05
-        minda = 0.05
+    minda = sort(das)[div(length(das), 20)]
+    if minda > 0.2
+        minda = 0.2
     end
     minda
 end
@@ -102,7 +105,7 @@ function kick!(accel, v, a, da)
 end
 
 @everywhere function _drift_single_worker!(vel, pos, fd, dim, side_len=SIDE_LEN)
-    @inbounds for i in myrange(v)
+    @inbounds for i in myrange(vel)
         pos[dim,i] = mod1(pos[dim,i] + vel[i]*fd, side_len)
     end
 end
@@ -122,15 +125,14 @@ function simulate_dyn!(rho, c, vx,vy,vz, pos, m, a_from, a_to)
 
     # Initial velocity
     info("simdyn initial vel")
-    fac = 2 * F(a_from) / 3 / OM(a_from) / Ha(a_from) / a_from
     to_rho!(pos,m, rho);
     rho_to_1st_order_vel_pot!(rho);
     get_1st_order_comoving_vel!(c, a_from, 1, pos, rho)
-    vx.s[:] = real(c)*fac
+    vx.s[:] = real(c)*a_from*a_from
     get_1st_order_comoving_vel!(c, a_from, 2, pos, rho)
-    vy.s[:] = real(c)*fac
+    vy.s[:] = real(c)*a_from*a_from
     get_1st_order_comoving_vel!(c, a_from, 3, pos, rho)
-    vz.s[:] = real(c)*fac
+    vz.s[:] = real(c)*a_from*a_from
 
     # Initial accel...
     info("simdyn initial accel")
@@ -154,11 +156,13 @@ function simulate_dyn!(rho, c, vx,vy,vz, pos, m, a_from, a_to)
         info("simdyn step=",step," a=",a," da=",da)
 
         # kick da/2
-        info("simdyn kick da/2")
+        info("simdyn kick da/2.. x")
         from_cic_dim2!(c,pos,rho,1)
         kick!(c, vx, a, da/2)
+        info("simdyn kick da/2.. y")
         from_cic_dim2!(c,pos,rho,2)
         kick!(c, vy, a, da/2)
+        info("simdyn kick da/2.. z")
         from_cic_dim2!(c,pos,rho,3)
         kick!(c, vz, a, da/2)
 
@@ -172,14 +176,16 @@ function simulate_dyn!(rho, c, vx,vy,vz, pos, m, a_from, a_to)
         info("simdyn accel")
         to_rho!(pos,m, rho)
         to_g_fft!(rho)
-        in_place_multiply(rho ,G)
+        in_place_multiply!(rho ,G)
 
         # kick da/2
-        info("simdyn kick da/2")
+        info("simdyn kick da/2.. x")
         from_cic_dim2!(c,pos,rho,1)
         kick!(c, vx, a, da/2)
+        info("simdyn kick da/2.. y")
         from_cic_dim2!(c,pos,rho,2)
         kick!(c, vy, a, da/2)
+        info("simdyn kick da/2.. z")
         from_cic_dim2!(c,pos,rho,3)
         kick!(c, vz, a, da/2)
 
