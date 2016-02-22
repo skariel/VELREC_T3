@@ -15,7 +15,7 @@ try
 catch e
 end
 
-Logging.configure(filename= "realization_$(LOGGING_FN)/log.txt")
+Logging.configure(filename= "realization_$(LOGGING_FOLDER)/log.txt")
 
 info("REALIZATION_TYPE=",REALIZATION_TYPE)
 info("PROCS_NUM=",PROCS_NUM)
