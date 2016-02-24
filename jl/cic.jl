@@ -14,7 +14,7 @@ end
 end
 
 function to_cic!(data,v_arr,grid,grid_min=0.0,side_len=SIDE_LEN)
-    fill!(grid, 0)
+    fill_with_zeros!(grid)
     @sync begin
         for p in workers()
             @async remotecall_wait(p, _to_cic_single_worker!,
@@ -34,7 +34,7 @@ end
 @everywhere function _to_cic_single_worker!(data,v_arr,grid,grid_min::Number,side_len::Number)
     const N = size(grid)[1]
     const g_dx = side_len / eltype(data)(N)
-    @inbounds for i in myrange(v_arr)
+    for i in myrange(v_arr)
         const x = mod1(data[1,i] - grid_min, side_len)
         const y = mod1(data[2,i] - grid_min, side_len)
         const z = mod1(data[3,i] - grid_min, side_len)
@@ -42,7 +42,7 @@ end
         const y_ix = 1 + round(Int, trunc(y/g_dx))
         const z_ix = 1 + round(Int, trunc(z/g_dx))
         val = v_arr[i]
-        @inbounds for d_ix_x in 0:1, d_ix_y in 0:1, d_ix_z in 0:1
+        for d_ix_x in 0:1, d_ix_y in 0:1, d_ix_z in 0:1
             const lever_x = abs(x_ix-d_ix_x - x/g_dx)
             const lever_y = abs(y_ix-d_ix_y - y/g_dx)
             const lever_z = abs(z_ix-d_ix_z - z/g_dx)
@@ -55,7 +55,7 @@ end
 end
 
 function from_cic!(v_arr,data,grid,grid_min=0.0,side_len=SIDE_LEN)
-    fill!(v_arr, 0)
+    fill_with_zeros!(v_arr)
     @sync begin
         for p in workers()
             @async remotecall_wait(p, _from_cic_single_worker!,
@@ -68,14 +68,14 @@ end
 @everywhere function _from_cic_single_worker!(v_arr,data,grid,grid_min::Number,side_len::Number)
     const N = size(grid)[1]
     const g_dx = side_len / eltype(data)(N)
-    @inbounds for i in myrange(v_arr)
+    for i in myrange(v_arr)
         const x = mod1(data[1,i] - grid_min, side_len)
         const y = mod1(data[2,i] - grid_min, side_len)
         const z = mod1(data[3,i] - grid_min, side_len)
         x_ix = 1 + round(Int, trunc(x/g_dx))
         y_ix = 1 + round(Int, trunc(y/g_dx))
         z_ix = 1 + round(Int, trunc(z/g_dx))
-        @inbounds for d_ix_x in 0:1, d_ix_y in 0:1, d_ix_z in 0:1
+        for d_ix_x in 0:1, d_ix_y in 0:1, d_ix_z in 0:1
             const lever_x = abs(x_ix-d_ix_x - x/g_dx)
             const lever_y = abs(y_ix-d_ix_y - y/g_dx)
             const lever_z = abs(z_ix-d_ix_z - z/g_dx)
@@ -97,28 +97,28 @@ function from_cic_dim4!(v_arr,data,grid,dim::Integer, grid_min=0.0, side_len=SID
 
     _in_place_add!(data, dx, dim)   # +dx
     from_cic!(v_arr,data,grid,grid_min,side_len)
-    @inbounds for i in eachindex(v_arr)
+    for i in eachindex(v_arr)
         cum_tmp[i] += v_arr[i]*idx*2/3
     end
     _in_place_add!(data, -2dx, dim) # -dx
     tmp = from_cic!(v_arr,data,grid,grid_min,side_len)
-    @inbounds for i in eachindex(v_arr)
+    for i in eachindex(v_arr)
         cum_tmp[i] -= v_arr[i]*idx*2/3
     end
     _in_place_add!(data, 3dx, dim)  # +2dx
     tmp = from_cic!(v_arr,data,grid,grid_min,side_len)
-    @inbounds for i in eachindex(v_arr)
+    for i in eachindex(v_arr)
         cum_tmp[i] += v_arr[i]*idx* ( -1/12)
     end
     _in_place_add!(data, -4dx, dim) # -2dx
     tmp = from_cic!(v_arr,data,grid,grid_min,side_len)
-    @inbounds for i in eachindex(v_arr)
+    for i in eachindex(v_arr)
         cum_tmp[i] -= v_arr[i]*idx* (-1/12)
     end
 
     # finalizing...
     _in_place_add!(data, 2dx, dim) # back to original...
-    @inbounds for i in eachindex(v_arr)
+    for i in eachindex(v_arr)
         v_arr[i] = cum_tmp[i]
     end
     v_arr
@@ -134,18 +134,18 @@ function from_cic_dim2!(v_arr,data,grid,dim::Integer, grid_min=0.0, side_len=SID
 
     _in_place_add!(data, dx, dim)   # +dx
     from_cic!(v_arr,data,grid,grid_min,side_len)
-    @inbounds for i in eachindex(v_arr)
+    for i in eachindex(v_arr)
         cum_tmp[i] += v_arr[i]*idx2
     end
     _in_place_add!(data, -2dx, dim) # -dx
     tmp = from_cic!(v_arr,data,grid,grid_min,side_len)
-    @inbounds for i in eachindex(v_arr)
+    for i in eachindex(v_arr)
         cum_tmp[i] -= v_arr[i]*idx2
     end
 
     # finalizing...
     _in_place_add!(data, dx, dim) # back to original...
-    @inbounds for i in eachindex(v_arr)
+    for i in eachindex(v_arr)
         v_arr[i] = cum_tmp[i]
     end
     v_arr

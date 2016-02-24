@@ -1,13 +1,13 @@
 
 function to_tlpt_delta!(grid, side_len=SIDE_LEN)
     res = similar(grid)
-    fill!(res, 0.0)
+    fill_with_zeros!(res)
     const N = size(grid)[1]
     const GRID_DX = side_len/N
     const fac = 16*GRID_DX^4
 
     rng1 = 3:(N-2)
-    @inbounds for z in rng1
+    for z in rng1
         for y in rng1
             @simd for x in rng1
 
@@ -41,7 +41,7 @@ function to_tlpt_delta!(grid, side_len=SIDE_LEN)
     end
 
     rng2 = [1,2,N-1,N]
-    @inbounds for z in rng2, y in rng2, x in rng2
+    for z in rng2, y in rng2, x in rng2
         const xp1 = mod1(x+1,N)
         const xm1 = mod1(x-1,N)
         const xp2 = mod1(x+2,N)
@@ -69,7 +69,7 @@ function to_tlpt_delta!(grid, side_len=SIDE_LEN)
         res[x,y,z] = (dyy*dxx + dzz*dxx + dzz*dyy  -  dyx*dyx - dzx*dzx - dzy*dzy)/fac
     end
 
-    @inbounds for z in 1:N, y in 1:N, x in 1:N
+    for z in 1:N, y in 1:N, x in 1:N
         grid[x,y,z] = res[x,y,z]
     end
 

@@ -68,7 +68,7 @@ function get_min_dt(accel_x, a, smth=SMTH, skp=16)
     a4 = a*a*a*a
     phys_smth = smth*a
     das = Float64[]
-    @inbounds for i in 1:skp:length(accel_x)
+    for i in 1:skp:length(accel_x)
         const accel2 = abs2(accel_x[i])*3
         const phys_accel2 = accel2/a4
 
@@ -89,7 +89,7 @@ function get_min_dt(accel_x, a, smth=SMTH, skp=16)
 end
 
 @everywhere function _kick_single_worker!(accel, v, fk)
-    @inbounds for i in myrange(v)
+    for i in myrange(v)
         v[i] += real(accel[i])*fk
     end
 end
@@ -105,7 +105,7 @@ function kick!(accel, v, a, da)
 end
 
 @everywhere function _drift_single_worker!(vel, pos, fd, dim, side_len=SIDE_LEN)
-    @inbounds for i in myrange(vel)
+    for i in myrange(vel)
         pos[dim,i] = mod1(pos[dim,i] + vel[i]*fd, side_len)
     end
 end
