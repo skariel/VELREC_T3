@@ -1,4 +1,4 @@
-FFTW.set_num_threads(8)
+FFTW.set_num_threads(min(8,length(workers())))
 
 doc"""
 Given a 3D cube box represented by $\rho$, solves the poisson equation

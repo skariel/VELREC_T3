@@ -127,10 +127,13 @@ function simulate_dyn!(rho, c, vx,vy,vz, pos, m, a_from, a_to)
     info("simdyn initial vel")
     to_rho!(pos,m, rho);
     rho_to_1st_order_vel_pot!(rho);
+    info("simdyn iv.. x")
     get_1st_order_comoving_vel!(c, a_from, 1, pos, rho)
     vx.s[:] = real(c)*a_from*a_from
+    info("simdyn iv.. y")
     get_1st_order_comoving_vel!(c, a_from, 2, pos, rho)
     vy.s[:] = real(c)*a_from*a_from
+    info("simdyn iv.. z")
     get_1st_order_comoving_vel!(c, a_from, 3, pos, rho)
     vz.s[:] = real(c)*a_from*a_from
 
