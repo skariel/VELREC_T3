@@ -31,7 +31,7 @@ end
 open(run_sim_name,"w") do f
     write(f, """
     #!/bin/sh
-    stdbuf -o0 -e0 julia/bin/julia $(jl_sim_name)
+    stdbuf -o0 -e0 julia/bin/julia -O --inline=yes  --check-bounds=no --math-mode=fast --depwarn=no $(jl_sim_name)
     """)
 end
 

@@ -1,31 +1,31 @@
 function _in_place_add!(a,v,dim)
-    for i in 1:size(a)[2]
+    @inbounds for i in 1:size(a)[2]
         a[dim,i] += v
     end
     a
 end
 
 function _in_place_add_with_fac!(to, from, fac)
-    for i in eachindex(to)
+    @inbounds for i in eachindex(to)
         to[i] += from[i]*fac
     end
 end
 
 function in_place_multiply!(m, fac)
-    for i in eachindex(m)
+    @inbounds for i in eachindex(m)
         m[i] *= fac
     end
     m
 end
 
 function copy_into!(to, from)
-    for i in eachindex(to)
+    @inbounds for i in eachindex(to)
         to[i] = from[i]
     end
 end
 
 function fill_with_zeros!(a)
-    for i in eachindex(a)
+    @inbounds for i in eachindex(a)
         a[i] = 0.0
     end
 end
@@ -55,19 +55,19 @@ function filter_mass_above(pos,vx,vy,vz,m,mf)
 end
 
 function back_in_box!(pos, box_min=0.0, side_len=SIDE_LEN)
-    for i in eachindex(pos)
+    @inbounds for i in eachindex(pos)
         pos[i] = mod1(pos[i], SIDE_LEN)
     end
 end
 
 function move_periodic!(pos, dim, vel, fac, side_len=SIDE_LEN)
-    for i in 1:length(vel)
+    @inbounds for i in 1:length(vel)
         pos[dim,i] = mod1(pos[dim,i] + real(vel[i])*fac, side_len)
     end
 end
 
 function move_periodic_all_dims!(pos, vx,vy,vz, fac, side_len=SIDE_LEN)
-    for i in 1:length(vx)
+    @inbounds for i in 1:length(vx)
         pos[1,i] = mod1(pos[1,i] + real(vx[i])*fac, side_len)
         pos[2,i] = mod1(pos[2,i] + real(vy[i])*fac, side_len)
         pos[3,i] = mod1(pos[3,i] + real(vz[i])*fac, side_len)
@@ -76,7 +76,7 @@ end
 
 function mean_std_dx_vs_pushed_pos(pos, side_len=SIDE_LEN)
     dx = zeros(Float32, div(size(pos)[2], 50))
-    for i in 1:length(dx)
+    @inbounds for i in 1:length(dx)
         i50 = i*50
         dx[i] = abs(pos[1,i50]-_s_pos[1,i50])
         if dx[i] > side_len/2
@@ -98,7 +98,7 @@ function get_accel!(c, a, dim, pos, rho)
     in_place_multiply!(rho, G)
     from_cic_dim2!(c,pos,first_order_vel_pot,dim);
     const fac = -D(a)*F(a)*Ha(a)
-    for i in eachindex(c)
+    @inbounds for i in eachindex(c)
         c[i] = fac * real(c[i])
     end
 end
@@ -106,7 +106,7 @@ end
 function get_1st_order_comoving_vel!(c, a, dim, pos, first_order_vel_pot)
     from_cic_dim2!(c,pos,first_order_vel_pot,dim);
     const fac = -D(a)*F(a)*Ha(a)
-    for i in eachindex(c)
+    @inbounds for i in eachindex(c)
         c[i] = fac * real(c[i])
     end
 end
@@ -116,7 +116,7 @@ function get_1st_order_s!(c, a_from, a_to, dim, pos, first_order_vel_pot)
     const fac_from = -D(a_from)
     const fac_to = -D(a_to)
     const dfac = fac_to-fac_from
-    for i in eachindex(c)
+    @inbounds for i in eachindex(c)
         c[i] = dfac * real(c[i])
     end
 end
@@ -131,7 +131,7 @@ end
 function get_2nd_order_comoving_vel!(c, a, dim, pos, second_order_vel_pot)
     from_cic_dim2!(c,pos,second_order_vel_pot,dim);
     const fac = D2(a)*F2(a)*Ha(a)
-    for i in eachindex(c)
+    @inbounds for i in eachindex(c)
         c[i] = fac * real(c[i])
     end
 end
@@ -141,7 +141,7 @@ function get_2nd_order_s!(c, a_from, a_to, dim, pos, second_order_vel_pot)
     const fac_from = D2(a_from)
     const fac_to = D2(a_to)
     const dfac = fac_to-fac_from
-    for i in eachindex(c)
+    @inbounds for i in eachindex(c)
         c[i] = dfac * real(c[i])
     end
 end

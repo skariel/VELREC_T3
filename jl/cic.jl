@@ -34,7 +34,7 @@ end
 @everywhere function _to_cic_single_worker!(data,v_arr,grid,grid_min::Number,side_len::Number)
     const N = size(grid)[1]
     const g_dx = side_len / eltype(data)(N)
-    for i in myrange(v_arr)
+    @inbounds for i in myrange(v_arr)
         const x = mod1(data[1,i] - grid_min, side_len)
         const y = mod1(data[2,i] - grid_min, side_len)
         const z = mod1(data[3,i] - grid_min, side_len)
@@ -42,7 +42,7 @@ end
         const y_ix = 1 + round(Int, trunc(y/g_dx))
         const z_ix = 1 + round(Int, trunc(z/g_dx))
         val = v_arr[i]
-        for d_ix_x in 0:1, d_ix_y in 0:1, d_ix_z in 0:1
+        @inbounds for d_ix_x in 0:1, d_ix_y in 0:1, d_ix_z in 0:1
             const lever_x = abs(x_ix-d_ix_x - x/g_dx)
             const lever_y = abs(y_ix-d_ix_y - y/g_dx)
             const lever_z = abs(z_ix-d_ix_z - z/g_dx)
@@ -68,14 +68,14 @@ end
 @everywhere function _from_cic_single_worker!(v_arr,data,grid,grid_min::Number,side_len::Number)
     const N = size(grid)[1]
     const g_dx = side_len / eltype(data)(N)
-    for i in myrange(v_arr)
+    @inbounds for i in myrange(v_arr)
         const x = mod1(data[1,i] - grid_min, side_len)
         const y = mod1(data[2,i] - grid_min, side_len)
         const z = mod1(data[3,i] - grid_min, side_len)
         x_ix = 1 + round(Int, trunc(x/g_dx))
         y_ix = 1 + round(Int, trunc(y/g_dx))
         z_ix = 1 + round(Int, trunc(z/g_dx))
-        for d_ix_x in 0:1, d_ix_y in 0:1, d_ix_z in 0:1
+        @inbounds for d_ix_x in 0:1, d_ix_y in 0:1, d_ix_z in 0:1
             const lever_x = abs(x_ix-d_ix_x - x/g_dx)
             const lever_y = abs(y_ix-d_ix_y - y/g_dx)
             const lever_z = abs(z_ix-d_ix_z - z/g_dx)

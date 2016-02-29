@@ -1,6 +1,8 @@
 using Logging
-using Winston
-using NearestNeighbors
+if !(isdefined(:ICORE) && ICORE==true)
+    using Winston
+    using NearestNeighbors
+end
 
 Logging.configure(level=INFO)
 

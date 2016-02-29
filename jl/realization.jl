@@ -52,7 +52,7 @@ function load_chunked_array(fn, shared=true, realtype="small")
     end
     if shared
         sx = SharedArray(Float32, length(x))
-        sx.s[:] = x
+        sx[:] = x
         return sx
     else
         sx = Array(Float32, length(x))
