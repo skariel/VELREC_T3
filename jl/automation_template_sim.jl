@@ -17,6 +17,7 @@ open(jl_sim_name, "w") do f
     const A_FROM  = $(A_FROM)
     const A_TO    = $(A_TO)
     const RELNAME = "$(RELNAME)"
+    const PROCS_NUM = $(PROCS_NUM)
     const LOGGING_FOLDER   = "$(sim_name)"
 
     include("jl/init_by_params_sim.jl")
