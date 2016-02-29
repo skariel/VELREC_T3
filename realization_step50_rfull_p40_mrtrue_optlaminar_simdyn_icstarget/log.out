@@ -1,0 +1,82 @@
+WARNING: Method definition info(Any...) in module Base at util.jl:334 overwritten in module Logging at /home/skariel/.julia/v0.4/Logging/src/Logging.jl:61.
+WARNING: Method definition warn(Any...) in module Base at util.jl:364 overwritten in module Logging at /home/skariel/.julia/v0.4/Logging/src/Logging.jl:61.
+WARNING: Method definition info(Any...) in module BaseWARNING: Method definition info at util.jl:334(WARNING: Method definition infoWARNING: Method definition infoWARNING: Method definition infoWARNING: Method definition info overwritten in module LoggingAnyWARNING: Method definition infoWARNING: Method definition info((((...((AnyWARNING: Method definition info at /home/skariel/.julia/v0.4/Logging/src/Logging.jl:61AnyAnyAnyAnyAny.
+...)......(.........)WARNING: Method definition info() in module Base)Any)) in module Base)WARNING: Method definition warnAny in module Base in module Base at util.jl:334 at util.jl:334 in module Base in module Base... in module Base at util.jl:334 overwritten in module Logging overwritten in module LoggingWARNING: Method definition info at util.jl:334 at util.jl:334) at /home/skariel/.julia/v0.4/Logging/src/Logging.jl:61 at /home/skariel/.julia/v0.4/Logging/src/Logging.jl:61 overwritten in module Logging.
+.
+ at /home/skariel/.julia/v0.4/Logging/src/Logging.jl:61 overwritten in module Logging overwritten in module Logging in module Base at util.jl:334 at util.jl:334...WARNING: Method definition infoWARNING: Method definition infoWARNING: Method definition info.
+() overwritten in module Logging( at util.jl:334WARNING: Method definition warnWARNING: Method definition warn at /home/skariel/.julia/v0.4/Logging/src/Logging.jl:61 at /home/skariel/.julia/v0.4/Logging/src/Logging.jl:61 overwritten in module Logging((WARNING: Method definition warn at /home/skariel/.julia/v0.4/Logging/src/Logging.jl:61((WARNING: Method definition info.
+WARNING: Method definition info.
+ in module BaseAnyAny.
+( at /home/skariel/.julia/v0.4/Logging/src/Logging.jl:61AnyAny(Any at util.jl:334AnyWARNING: Method definition warn(WARNING: Method definition warn...WARNING: Method definition warn(... overwritten in module Logging...WARNING: Method definition info....
+(Any overwritten in module LoggingAny...)...Any()Any at /home/skariel/.julia/v0.4/Logging/src/Logging.jl:61()WARNING: Method definition warn...Any( at /home/skariel/.julia/v0.4/Logging/src/Logging.jl:61 in module Base...)) in module Base...)Any.
+Any(...Any) at util.jl:334 at util.jl:334) in module Base.
+...)Any in module Base... overwritten in module Logging in module Base... in module Base in module Base) at util.jl:364)... overwritten in module LoggingWARNING: Method definition warn...) in module Base in module Base in module Base in module Base at util.jl:334WARNING: Method definition warn at util.jl:364 at /home/skariel/.julia/v0.4/Logging/src/Logging.jl:61 at /home/skariel/.julia/v0.4/Logging/src/Logging.jl:61 at util.jl:364) at util.jl:334 overwritten in module LoggingWARNING: Method definition info() at util.jl:364 at util.jl:364 in module Base at util.jl:334 overwritten in module Logging) overwritten in module Logging.
+ at /home/skariel/.julia/v0.4/Logging/src/Logging.jl:61 in module Base( in module Base overwritten in module Logging overwritten in module Logging.
+ overwritten in module Logging overwritten in module LoggingAny( at util.jl:334Any at util.jl:364 overwritten in module LoggingWARNING: Method definition info at /home/skariel/.julia/v0.4/Logging/src/Logging.jl:61 at util.jl:364 in module BaseWARNING: Method definition infoWARNING: Method definition warn at util.jl:334 at /home/skariel/.julia/v0.4/Logging/src/Logging.jl:61 overwritten in module Logging.
+ at /home/skariel/.julia/v0.4/Logging/src/Logging.jl:61WARNING: Method definition info at /home/skariel/.julia/v0.4/Logging/src/Logging.jl:61WARNING: Method definition warn...WARNING: Method definition infoAnyWARNING: Method definition info at /home/skariel/.julia/v0.4/Logging/src/Logging.jl:61.
+...( at /home/skariel/.julia/v0.4/Logging/src/Logging.jl:61 overwritten in module Logging( at /home/skariel/.julia/v0.4/Logging/src/Logging.jl:61().
+.
+ at util.jl:364 overwritten in module Logging overwritten in module Logging at /home/skariel/.julia/v0.4/Logging/src/Logging.jl:61 at /home/skariel/.julia/v0.4/Logging/src/Logging.jl:61WARNING: Method definition infoWARNING: Method definition warn((AnyAny......)) in module Base in module Base at util.jl:334 at util.jl:364 overwritten in module Logging overwritten in module Logging at /home/skariel/.julia/v0.4/Logging/src/Logging.jl:61Any.
+ overwritten in module Logging((( in module BaseAnyWARNING: Method definition info... at /home/skariel/.julia/v0.4/Logging/src/Logging.jl:61.
+.
+ at /home/skariel/.julia/v0.4/Logging/src/Logging.jl:61).
+....
+ at /home/skariel/.julia/v0.4/Logging/src/Logging.jl:61.
+AnyAnyAny.
+(...)WARNING: Method definition infoWARNING: Method definition warnWARNING: Method definition infoWARNING: Method definition infoAny at /home/skariel/.julia/v0.4/Logging/src/Logging.jl:61)WARNING: Method definition info....
+...( in module Base.
+WARNING: Method definition info... at util.jl:334WARNING: Method definition info...Any)WARNING: Method definition infoWARNING: Method definition warn at util.jl:364( in module BaseWARNING: Method definition info.
+((( in module BaseWARNING: Method definition warn)) in module Base)(.
+(WARNING: Method definition info...WARNING: Method definition infoAny overwritten in module Logging)(Any(AnyAny( in module Base... overwritten in module Logging at util.jl:364AnyWARNING: Method definition info((WARNING: Method definition warnWARNING: Method definition warn) at /home/skariel/.julia/v0.4/Logging/src/Logging.jl:61 in module Base(Any at util.jl:334.........Any in module BaseAny)... at /home/skariel/.julia/v0.4/Logging/src/Logging.jl:61( at util.jl:364 in module Base(...Any.
+ in module BaseAnyWARNING: Method definition info) overwritten in module LoggingAny).
+Any(WARNING: Method definition infoWARNING: Method definition info...( at util.jl:334 overwritten in module Logging))... at util.jl:334) in module BaseAnyAnyWARNING: Method definition info... at util.jl:334... at util.jl:364 overwritten in module LoggingAny at util.jl:334)AnyAny overwritten in module Logging...WARNING: Method definition warn in module Base(( in module Base in module Base... overwritten in module Logging in module Base...... in module Base( at /home/skariel/.julia/v0.4/Logging/src/Logging.jl:61( at /home/skariel/.julia/v0.4/Logging/src/Logging.jl:61) at util.jl:334... in module Base)Any at util.jl:334 at util.jl:334) at /home/skariel/.julia/v0.4/Logging/src/Logging.jl:61 at util.jl:334) overwritten in module Logging) at /home/skariel/.julia/v0.4/Logging/src/Logging.jl:61 at /home/skariel/.julia/v0.4/Logging/src/Logging.jl:61....
+)Any at util.jl:364 overwritten in module Logging)Any( overwritten in module Logging overwritten in module Logging in module Base)...Any overwritten in module Logging.
+.
+ overwritten in module Logging.
+ at util.jl:334) in module Base overwritten in module Logging.
+ in module Base... in module Base at /home/skariel/.julia/v0.4/Logging/src/Logging.jl:61 at util.jl:334 in module Base at /home/skariel/.julia/v0.4/Logging/src/Logging.jl:61 at util.jl:334 in module Base at /home/skariel/.julia/v0.4/Logging/src/Logging.jl:61 in module Base at /home/skariel/.julia/v0.4/Logging/src/Logging.jl:61 in module Base at util.jl:334).
+Any overwritten in module Logging... at /home/skariel/.julia/v0.4/Logging/src/Logging.jl:61.
+ overwritten in module Logging in module Base at util.jl:334 at util.jl:334 at /home/skariel/.julia/v0.4/Logging/src/Logging.jl:61 overwritten in module LoggingWARNING: Method definition warn.
+...)...WARNING: Method definition warn at util.jl:334 overwritten in module Logging at util.jl:364 at util.jl:334 at /home/skariel/.julia/v0.4/Logging/src/Logging.jl:61.
+ overwritten in module LoggingWARNING: Method definition warn at util.jl:364) at /home/skariel/.julia/v0.4/Logging/src/Logging.jl:61 at util.jl:364 overwritten in module Logging... in module Base.
+ at /home/skariel/.julia/v0.4/Logging/src/Logging.jl:61 at /home/skariel/.julia/v0.4/Logging/src/Logging.jl:61) overwritten in module Logging.
+(WARNING: Method definition warn( at /home/skariel/.julia/v0.4/Logging/src/Logging.jl:61.
+WARNING: Method definition warn overwritten in module Logging at /home/skariel/.julia/v0.4/Logging/src/Logging.jl:61WARNING: Method definition warn at util.jl:334).
+ overwritten in module Logging in module BaseWARNING: Method definition warn in module Base in module Base at /home/skariel/.julia/v0.4/Logging/src/Logging.jl:61) overwritten in module Logging overwritten in module LoggingAny at /home/skariel/.julia/v0.4/Logging/src/Logging.jl:61(Any(.
+.
+ in module Base at /home/skariel/.julia/v0.4/Logging/src/Logging.jl:61 overwritten in module Logging(WARNING: Method definition warn.
+ at util.jl:364 at util.jl:334WARNING: Method definition warn.
+.
+ overwritten in module Logging at /home/skariel/.julia/v0.4/Logging/src/Logging.jl:61(.
+(WARNING: Method definition warn....
+AnyAny at /home/skariel/.julia/v0.4/Logging/src/Logging.jl:61 at /home/skariel/.julia/v0.4/Logging/src/Logging.jl:61 at util.jl:334 at util.jl:364 overwritten in module Logging at /home/skariel/.julia/v0.4/Logging/src/Logging.jl:61 overwritten in module Logging( in module BaseWARNING: Method definition warnAny(AnyWARNING: Method definition warn)....
+Any overwritten in module Logging.
+ overwritten in module Logging...WARNING: Method definition warn(.
+WARNING: Method definition warnWARNING: Method definition warnWARNING: Method definition warn at /home/skariel/.julia/v0.4/Logging/src/Logging.jl:61 at /home/skariel/.julia/v0.4/Logging/src/Logging.jl:61((... at /home/skariel/.julia/v0.4/Logging/src/Logging.jl:61.
+)......(( at /home/skariel/.julia/v0.4/Logging/src/Logging.jl:61...Any( in module Base at /home/skariel/.julia/v0.4/Logging/src/Logging.jl:61 at util.jl:334AnyWARNING: Method definition warn)(.
+.
+Any.
+ in module BaseAny.
+).
+) overwritten in module LoggingAnyAny)AnyAny... at util.jl:364 in module Base...WARNING: Method definition warn...() in module BaseWARNING: Method definition warn......Any in module Base at /home/skariel/.julia/v0.4/Logging/src/Logging.jl:61......WARNING: Method definition warn) at util.jl:364 in module BaseAny in module Base)...)) at util.jl:364)() at util.jl:364 overwritten in module Logging.
+( at util.jl:364 overwritten in module Logging... in module Base in module Base in module Base in module Base in module Base)(...) at util.jl:364 at /home/skariel/.julia/v0.4/Logging/src/Logging.jl:61AnyAny overwritten in module Logging at /home/skariel/.julia/v0.4/Logging/src/Logging.jl:61 overwritten in module Logging in module Base at util.jl:364 at util.jl:364) in module Base at util.jl:364 at util.jl:364Any) in module Base overwritten in module Logging....
+ at /home/skariel/.julia/v0.4/Logging/src/Logging.jl:61 at util.jl:364 at /home/skariel/.julia/v0.4/Logging/src/Logging.jl:61 at util.jl:364 at util.jl:364...WARNING: Method definition warn overwritten in module Logging overwritten in module Logging at util.jl:364 overwritten in module Logging in module Base.
+ overwritten in module Logging overwritten in module Logging overwritten in module Logging) overwritten in module Logging in module Base overwritten in module Logging).
+( at /home/skariel/.julia/v0.4/Logging/src/Logging.jl:61... at util.jl:364 overwritten in module Logging at /home/skariel/.julia/v0.4/Logging/src/Logging.jl:61 at /home/skariel/.julia/v0.4/Logging/src/Logging.jl:61.
+ at /home/skariel/.julia/v0.4/Logging/src/Logging.jl:61 at util.jl:364 at /home/skariel/.julia/v0.4/Logging/src/Logging.jl:61 at /home/skariel/.julia/v0.4/Logging/src/Logging.jl:61 in module Base at /home/skariel/.julia/v0.4/Logging/src/Logging.jl:61 at /home/skariel/.julia/v0.4/Logging/src/Logging.jl:61 at /home/skariel/.julia/v0.4/Logging/src/Logging.jl:61 in module Base).
+.
+.
+ at util.jl:364.
+ overwritten in module Logging at util.jl:364.
+.
+ at /home/skariel/.julia/v0.4/Logging/src/Logging.jl:61Any overwritten in module Logging.
+ at util.jl:364.
+ in module Base overwritten in module Logging overwritten in module Logging.
+... at util.jl:364 at /home/skariel/.julia/v0.4/Logging/src/Logging.jl:61 at /home/skariel/.julia/v0.4/Logging/src/Logging.jl:61).
+ in module Base at util.jl:364 overwritten in module Logging at /home/skariel/.julia/v0.4/Logging/src/Logging.jl:61.
+ at /home/skariel/.julia/v0.4/Logging/src/Logging.jl:61 overwritten in module Logging.
+ at /home/skariel/.julia/v0.4/Logging/src/Logging.jl:61.
+.
+.
+ at /home/skariel/.julia/v0.4/Logging/src/Logging.jl:61 overwritten in module Logging.
+ at /home/skariel/.julia/v0.4/Logging/src/Logging.jl:61.

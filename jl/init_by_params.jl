@@ -96,11 +96,11 @@ elseif OPT_TYPE == "fwd" && SIM_TYPE == "2lpt"
 elseif OPT_TYPE == "fwd" && SIM_TYPE == "dyn"
     optimize_dyn_vs_pushed_pos!(vx,vy,vz, rho, opos_i, pos, m, 0.01, 1.0, 0.21, 350);
 elseif OPT_TYPE == "laminar" && SIM_TYPE == "zel"
-    back_optimize_zeld_vs_pushed_pos!(rho, opos_i, pos, m, 0.01, 1.0, 50, 0.21, 350);
+    back_optimize_zeld_vs_pushed_pos!(rho, opos_i, pos, m, 0.01, 1.0, 20, 0.21, 350);
 elseif OPT_TYPE == "laminar" && SIM_TYPE == "2lpt"
-    back_optimize_2lpt_vs_pushed_pos!(rho, opos_i, pos, m, 0.01, 1.0, 50, 0.21, 350);
+    back_optimize_2lpt_vs_pushed_pos!(rho, opos_i, pos, m, 0.01, 1.0, 20, 0.21, 350);
 elseif OPT_TYPE == "laminar" && SIM_TYPE == "dyn"
-    back_optimize_dyn_vs_pushed_pos!(vx,vy,vz, rho, opos_i, pos, m, 0.01, 1.0, 50, 0.21, 350);
+    back_optimize_dyn_vs_pushed_pos!(vx,vy,vz, rho, opos_i, pos, m, 0.01, 1.0, 20, 0.21, 350);
 else
     throw("BAD OPT_TYPE AND/OR SIM_TYPE PARAMETERS: "*string(OPT_TYPE)+", "*string(SIM_TYPE))
 end
