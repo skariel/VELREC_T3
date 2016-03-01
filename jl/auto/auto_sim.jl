@@ -20,7 +20,7 @@ open(jl_sim_name, "w") do f
     const PROCS_NUM = $(PROCS_NUM)
     const LOGGING_FOLDER   = "$(sim_name)"
 
-    include("jl/init_by_params_sim.jl")
+    include("jl/run_sim.jl")
     """)
 end
 

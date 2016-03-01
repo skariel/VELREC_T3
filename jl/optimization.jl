@@ -83,10 +83,21 @@ end
 
 function back_optimize_zeld_vs_pushed_pos!(rho, opos_i, pos, m, a_from, a_to, a_steps_num=20, frac_mov=0.15, end_meandx=400.0, side_len=SIDE_LEN)
     info("backoptzel start a_from=",a_from," a_to=",a_to," end_meandx=",end_meandx, " fracmov=",frac_mov)
+    lns = append!(collect(linspace(0.99,0.041,20)), (collect(linspace(0.04,0.02,120))))
     for a_i in linspace(a_to,a_from,a_steps_num)
+        if a_i > 0.3
+            frac_mov = 0.27
+        elseif a_i > 0.1
+            frac_mov = 0.2
+        elseif a_i > 0.05
+            frac_mov = 0.1
+        else a_i > 0.05
+            frac_mov = 0.05
+        end
         a_i==a_to && continue
         step = 0
         info("backoptzel a_i=",a_i)
+        additional_frac_mov = 1.0
         while true
             step += 1
 
@@ -94,7 +105,8 @@ function back_optimize_zeld_vs_pushed_pos!(rho, opos_i, pos, m, a_from, a_to, a_
             simulate_zeld!(rho, pos, m, a_i, a_to, side_len)
 
             (mdx,sdx) = mean_std_dx_vs_pushed_pos(pos)
-            _move_opos_i_inregards_to_pushed_target!(opos_i, pos, frac_mov, side_len)
+            _move_opos_i_inregards_to_pushed_target!(opos_i, pos, frac_mov*additional_frac_mov, side_len)
+            additional_frac_mov *= 0.95
             info("backoptzel step=", step, " mdx=",mdx)
             mdx < end_meandx && break
 
@@ -105,11 +117,22 @@ end
 
 function back_optimize_2lpt_vs_pushed_pos!(rho, opos_i, pos, m, a_from, a_to, a_steps_num=20, frac_mov=0.15, end_meandx=400.0, side_len=SIDE_LEN)
     info("backopt2lpt start a_from=",a_from," a_to=",a_to," end_meandx=",end_meandx, " fracmov=",frac_mov)
-    for a_i in linspace(a_to,a_from,a_steps_num)
+    lns = append!(collect(linspace(0.99,0.041,20)), (collect(linspace(0.04,0.02,120))))
+    for a_i in lns
+        if a_i > 0.3
+            frac_mov = 0.27
+        elseif a_i > 0.1
+            frac_mov = 0.2
+        elseif a_i > 0.05
+            frac_mov = 0.1
+        else a_i > 0.05
+            frac_mov = 0.05
+        end
         a_i==a_to && continue
         step = 0
         info("backopt2lpt a_i=",a_i)
         fac2 = 1.0
+        additional_frac_mov = 1.0
         while true
             step += 1
 
@@ -117,7 +140,8 @@ function back_optimize_2lpt_vs_pushed_pos!(rho, opos_i, pos, m, a_from, a_to, a_
             simulate_2lpt!(rho, pos, m, a_i, a_to, fac2, side_len)
 
             (mdx,sdx) = mean_std_dx_vs_pushed_pos(pos)
-            _move_opos_i_inregards_to_pushed_target!(opos_i, pos, frac_mov, side_len)
+            _move_opos_i_inregards_to_pushed_target!(opos_i, pos, frac_mov*additional_frac_mov, side_len)
+            additional_frac_mov *= 0.95
             info("backopt2lpt step=", step, " mdx=",mdx)
             mdx < end_meandx && break
 
@@ -160,4 +184,3 @@ function back_optimize_dyn_vs_pushed_pos!(vx,vy,vz,rho, opos_i, pos, m, a_from, 
     end
     info("backoptdyn end")
 end
-

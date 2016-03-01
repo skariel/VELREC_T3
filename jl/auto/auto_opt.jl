@@ -24,7 +24,7 @@ open(jl_sim_name, "w") do f
     const ICS              = "$(ICS)"
     const LOGGING_FOLDER   = "$(sim_name)"
 
-    include("jl/init_by_params.jl")
+    include("jl/auto/run_opt.jl")
     """)
 end
 
