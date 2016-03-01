@@ -1,0 +1,84 @@
+29-Feb 15:58:07:INFO:root:PROCS_NUM=40
+29-Feb 15:58:07:INFO:root:RELNAME=step50_rfull_p40_mrtrue_optlaminar_simdyn_icstarget
+29-Feb 15:58:07:INFO:root:A_FROM=0.02
+29-Feb 15:58:07:INFO:root:A_TO=0.2
+29-Feb 15:58:19:INFO:root:N=150149632 min(m)=22.211617 max(m)=959026.75
+29-Feb 15:58:21:INFO:root:simdyn start from a=0.02 to a=0.2
+29-Feb 15:58:21:INFO:root:simdyn initial vel
+29-Feb 15:58:35:INFO:root:simdyn iv.. x
+29-Feb 15:58:44:INFO:root:simdyn iv.. y
+29-Feb 15:58:52:INFO:root:simdyn iv.. z
+29-Feb 15:59:00:INFO:root:simdyn initial accel
+29-Feb 15:59:18:INFO:root:simdyn step=0 a=0.02 da=0.009166311722623022
+29-Feb 15:59:18:INFO:root:simdyn kick da/2.. x
+29-Feb 15:59:25:INFO:root:simdyn kick da/2.. y
+29-Feb 15:59:32:INFO:root:simdyn kick da/2.. z
+29-Feb 15:59:39:INFO:root:simdyn drift da
+29-Feb 15:59:39:INFO:root:simdyn accel
+29-Feb 15:59:48:INFO:root:simdyn kick da/2.. x
+29-Feb 15:59:55:INFO:root:simdyn kick da/2.. y
+29-Feb 16:00:02:INFO:root:simdyn kick da/2.. z
+29-Feb 16:00:09:INFO:root:simdyn step=1 a=0.029166311722623024 da=0.012861509571601686
+29-Feb 16:00:09:INFO:root:simdyn kick da/2.. x
+29-Feb 16:00:16:INFO:root:simdyn kick da/2.. y
+29-Feb 16:00:22:INFO:root:simdyn kick da/2.. z
+29-Feb 16:00:29:INFO:root:simdyn drift da
+29-Feb 16:00:30:INFO:root:simdyn accel
+29-Feb 16:00:38:INFO:root:simdyn kick da/2.. x
+29-Feb 16:00:45:INFO:root:simdyn kick da/2.. y
+29-Feb 16:00:51:INFO:root:simdyn kick da/2.. z
+29-Feb 16:00:59:INFO:root:simdyn step=2 a=0.04202782129422471 da=0.01682366779312862
+29-Feb 16:00:59:INFO:root:simdyn kick da/2.. x
+29-Feb 16:01:06:INFO:root:simdyn kick da/2.. y
+29-Feb 16:01:12:INFO:root:simdyn kick da/2.. z
+29-Feb 16:01:19:INFO:root:simdyn drift da
+29-Feb 16:01:19:INFO:root:simdyn accel
+29-Feb 16:01:28:INFO:root:simdyn kick da/2.. x
+29-Feb 16:01:35:INFO:root:simdyn kick da/2.. y
+29-Feb 16:01:41:INFO:root:simdyn kick da/2.. z
+29-Feb 16:01:49:INFO:root:simdyn step=3 a=0.058851489087353326 da=0.020874641221553445
+29-Feb 16:01:49:INFO:root:simdyn kick da/2.. x
+29-Feb 16:01:55:INFO:root:simdyn kick da/2.. y
+29-Feb 16:02:02:INFO:root:simdyn kick da/2.. z
+29-Feb 16:02:09:INFO:root:simdyn drift da
+29-Feb 16:02:09:INFO:root:simdyn accel
+29-Feb 16:02:18:INFO:root:simdyn kick da/2.. x
+29-Feb 16:02:24:INFO:root:simdyn kick da/2.. y
+29-Feb 16:02:31:INFO:root:simdyn kick da/2.. z
+29-Feb 16:02:39:INFO:root:simdyn step=4 a=0.07972613030890677 da=0.024962235724521428
+29-Feb 16:02:39:INFO:root:simdyn kick da/2.. x
+29-Feb 16:02:45:INFO:root:simdyn kick da/2.. y
+29-Feb 16:02:52:INFO:root:simdyn kick da/2.. z
+29-Feb 16:02:58:INFO:root:simdyn drift da
+29-Feb 16:02:59:INFO:root:simdyn accel
+29-Feb 16:03:08:INFO:root:simdyn kick da/2.. x
+29-Feb 16:03:14:INFO:root:simdyn kick da/2.. y
+29-Feb 16:03:21:INFO:root:simdyn kick da/2.. z
+29-Feb 16:03:29:INFO:root:simdyn step=5 a=0.1046883660334282 da=0.029094392613191387
+29-Feb 16:03:29:INFO:root:simdyn kick da/2.. x
+29-Feb 16:03:35:INFO:root:simdyn kick da/2.. y
+29-Feb 16:03:42:INFO:root:simdyn kick da/2.. z
+29-Feb 16:03:49:INFO:root:simdyn drift da
+29-Feb 16:03:49:INFO:root:simdyn accel
+29-Feb 16:03:58:INFO:root:simdyn kick da/2.. x
+29-Feb 16:04:05:INFO:root:simdyn kick da/2.. y
+29-Feb 16:04:11:INFO:root:simdyn kick da/2.. z
+29-Feb 16:04:19:INFO:root:simdyn step=6 a=0.1337827586466196 da=0.03329944272741718
+29-Feb 16:04:19:INFO:root:simdyn kick da/2.. x
+29-Feb 16:04:25:INFO:root:simdyn kick da/2.. y
+29-Feb 16:04:32:INFO:root:simdyn kick da/2.. z
+29-Feb 16:04:38:INFO:root:simdyn drift da
+29-Feb 16:04:39:INFO:root:simdyn accel
+29-Feb 16:04:48:INFO:root:simdyn kick da/2.. x
+29-Feb 16:04:54:INFO:root:simdyn kick da/2.. y
+29-Feb 16:05:01:INFO:root:simdyn kick da/2.. z
+29-Feb 16:05:08:INFO:root:simdyn step=7 a=0.1670822013740368 da=0.032917798625963224
+29-Feb 16:05:08:INFO:root:simdyn kick da/2.. x
+29-Feb 16:05:15:INFO:root:simdyn kick da/2.. y
+29-Feb 16:05:22:INFO:root:simdyn kick da/2.. z
+29-Feb 16:05:28:INFO:root:simdyn drift da
+29-Feb 16:05:29:INFO:root:simdyn accel
+29-Feb 16:05:38:INFO:root:simdyn kick da/2.. x
+29-Feb 16:05:44:INFO:root:simdyn kick da/2.. y
+29-Feb 16:05:51:INFO:root:simdyn kick da/2.. z
+29-Feb 16:05:57:INFO:root:simdyn end
