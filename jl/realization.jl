@@ -76,3 +76,16 @@ function load_realization(realtype="small")
     load_chunked_array("vz", true, realtype),
     load_chunked_array("m", true, realtype)
 end
+
+function load_realization_pos_m(realtype="small")
+    x = load_chunked_array("x", false, realtype)
+    y = load_chunked_array("y", false, realtype)
+    z = load_chunked_array("z", false, realtype)
+    pos = SharedArray(Float32, (3,length(x)))
+    pos[1,:] = x
+    pos[2,:] = y
+    pos[3,:] = z
+
+    pos,
+    load_chunked_array("m", true, realtype)
+end

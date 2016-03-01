@@ -10,7 +10,7 @@ ICORE = true
 
 addprocs(PROCS_NUM)
 
-include("all.jl")
+include("../all.jl")
 
 try
     mkdir( "realization_$(LOGGING_FOLDER)")
