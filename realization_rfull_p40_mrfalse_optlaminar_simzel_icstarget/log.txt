@@ -1,0 +1,1003 @@
+01-Mar 10:30:50:INFO:root:PROCS_NUM=40
+01-Mar 10:30:50:INFO:root:REALIZATION_TYPE=full
+01-Mar 10:30:50:INFO:root:MASS_REAL=false
+01-Mar 10:30:50:INFO:root:OPT_TYPE=laminar
+01-Mar 10:30:50:INFO:root:SIM_TYPE=zel
+01-Mar 10:30:50:INFO:root:ICS=target
+01-Mar 10:31:01:INFO:root:N=150149632 min(m)=10.249871 max(m)=442556.75
+01-Mar 10:31:01:INFO:root:rescaling masses
+01-Mar 10:31:01:INFO:root:N=150149632 min(m)=223.5081 max(m)=223.5081
+01-Mar 10:31:10:INFO:root:backoptzel start a_from=0.02 a_to=1.0 end_meandx=350 fracmov=0.15
+01-Mar 10:31:10:INFO:root:backoptzel a_i=0.99
+01-Mar 10:31:11:INFO:root:simzel start from a=0.99 to a=1.0
+01-Mar 10:31:23:INFO:root:simzel dim 1
+01-Mar 10:31:30:INFO:root:simzel dim 2
+01-Mar 10:31:38:INFO:root:simzel dim 3
+01-Mar 10:31:50:INFO:root:simzel end
+01-Mar 10:31:52:INFO:root:backoptzel step=1 mdx=14.5243
+01-Mar 10:31:52:INFO:root:backoptzel a_i=0.9400526315789474
+01-Mar 10:31:53:INFO:root:simzel start from a=0.9400526315789474 to a=1.0
+01-Mar 10:32:04:INFO:root:simzel dim 1
+01-Mar 10:32:11:INFO:root:simzel dim 2
+01-Mar 10:32:18:INFO:root:simzel dim 3
+01-Mar 10:32:29:INFO:root:simzel end
+01-Mar 10:32:32:INFO:root:backoptzel step=1 mdx=87.24706
+01-Mar 10:32:32:INFO:root:backoptzel a_i=0.8901052631578947
+01-Mar 10:32:32:INFO:root:simzel start from a=0.8901052631578947 to a=1.0
+01-Mar 10:32:44:INFO:root:simzel dim 1
+01-Mar 10:32:51:INFO:root:simzel dim 2
+01-Mar 10:32:57:INFO:root:simzel dim 3
+01-Mar 10:33:09:INFO:root:simzel end
+01-Mar 10:33:12:INFO:root:backoptzel step=1 mdx=146.34155
+01-Mar 10:33:12:INFO:root:backoptzel a_i=0.8401578947368421
+01-Mar 10:33:12:INFO:root:simzel start from a=0.8401578947368421 to a=1.0
+01-Mar 10:33:24:INFO:root:simzel dim 1
+01-Mar 10:33:31:INFO:root:simzel dim 2
+01-Mar 10:33:38:INFO:root:simzel dim 3
+01-Mar 10:33:49:INFO:root:simzel end
+01-Mar 10:33:51:INFO:root:backoptzel step=1 mdx=194.44254
+01-Mar 10:33:51:INFO:root:backoptzel a_i=0.7902105263157895
+01-Mar 10:33:52:INFO:root:simzel start from a=0.7902105263157895 to a=1.0
+01-Mar 10:34:04:INFO:root:simzel dim 1
+01-Mar 10:34:11:INFO:root:simzel dim 2
+01-Mar 10:34:18:INFO:root:simzel dim 3
+01-Mar 10:34:29:INFO:root:simzel end
+01-Mar 10:34:32:INFO:root:backoptzel step=1 mdx=233.53038
+01-Mar 10:34:32:INFO:root:backoptzel a_i=0.7402631578947368
+01-Mar 10:34:32:INFO:root:simzel start from a=0.7402631578947368 to a=1.0
+01-Mar 10:34:44:INFO:root:simzel dim 1
+01-Mar 10:34:51:INFO:root:simzel dim 2
+01-Mar 10:34:57:INFO:root:simzel dim 3
+01-Mar 10:35:09:INFO:root:simzel end
+01-Mar 10:35:11:INFO:root:backoptzel step=1 mdx=265.06943
+01-Mar 10:35:11:INFO:root:backoptzel a_i=0.6903157894736842
+01-Mar 10:35:11:INFO:root:simzel start from a=0.6903157894736842 to a=1.0
+01-Mar 10:35:23:INFO:root:simzel dim 1
+01-Mar 10:35:30:INFO:root:simzel dim 2
+01-Mar 10:35:37:INFO:root:simzel dim 3
+01-Mar 10:35:48:INFO:root:simzel end
+01-Mar 10:35:50:INFO:root:backoptzel step=1 mdx=290.1175
+01-Mar 10:35:50:INFO:root:backoptzel a_i=0.6403684210526316
+01-Mar 10:35:51:INFO:root:simzel start from a=0.6403684210526316 to a=1.0
+01-Mar 10:36:03:INFO:root:simzel dim 1
+01-Mar 10:36:09:INFO:root:simzel dim 2
+01-Mar 10:36:16:INFO:root:simzel dim 3
+01-Mar 10:36:27:INFO:root:simzel end
+01-Mar 10:36:30:INFO:root:backoptzel step=1 mdx=309.42056
+01-Mar 10:36:30:INFO:root:backoptzel a_i=0.590421052631579
+01-Mar 10:36:30:INFO:root:simzel start from a=0.590421052631579 to a=1.0
+01-Mar 10:36:42:INFO:root:simzel dim 1
+01-Mar 10:36:49:INFO:root:simzel dim 2
+01-Mar 10:36:56:INFO:root:simzel dim 3
+01-Mar 10:37:07:INFO:root:simzel end
+01-Mar 10:37:10:INFO:root:backoptzel step=1 mdx=323.49518
+01-Mar 10:37:10:INFO:root:backoptzel a_i=0.5404736842105263
+01-Mar 10:37:11:INFO:root:simzel start from a=0.5404736842105263 to a=1.0
+01-Mar 10:37:22:INFO:root:simzel dim 1
+01-Mar 10:37:29:INFO:root:simzel dim 2
+01-Mar 10:37:36:INFO:root:simzel dim 3
+01-Mar 10:37:48:INFO:root:simzel end
+01-Mar 10:37:50:INFO:root:backoptzel step=1 mdx=332.7037
+01-Mar 10:37:50:INFO:root:backoptzel a_i=0.4905263157894737
+01-Mar 10:37:51:INFO:root:simzel start from a=0.4905263157894737 to a=1.0
+01-Mar 10:38:03:INFO:root:simzel dim 1
+01-Mar 10:38:09:INFO:root:simzel dim 2
+01-Mar 10:38:16:INFO:root:simzel dim 3
+01-Mar 10:38:27:INFO:root:simzel end
+01-Mar 10:38:30:INFO:root:backoptzel step=1 mdx=337.33163
+01-Mar 10:38:30:INFO:root:backoptzel a_i=0.44057894736842107
+01-Mar 10:38:30:INFO:root:simzel start from a=0.44057894736842107 to a=1.0
+01-Mar 10:38:42:INFO:root:simzel dim 1
+01-Mar 10:38:49:INFO:root:simzel dim 2
+01-Mar 10:38:56:INFO:root:simzel dim 3
+01-Mar 10:39:07:INFO:root:simzel end
+01-Mar 10:39:09:INFO:root:backoptzel step=1 mdx=337.65283
+01-Mar 10:39:09:INFO:root:backoptzel a_i=0.39063157894736844
+01-Mar 10:39:10:INFO:root:simzel start from a=0.39063157894736844 to a=1.0
+01-Mar 10:39:22:INFO:root:simzel dim 1
+01-Mar 10:39:29:INFO:root:simzel dim 2
+01-Mar 10:39:35:INFO:root:simzel dim 3
+01-Mar 10:39:47:INFO:root:simzel end
+01-Mar 10:39:49:INFO:root:backoptzel step=1 mdx=333.9849
+01-Mar 10:39:49:INFO:root:backoptzel a_i=0.3406842105263158
+01-Mar 10:39:50:INFO:root:simzel start from a=0.3406842105263158 to a=1.0
+01-Mar 10:40:01:INFO:root:simzel dim 1
+01-Mar 10:40:08:INFO:root:simzel dim 2
+01-Mar 10:40:14:INFO:root:simzel dim 3
+01-Mar 10:40:26:INFO:root:simzel end
+01-Mar 10:40:28:INFO:root:backoptzel step=1 mdx=326.7361
+01-Mar 10:40:28:INFO:root:backoptzel a_i=0.2907368421052632
+01-Mar 10:40:29:INFO:root:simzel start from a=0.2907368421052632 to a=1.0
+01-Mar 10:40:40:INFO:root:simzel dim 1
+01-Mar 10:40:47:INFO:root:simzel dim 2
+01-Mar 10:40:54:INFO:root:simzel dim 3
+01-Mar 10:41:05:INFO:root:simzel end
+01-Mar 10:41:07:INFO:root:backoptzel step=1 mdx=316.42072
+01-Mar 10:41:07:INFO:root:backoptzel a_i=0.24078947368421053
+01-Mar 10:41:08:INFO:root:simzel start from a=0.24078947368421053 to a=1.0
+01-Mar 10:41:19:INFO:root:simzel dim 1
+01-Mar 10:41:26:INFO:root:simzel dim 2
+01-Mar 10:41:33:INFO:root:simzel dim 3
+01-Mar 10:41:44:INFO:root:simzel end
+01-Mar 10:41:47:INFO:root:backoptzel step=1 mdx=339.52997
+01-Mar 10:41:47:INFO:root:backoptzel a_i=0.1908421052631579
+01-Mar 10:41:47:INFO:root:simzel start from a=0.1908421052631579 to a=1.0
+01-Mar 10:41:59:INFO:root:simzel dim 1
+01-Mar 10:42:05:INFO:root:simzel dim 2
+01-Mar 10:42:12:INFO:root:simzel dim 3
+01-Mar 10:42:23:INFO:root:simzel end
+01-Mar 10:42:26:INFO:root:backoptzel step=1 mdx=349.5821
+01-Mar 10:42:26:INFO:root:backoptzel a_i=0.14089473684210527
+01-Mar 10:42:26:INFO:root:simzel start from a=0.14089473684210527 to a=1.0
+01-Mar 10:42:38:INFO:root:simzel dim 1
+01-Mar 10:42:45:INFO:root:simzel dim 2
+01-Mar 10:42:52:INFO:root:simzel dim 3
+01-Mar 10:43:03:INFO:root:simzel end
+01-Mar 10:43:05:INFO:root:backoptzel step=1 mdx=349.68347
+01-Mar 10:43:05:INFO:root:backoptzel a_i=0.09094736842105264
+01-Mar 10:43:06:INFO:root:simzel start from a=0.09094736842105264 to a=1.0
+01-Mar 10:43:18:INFO:root:simzel dim 1
+01-Mar 10:43:24:INFO:root:simzel dim 2
+01-Mar 10:43:31:INFO:root:simzel dim 3
+01-Mar 10:43:42:INFO:root:simzel end
+01-Mar 10:43:45:INFO:root:backoptzel step=1 mdx=342.59146
+01-Mar 10:43:45:INFO:root:backoptzel a_i=0.041
+01-Mar 10:43:46:INFO:root:simzel start from a=0.041 to a=1.0
+01-Mar 10:43:57:INFO:root:simzel dim 1
+01-Mar 10:44:04:INFO:root:simzel dim 2
+01-Mar 10:44:11:INFO:root:simzel dim 3
+01-Mar 10:44:22:INFO:root:simzel end
+01-Mar 10:44:24:INFO:root:backoptzel step=1 mdx=393.47202
+01-Mar 10:44:25:INFO:root:simzel start from a=0.041 to a=1.0
+01-Mar 10:44:36:INFO:root:simzel dim 1
+01-Mar 10:44:43:INFO:root:simzel dim 2
+01-Mar 10:44:50:INFO:root:simzel dim 3
+01-Mar 10:45:01:INFO:root:simzel end
+01-Mar 10:45:03:INFO:root:backoptzel step=2 mdx=357.35968
+01-Mar 10:45:04:INFO:root:simzel start from a=0.041 to a=1.0
+01-Mar 10:45:16:INFO:root:simzel dim 1
+01-Mar 10:45:22:INFO:root:simzel dim 2
+01-Mar 10:45:29:INFO:root:simzel dim 3
+01-Mar 10:45:40:INFO:root:simzel end
+01-Mar 10:45:43:INFO:root:backoptzel step=3 mdx=326.29623
+01-Mar 10:45:43:INFO:root:backoptzel a_i=0.04
+01-Mar 10:45:43:INFO:root:simzel start from a=0.04 to a=1.0
+01-Mar 10:45:55:INFO:root:simzel dim 1
+01-Mar 10:46:02:INFO:root:simzel dim 2
+01-Mar 10:46:09:INFO:root:simzel dim 3
+01-Mar 10:46:20:INFO:root:simzel end
+01-Mar 10:46:23:INFO:root:backoptzel step=1 mdx=301.60623
+01-Mar 10:46:23:INFO:root:backoptzel a_i=0.039831932773109244
+01-Mar 10:46:23:INFO:root:simzel start from a=0.039831932773109244 to a=1.0
+01-Mar 10:46:35:INFO:root:simzel dim 1
+01-Mar 10:46:42:INFO:root:simzel dim 2
+01-Mar 10:46:48:INFO:root:simzel dim 3
+01-Mar 10:47:00:INFO:root:simzel end
+01-Mar 10:47:02:INFO:root:backoptzel step=1 mdx=274.5162
+01-Mar 10:47:02:INFO:root:backoptzel a_i=0.03966386554621849
+01-Mar 10:47:03:INFO:root:simzel start from a=0.03966386554621849 to a=1.0
+01-Mar 10:47:15:INFO:root:simzel dim 1
+01-Mar 10:47:22:INFO:root:simzel dim 2
+01-Mar 10:47:28:INFO:root:simzel dim 3
+01-Mar 10:47:40:INFO:root:simzel end
+01-Mar 10:47:42:INFO:root:backoptzel step=1 mdx=249.97176
+01-Mar 10:47:42:INFO:root:backoptzel a_i=0.03949579831932773
+01-Mar 10:47:43:INFO:root:simzel start from a=0.03949579831932773 to a=1.0
+01-Mar 10:47:55:INFO:root:simzel dim 1
+01-Mar 10:48:01:INFO:root:simzel dim 2
+01-Mar 10:48:08:INFO:root:simzel dim 3
+01-Mar 10:48:20:INFO:root:simzel end
+01-Mar 10:48:22:INFO:root:backoptzel step=1 mdx=227.73123
+01-Mar 10:48:22:INFO:root:backoptzel a_i=0.03932773109243697
+01-Mar 10:48:23:INFO:root:simzel start from a=0.03932773109243697 to a=1.0
+01-Mar 10:48:34:INFO:root:simzel dim 1
+01-Mar 10:48:41:INFO:root:simzel dim 2
+01-Mar 10:48:48:INFO:root:simzel dim 3
+01-Mar 10:48:59:INFO:root:simzel end
+01-Mar 10:49:01:INFO:root:backoptzel step=1 mdx=207.57472
+01-Mar 10:49:01:INFO:root:backoptzel a_i=0.039159663865546215
+01-Mar 10:49:02:INFO:root:simzel start from a=0.039159663865546215 to a=1.0
+01-Mar 10:49:14:INFO:root:simzel dim 1
+01-Mar 10:49:21:INFO:root:simzel dim 2
+01-Mar 10:49:28:INFO:root:simzel dim 3
+01-Mar 10:49:39:INFO:root:simzel end
+01-Mar 10:49:42:INFO:root:backoptzel step=1 mdx=189.3038
+01-Mar 10:49:42:INFO:root:backoptzel a_i=0.038991596638655465
+01-Mar 10:49:42:INFO:root:simzel start from a=0.038991596638655465 to a=1.0
+01-Mar 10:49:54:INFO:root:simzel dim 1
+01-Mar 10:50:01:INFO:root:simzel dim 2
+01-Mar 10:50:08:INFO:root:simzel dim 3
+01-Mar 10:50:19:INFO:root:simzel end
+01-Mar 10:50:21:INFO:root:backoptzel step=1 mdx=172.739
+01-Mar 10:50:21:INFO:root:backoptzel a_i=0.03882352941176471
+01-Mar 10:50:22:INFO:root:simzel start from a=0.03882352941176471 to a=1.0
+01-Mar 10:50:34:INFO:root:simzel dim 1
+01-Mar 10:50:41:INFO:root:simzel dim 2
+01-Mar 10:50:47:INFO:root:simzel dim 3
+01-Mar 10:50:58:INFO:root:simzel end
+01-Mar 10:51:01:INFO:root:backoptzel step=1 mdx=157.71843
+01-Mar 10:51:01:INFO:root:backoptzel a_i=0.03865546218487395
+01-Mar 10:51:01:INFO:root:simzel start from a=0.03865546218487395 to a=1.0
+01-Mar 10:51:13:INFO:root:simzel dim 1
+01-Mar 10:51:20:INFO:root:simzel dim 2
+01-Mar 10:51:27:INFO:root:simzel dim 3
+01-Mar 10:51:39:INFO:root:simzel end
+01-Mar 10:51:41:INFO:root:backoptzel step=1 mdx=144.09575
+01-Mar 10:51:41:INFO:root:backoptzel a_i=0.038487394957983194
+01-Mar 10:51:42:INFO:root:simzel start from a=0.038487394957983194 to a=1.0
+01-Mar 10:51:54:INFO:root:simzel dim 1
+01-Mar 10:52:01:INFO:root:simzel dim 2
+01-Mar 10:52:07:INFO:root:simzel dim 3
+01-Mar 10:52:19:INFO:root:simzel end
+01-Mar 10:52:21:INFO:root:backoptzel step=1 mdx=131.73793
+01-Mar 10:52:21:INFO:root:backoptzel a_i=0.03831932773109244
+01-Mar 10:52:22:INFO:root:simzel start from a=0.03831932773109244 to a=1.0
+01-Mar 10:52:34:INFO:root:simzel dim 1
+01-Mar 10:52:41:INFO:root:simzel dim 2
+01-Mar 10:52:47:INFO:root:simzel dim 3
+01-Mar 10:52:59:INFO:root:simzel end
+01-Mar 10:53:01:INFO:root:backoptzel step=1 mdx=120.524414
+01-Mar 10:53:01:INFO:root:backoptzel a_i=0.03815126050420168
+01-Mar 10:53:02:INFO:root:simzel start from a=0.03815126050420168 to a=1.0
+01-Mar 10:53:13:INFO:root:simzel dim 1
+01-Mar 10:53:20:INFO:root:simzel dim 2
+01-Mar 10:53:27:INFO:root:simzel dim 3
+01-Mar 10:53:38:INFO:root:simzel end
+01-Mar 10:53:40:INFO:root:backoptzel step=1 mdx=110.34678
+01-Mar 10:53:40:INFO:root:backoptzel a_i=0.03798319327731092
+01-Mar 10:53:41:INFO:root:simzel start from a=0.03798319327731092 to a=1.0
+01-Mar 10:53:53:INFO:root:simzel dim 1
+01-Mar 10:53:59:INFO:root:simzel dim 2
+01-Mar 10:54:06:INFO:root:simzel dim 3
+01-Mar 10:54:17:INFO:root:simzel end
+01-Mar 10:54:19:INFO:root:backoptzel step=1 mdx=101.10744
+01-Mar 10:54:19:INFO:root:backoptzel a_i=0.037815126050420166
+01-Mar 10:54:20:INFO:root:simzel start from a=0.037815126050420166 to a=1.0
+01-Mar 10:54:32:INFO:root:simzel dim 1
+01-Mar 10:54:38:INFO:root:simzel dim 2
+01-Mar 10:54:45:INFO:root:simzel dim 3
+01-Mar 10:54:56:INFO:root:simzel end
+01-Mar 10:54:59:INFO:root:backoptzel step=1 mdx=92.717064
+01-Mar 10:54:59:INFO:root:backoptzel a_i=0.03764705882352941
+01-Mar 10:54:59:INFO:root:simzel start from a=0.03764705882352941 to a=1.0
+01-Mar 10:55:11:INFO:root:simzel dim 1
+01-Mar 10:55:18:INFO:root:simzel dim 2
+01-Mar 10:55:24:INFO:root:simzel dim 3
+01-Mar 10:55:36:INFO:root:simzel end
+01-Mar 10:55:39:INFO:root:backoptzel step=1 mdx=85.095825
+01-Mar 10:55:39:INFO:root:backoptzel a_i=0.03747899159663866
+01-Mar 10:55:39:INFO:root:simzel start from a=0.03747899159663866 to a=1.0
+01-Mar 10:55:51:INFO:root:simzel dim 1
+01-Mar 10:55:58:INFO:root:simzel dim 2
+01-Mar 10:56:05:INFO:root:simzel dim 3
+01-Mar 10:56:16:INFO:root:simzel end
+01-Mar 10:56:18:INFO:root:backoptzel step=1 mdx=78.170296
+01-Mar 10:56:18:INFO:root:backoptzel a_i=0.0373109243697479
+01-Mar 10:56:19:INFO:root:simzel start from a=0.0373109243697479 to a=1.0
+01-Mar 10:56:31:INFO:root:simzel dim 1
+01-Mar 10:56:38:INFO:root:simzel dim 2
+01-Mar 10:56:44:INFO:root:simzel dim 3
+01-Mar 10:56:55:INFO:root:simzel end
+01-Mar 10:56:58:INFO:root:backoptzel step=1 mdx=71.8754
+01-Mar 10:56:58:INFO:root:backoptzel a_i=0.037142857142857144
+01-Mar 10:56:58:INFO:root:simzel start from a=0.037142857142857144 to a=1.0
+01-Mar 10:57:10:INFO:root:simzel dim 1
+01-Mar 10:57:17:INFO:root:simzel dim 2
+01-Mar 10:57:24:INFO:root:simzel dim 3
+01-Mar 10:57:35:INFO:root:simzel end
+01-Mar 10:57:37:INFO:root:backoptzel step=1 mdx=66.1516
+01-Mar 10:57:37:INFO:root:backoptzel a_i=0.03697478991596639
+01-Mar 10:57:38:INFO:root:simzel start from a=0.03697478991596639 to a=1.0
+01-Mar 10:57:50:INFO:root:simzel dim 1
+01-Mar 10:57:57:INFO:root:simzel dim 2
+01-Mar 10:58:03:INFO:root:simzel dim 3
+01-Mar 10:58:14:INFO:root:simzel end
+01-Mar 10:58:17:INFO:root:backoptzel step=1 mdx=60.945065
+01-Mar 10:58:17:INFO:root:backoptzel a_i=0.03680672268907563
+01-Mar 10:58:17:INFO:root:simzel start from a=0.03680672268907563 to a=1.0
+01-Mar 10:58:29:INFO:root:simzel dim 1
+01-Mar 10:58:35:INFO:root:simzel dim 2
+01-Mar 10:58:42:INFO:root:simzel dim 3
+01-Mar 10:58:53:INFO:root:simzel end
+01-Mar 10:58:55:INFO:root:backoptzel step=1 mdx=56.207047
+01-Mar 10:58:55:INFO:root:backoptzel a_i=0.03663865546218487
+01-Mar 10:58:56:INFO:root:simzel start from a=0.03663865546218487 to a=1.0
+01-Mar 10:59:08:INFO:root:simzel dim 1
+01-Mar 10:59:14:INFO:root:simzel dim 2
+01-Mar 10:59:21:INFO:root:simzel dim 3
+01-Mar 10:59:32:INFO:root:simzel end
+01-Mar 10:59:35:INFO:root:backoptzel step=1 mdx=51.89346
+01-Mar 10:59:35:INFO:root:backoptzel a_i=0.036470588235294116
+01-Mar 10:59:35:INFO:root:simzel start from a=0.036470588235294116 to a=1.0
+01-Mar 10:59:47:INFO:root:simzel dim 1
+01-Mar 10:59:54:INFO:root:simzel dim 2
+01-Mar 11:00:00:INFO:root:simzel dim 3
+01-Mar 11:00:11:INFO:root:simzel end
+01-Mar 11:00:14:INFO:root:backoptzel step=1 mdx=47.96454
+01-Mar 11:00:14:INFO:root:backoptzel a_i=0.03630252100840336
+01-Mar 11:00:14:INFO:root:simzel start from a=0.03630252100840336 to a=1.0
+01-Mar 11:00:26:INFO:root:simzel dim 1
+01-Mar 11:00:33:INFO:root:simzel dim 2
+01-Mar 11:00:39:INFO:root:simzel dim 3
+01-Mar 11:00:50:INFO:root:simzel end
+01-Mar 11:00:53:INFO:root:backoptzel step=1 mdx=44.384113
+01-Mar 11:00:53:INFO:root:backoptzel a_i=0.03613445378151261
+01-Mar 11:00:53:INFO:root:simzel start from a=0.03613445378151261 to a=1.0
+01-Mar 11:01:05:INFO:root:simzel dim 1
+01-Mar 11:01:12:INFO:root:simzel dim 2
+01-Mar 11:01:18:INFO:root:simzel dim 3
+01-Mar 11:01:30:INFO:root:simzel end
+01-Mar 11:01:32:INFO:root:backoptzel step=1 mdx=41.12015
+01-Mar 11:01:32:INFO:root:backoptzel a_i=0.03596638655462185
+01-Mar 11:01:33:INFO:root:simzel start from a=0.03596638655462185 to a=1.0
+01-Mar 11:01:45:INFO:root:simzel dim 1
+01-Mar 11:01:52:INFO:root:simzel dim 2
+01-Mar 11:01:59:INFO:root:simzel dim 3
+01-Mar 11:02:11:INFO:root:simzel end
+01-Mar 11:02:13:INFO:root:backoptzel step=1 mdx=38.142
+01-Mar 11:02:13:INFO:root:backoptzel a_i=0.035798319327731094
+01-Mar 11:02:14:INFO:root:simzel start from a=0.035798319327731094 to a=1.0
+01-Mar 11:02:25:INFO:root:simzel dim 1
+01-Mar 11:02:32:INFO:root:simzel dim 2
+01-Mar 11:02:40:INFO:root:simzel dim 3
+01-Mar 11:02:52:INFO:root:simzel end
+01-Mar 11:02:54:INFO:root:backoptzel step=1 mdx=35.423767
+01-Mar 11:02:54:INFO:root:backoptzel a_i=0.03563025210084034
+01-Mar 11:02:54:INFO:root:simzel start from a=0.03563025210084034 to a=1.0
+01-Mar 11:03:06:INFO:root:simzel dim 1
+01-Mar 11:03:13:INFO:root:simzel dim 2
+01-Mar 11:03:20:INFO:root:simzel dim 3
+01-Mar 11:03:31:INFO:root:simzel end
+01-Mar 11:03:33:INFO:root:backoptzel step=1 mdx=32.941013
+01-Mar 11:03:33:INFO:root:backoptzel a_i=0.03546218487394958
+01-Mar 11:03:34:INFO:root:simzel start from a=0.03546218487394958 to a=1.0
+01-Mar 11:03:46:INFO:root:simzel dim 1
+01-Mar 11:03:53:INFO:root:simzel dim 2
+01-Mar 11:03:59:INFO:root:simzel dim 3
+01-Mar 11:04:11:INFO:root:simzel end
+01-Mar 11:04:13:INFO:root:backoptzel step=1 mdx=30.671816
+01-Mar 11:04:13:INFO:root:backoptzel a_i=0.03529411764705882
+01-Mar 11:04:14:INFO:root:simzel start from a=0.03529411764705882 to a=1.0
+01-Mar 11:04:25:INFO:root:simzel dim 1
+01-Mar 11:04:32:INFO:root:simzel dim 2
+01-Mar 11:04:39:INFO:root:simzel dim 3
+01-Mar 11:04:50:INFO:root:simzel end
+01-Mar 11:04:52:INFO:root:backoptzel step=1 mdx=28.59646
+01-Mar 11:04:52:INFO:root:backoptzel a_i=0.035126050420168066
+01-Mar 11:04:53:INFO:root:simzel start from a=0.035126050420168066 to a=1.0
+01-Mar 11:05:05:INFO:root:simzel dim 1
+01-Mar 11:05:11:INFO:root:simzel dim 2
+01-Mar 11:05:18:INFO:root:simzel dim 3
+01-Mar 11:05:29:INFO:root:simzel end
+01-Mar 11:05:31:INFO:root:backoptzel step=1 mdx=26.697115
+01-Mar 11:05:31:INFO:root:backoptzel a_i=0.03495798319327731
+01-Mar 11:05:32:INFO:root:simzel start from a=0.03495798319327731 to a=1.0
+01-Mar 11:05:44:INFO:root:simzel dim 1
+01-Mar 11:05:50:INFO:root:simzel dim 2
+01-Mar 11:05:57:INFO:root:simzel dim 3
+01-Mar 11:06:08:INFO:root:simzel end
+01-Mar 11:06:10:INFO:root:backoptzel step=1 mdx=24.957472
+01-Mar 11:06:10:INFO:root:backoptzel a_i=0.03478991596638655
+01-Mar 11:06:11:INFO:root:simzel start from a=0.03478991596638655 to a=1.0
+01-Mar 11:06:23:INFO:root:simzel dim 1
+01-Mar 11:06:29:INFO:root:simzel dim 2
+01-Mar 11:06:36:INFO:root:simzel dim 3
+01-Mar 11:06:47:INFO:root:simzel end
+01-Mar 11:06:50:INFO:root:backoptzel step=1 mdx=23.363289
+01-Mar 11:06:50:INFO:root:backoptzel a_i=0.0346218487394958
+01-Mar 11:06:50:INFO:root:simzel start from a=0.0346218487394958 to a=1.0
+01-Mar 11:07:02:INFO:root:simzel dim 1
+01-Mar 11:07:09:INFO:root:simzel dim 2
+01-Mar 11:07:16:INFO:root:simzel dim 3
+01-Mar 11:07:27:INFO:root:simzel end
+01-Mar 11:07:29:INFO:root:backoptzel step=1 mdx=21.900826
+01-Mar 11:07:29:INFO:root:backoptzel a_i=0.034453781512605045
+01-Mar 11:07:30:INFO:root:simzel start from a=0.034453781512605045 to a=1.0
+01-Mar 11:07:42:INFO:root:simzel dim 1
+01-Mar 11:07:49:INFO:root:simzel dim 2
+01-Mar 11:07:55:INFO:root:simzel dim 3
+01-Mar 11:08:07:INFO:root:simzel end
+01-Mar 11:08:09:INFO:root:backoptzel step=1 mdx=20.558372
+01-Mar 11:08:09:INFO:root:backoptzel a_i=0.03428571428571429
+01-Mar 11:08:10:INFO:root:simzel start from a=0.03428571428571429 to a=1.0
+01-Mar 11:08:21:INFO:root:simzel dim 1
+01-Mar 11:08:28:INFO:root:simzel dim 2
+01-Mar 11:08:35:INFO:root:simzel dim 3
+01-Mar 11:08:46:INFO:root:simzel end
+01-Mar 11:08:48:INFO:root:backoptzel step=1 mdx=19.3253
+01-Mar 11:08:48:INFO:root:backoptzel a_i=0.03411764705882353
+01-Mar 11:08:49:INFO:root:simzel start from a=0.03411764705882353 to a=1.0
+01-Mar 11:09:01:INFO:root:simzel dim 1
+01-Mar 11:09:08:INFO:root:simzel dim 2
+01-Mar 11:09:14:INFO:root:simzel dim 3
+01-Mar 11:09:26:INFO:root:simzel end
+01-Mar 11:09:28:INFO:root:backoptzel step=1 mdx=18.19136
+01-Mar 11:09:28:INFO:root:backoptzel a_i=0.03394957983193277
+01-Mar 11:09:29:INFO:root:simzel start from a=0.03394957983193277 to a=1.0
+01-Mar 11:09:40:INFO:root:simzel dim 1
+01-Mar 11:09:47:INFO:root:simzel dim 2
+01-Mar 11:09:53:INFO:root:simzel dim 3
+01-Mar 11:10:05:INFO:root:simzel end
+01-Mar 11:10:07:INFO:root:backoptzel step=1 mdx=17.148167
+01-Mar 11:10:07:INFO:root:backoptzel a_i=0.033781512605042016
+01-Mar 11:10:08:INFO:root:simzel start from a=0.033781512605042016 to a=1.0
+01-Mar 11:10:20:INFO:root:simzel dim 1
+01-Mar 11:10:26:INFO:root:simzel dim 2
+01-Mar 11:10:33:INFO:root:simzel dim 3
+01-Mar 11:10:45:INFO:root:simzel end
+01-Mar 11:10:47:INFO:root:backoptzel step=1 mdx=16.187572
+01-Mar 11:10:47:INFO:root:backoptzel a_i=0.03361344537815126
+01-Mar 11:10:48:INFO:root:simzel start from a=0.03361344537815126 to a=1.0
+01-Mar 11:10:59:INFO:root:simzel dim 1
+01-Mar 11:11:06:INFO:root:simzel dim 2
+01-Mar 11:11:12:INFO:root:simzel dim 3
+01-Mar 11:11:24:INFO:root:simzel end
+01-Mar 11:11:26:INFO:root:backoptzel step=1 mdx=15.3024
+01-Mar 11:11:26:INFO:root:backoptzel a_i=0.0334453781512605
+01-Mar 11:11:27:INFO:root:simzel start from a=0.0334453781512605 to a=1.0
+01-Mar 11:11:39:INFO:root:simzel dim 1
+01-Mar 11:11:46:INFO:root:simzel dim 2
+01-Mar 11:11:52:INFO:root:simzel dim 3
+01-Mar 11:12:04:INFO:root:simzel end
+01-Mar 11:12:06:INFO:root:backoptzel step=1 mdx=14.486164
+01-Mar 11:12:06:INFO:root:backoptzel a_i=0.033277310924369745
+01-Mar 11:12:07:INFO:root:simzel start from a=0.033277310924369745 to a=1.0
+01-Mar 11:12:19:INFO:root:simzel dim 1
+01-Mar 11:12:26:INFO:root:simzel dim 2
+01-Mar 11:12:33:INFO:root:simzel dim 3
+01-Mar 11:12:44:INFO:root:simzel end
+01-Mar 11:12:46:INFO:root:backoptzel step=1 mdx=13.732819
+01-Mar 11:12:46:INFO:root:backoptzel a_i=0.033109243697478995
+01-Mar 11:12:47:INFO:root:simzel start from a=0.033109243697478995 to a=1.0
+01-Mar 11:12:59:INFO:root:simzel dim 1
+01-Mar 11:13:05:INFO:root:simzel dim 2
+01-Mar 11:13:12:INFO:root:simzel dim 3
+01-Mar 11:13:23:INFO:root:simzel end
+01-Mar 11:13:25:INFO:root:backoptzel step=1 mdx=13.037176
+01-Mar 11:13:25:INFO:root:backoptzel a_i=0.03294117647058824
+01-Mar 11:13:26:INFO:root:simzel start from a=0.03294117647058824 to a=1.0
+01-Mar 11:13:38:INFO:root:simzel dim 1
+01-Mar 11:13:45:INFO:root:simzel dim 2
+01-Mar 11:13:51:INFO:root:simzel dim 3
+01-Mar 11:14:03:INFO:root:simzel end
+01-Mar 11:14:05:INFO:root:backoptzel step=1 mdx=12.39397
+01-Mar 11:14:05:INFO:root:backoptzel a_i=0.03277310924369748
+01-Mar 11:14:06:INFO:root:simzel start from a=0.03277310924369748 to a=1.0
+01-Mar 11:14:18:INFO:root:simzel dim 1
+01-Mar 11:14:24:INFO:root:simzel dim 2
+01-Mar 11:14:31:INFO:root:simzel dim 3
+01-Mar 11:14:42:INFO:root:simzel end
+01-Mar 11:14:44:INFO:root:backoptzel step=1 mdx=11.799256
+01-Mar 11:14:44:INFO:root:backoptzel a_i=0.03260504201680672
+01-Mar 11:14:45:INFO:root:simzel start from a=0.03260504201680672 to a=1.0
+01-Mar 11:14:57:INFO:root:simzel dim 1
+01-Mar 11:15:03:INFO:root:simzel dim 2
+01-Mar 11:15:10:INFO:root:simzel dim 3
+01-Mar 11:15:21:INFO:root:simzel end
+01-Mar 11:15:23:INFO:root:backoptzel step=1 mdx=11.24857
+01-Mar 11:15:23:INFO:root:backoptzel a_i=0.032436974789915966
+01-Mar 11:15:24:INFO:root:simzel start from a=0.032436974789915966 to a=1.0
+01-Mar 11:15:36:INFO:root:simzel dim 1
+01-Mar 11:15:42:INFO:root:simzel dim 2
+01-Mar 11:15:50:INFO:root:simzel dim 3
+01-Mar 11:16:01:INFO:root:simzel end
+01-Mar 11:16:04:INFO:root:backoptzel step=1 mdx=10.738692
+01-Mar 11:16:04:INFO:root:backoptzel a_i=0.03226890756302521
+01-Mar 11:16:04:INFO:root:simzel start from a=0.03226890756302521 to a=1.0
+01-Mar 11:16:16:INFO:root:simzel dim 1
+01-Mar 11:16:22:INFO:root:simzel dim 2
+01-Mar 11:16:29:INFO:root:simzel dim 3
+01-Mar 11:16:41:INFO:root:simzel end
+01-Mar 11:16:43:INFO:root:backoptzel step=1 mdx=10.266024
+01-Mar 11:16:43:INFO:root:backoptzel a_i=0.03210084033613445
+01-Mar 11:16:43:INFO:root:simzel start from a=0.03210084033613445 to a=1.0
+01-Mar 11:16:55:INFO:root:simzel dim 1
+01-Mar 11:17:02:INFO:root:simzel dim 2
+01-Mar 11:17:09:INFO:root:simzel dim 3
+01-Mar 11:17:20:INFO:root:simzel end
+01-Mar 11:17:22:INFO:root:backoptzel step=1 mdx=9.828038
+01-Mar 11:17:22:INFO:root:backoptzel a_i=0.031932773109243695
+01-Mar 11:17:23:INFO:root:simzel start from a=0.031932773109243695 to a=1.0
+01-Mar 11:17:35:INFO:root:simzel dim 1
+01-Mar 11:17:41:INFO:root:simzel dim 2
+01-Mar 11:17:48:INFO:root:simzel dim 3
+01-Mar 11:18:00:INFO:root:simzel end
+01-Mar 11:18:02:INFO:root:backoptzel step=1 mdx=9.421556
+01-Mar 11:18:02:INFO:root:backoptzel a_i=0.03176470588235294
+01-Mar 11:18:03:INFO:root:simzel start from a=0.03176470588235294 to a=1.0
+01-Mar 11:18:14:INFO:root:simzel dim 1
+01-Mar 11:18:21:INFO:root:simzel dim 2
+01-Mar 11:18:28:INFO:root:simzel dim 3
+01-Mar 11:18:39:INFO:root:simzel end
+01-Mar 11:18:41:INFO:root:backoptzel step=1 mdx=9.0442095
+01-Mar 11:18:41:INFO:root:backoptzel a_i=0.03159663865546219
+01-Mar 11:18:42:INFO:root:simzel start from a=0.03159663865546219 to a=1.0
+01-Mar 11:18:54:INFO:root:simzel dim 1
+01-Mar 11:19:01:INFO:root:simzel dim 2
+01-Mar 11:19:07:INFO:root:simzel dim 3
+01-Mar 11:19:19:INFO:root:simzel end
+01-Mar 11:19:21:INFO:root:backoptzel step=1 mdx=8.693726
+01-Mar 11:19:21:INFO:root:backoptzel a_i=0.03142857142857143
+01-Mar 11:19:21:INFO:root:simzel start from a=0.03142857142857143 to a=1.0
+01-Mar 11:19:33:INFO:root:simzel dim 1
+01-Mar 11:19:40:INFO:root:simzel dim 2
+01-Mar 11:19:46:INFO:root:simzel dim 3
+01-Mar 11:19:58:INFO:root:simzel end
+01-Mar 11:20:00:INFO:root:backoptzel step=1 mdx=8.368212
+01-Mar 11:20:00:INFO:root:backoptzel a_i=0.031260504201680674
+01-Mar 11:20:01:INFO:root:simzel start from a=0.031260504201680674 to a=1.0
+01-Mar 11:20:13:INFO:root:simzel dim 1
+01-Mar 11:20:19:INFO:root:simzel dim 2
+01-Mar 11:20:26:INFO:root:simzel dim 3
+01-Mar 11:20:37:INFO:root:simzel end
+01-Mar 11:20:40:INFO:root:backoptzel step=1 mdx=8.065476
+01-Mar 11:20:40:INFO:root:backoptzel a_i=0.031092436974789917
+01-Mar 11:20:40:INFO:root:simzel start from a=0.031092436974789917 to a=1.0
+01-Mar 11:20:52:INFO:root:simzel dim 1
+01-Mar 11:20:59:INFO:root:simzel dim 2
+01-Mar 11:21:05:INFO:root:simzel dim 3
+01-Mar 11:21:17:INFO:root:simzel end
+01-Mar 11:21:20:INFO:root:backoptzel step=1 mdx=7.7837124
+01-Mar 11:21:20:INFO:root:backoptzel a_i=0.03092436974789916
+01-Mar 11:21:20:INFO:root:simzel start from a=0.03092436974789916 to a=1.0
+01-Mar 11:21:32:INFO:root:simzel dim 1
+01-Mar 11:21:39:INFO:root:simzel dim 2
+01-Mar 11:21:46:INFO:root:simzel dim 3
+01-Mar 11:21:57:INFO:root:simzel end
+01-Mar 11:21:59:INFO:root:backoptzel step=1 mdx=7.521769
+01-Mar 11:21:59:INFO:root:backoptzel a_i=0.030756302521008402
+01-Mar 11:22:00:INFO:root:simzel start from a=0.030756302521008402 to a=1.0
+01-Mar 11:22:12:INFO:root:simzel dim 1
+01-Mar 11:22:19:INFO:root:simzel dim 2
+01-Mar 11:22:25:INFO:root:simzel dim 3
+01-Mar 11:22:37:INFO:root:simzel end
+01-Mar 11:22:39:INFO:root:backoptzel step=1 mdx=7.278072
+01-Mar 11:22:39:INFO:root:backoptzel a_i=0.03058823529411765
+01-Mar 11:22:40:INFO:root:simzel start from a=0.03058823529411765 to a=1.0
+01-Mar 11:22:51:INFO:root:simzel dim 1
+01-Mar 11:22:58:INFO:root:simzel dim 2
+01-Mar 11:23:05:INFO:root:simzel dim 3
+01-Mar 11:23:16:INFO:root:simzel end
+01-Mar 11:23:18:INFO:root:backoptzel step=1 mdx=7.0508866
+01-Mar 11:23:18:INFO:root:backoptzel a_i=0.03042016806722689
+01-Mar 11:23:19:INFO:root:simzel start from a=0.03042016806722689 to a=1.0
+01-Mar 11:23:31:INFO:root:simzel dim 1
+01-Mar 11:23:38:INFO:root:simzel dim 2
+01-Mar 11:23:45:INFO:root:simzel dim 3
+01-Mar 11:23:57:INFO:root:simzel end
+01-Mar 11:23:59:INFO:root:backoptzel step=1 mdx=6.83946
+01-Mar 11:23:59:INFO:root:backoptzel a_i=0.030252100840336135
+01-Mar 11:24:00:INFO:root:simzel start from a=0.030252100840336135 to a=1.0
+01-Mar 11:24:12:INFO:root:simzel dim 1
+01-Mar 11:24:19:INFO:root:simzel dim 2
+01-Mar 11:24:25:INFO:root:simzel dim 3
+01-Mar 11:24:37:INFO:root:simzel end
+01-Mar 11:24:39:INFO:root:backoptzel step=1 mdx=6.6424713
+01-Mar 11:24:39:INFO:root:backoptzel a_i=0.030084033613445377
+01-Mar 11:24:40:INFO:root:simzel start from a=0.030084033613445377 to a=1.0
+01-Mar 11:24:51:INFO:root:simzel dim 1
+01-Mar 11:24:58:INFO:root:simzel dim 2
+01-Mar 11:25:05:INFO:root:simzel dim 3
+01-Mar 11:25:16:INFO:root:simzel end
+01-Mar 11:25:18:INFO:root:backoptzel step=1 mdx=6.458938
+01-Mar 11:25:18:INFO:root:backoptzel a_i=0.02991596638655462
+01-Mar 11:25:19:INFO:root:simzel start from a=0.02991596638655462 to a=1.0
+01-Mar 11:25:31:INFO:root:simzel dim 1
+01-Mar 11:25:38:INFO:root:simzel dim 2
+01-Mar 11:25:44:INFO:root:simzel dim 3
+01-Mar 11:25:56:INFO:root:simzel end
+01-Mar 11:25:58:INFO:root:backoptzel step=1 mdx=6.287799
+01-Mar 11:25:58:INFO:root:backoptzel a_i=0.029747899159663867
+01-Mar 11:25:59:INFO:root:simzel start from a=0.029747899159663867 to a=1.0
+01-Mar 11:26:10:INFO:root:simzel dim 1
+01-Mar 11:26:17:INFO:root:simzel dim 2
+01-Mar 11:26:23:INFO:root:simzel dim 3
+01-Mar 11:26:35:INFO:root:simzel end
+01-Mar 11:26:37:INFO:root:backoptzel step=1 mdx=6.1282406
+01-Mar 11:26:37:INFO:root:backoptzel a_i=0.02957983193277311
+01-Mar 11:26:38:INFO:root:simzel start from a=0.02957983193277311 to a=1.0
+01-Mar 11:26:49:INFO:root:simzel dim 1
+01-Mar 11:26:56:INFO:root:simzel dim 2
+01-Mar 11:27:03:INFO:root:simzel dim 3
+01-Mar 11:27:14:INFO:root:simzel end
+01-Mar 11:27:16:INFO:root:backoptzel step=1 mdx=5.979294
+01-Mar 11:27:16:INFO:root:backoptzel a_i=0.029411764705882353
+01-Mar 11:27:17:INFO:root:simzel start from a=0.029411764705882353 to a=1.0
+01-Mar 11:27:29:INFO:root:simzel dim 1
+01-Mar 11:27:35:INFO:root:simzel dim 2
+01-Mar 11:27:42:INFO:root:simzel dim 3
+01-Mar 11:27:54:INFO:root:simzel end
+01-Mar 11:27:56:INFO:root:backoptzel step=1 mdx=5.8406577
+01-Mar 11:27:56:INFO:root:backoptzel a_i=0.029243697478991595
+01-Mar 11:27:56:INFO:root:simzel start from a=0.029243697478991595 to a=1.0
+01-Mar 11:28:08:INFO:root:simzel dim 1
+01-Mar 11:28:15:INFO:root:simzel dim 2
+01-Mar 11:28:21:INFO:root:simzel dim 3
+01-Mar 11:28:32:INFO:root:simzel end
+01-Mar 11:28:35:INFO:root:backoptzel step=1 mdx=5.7111473
+01-Mar 11:28:35:INFO:root:backoptzel a_i=0.029075630252100842
+01-Mar 11:28:35:INFO:root:simzel start from a=0.029075630252100842 to a=1.0
+01-Mar 11:28:47:INFO:root:simzel dim 1
+01-Mar 11:28:54:INFO:root:simzel dim 2
+01-Mar 11:29:00:INFO:root:simzel dim 3
+01-Mar 11:29:12:INFO:root:simzel end
+01-Mar 11:29:14:INFO:root:backoptzel step=1 mdx=5.590242
+01-Mar 11:29:14:INFO:root:backoptzel a_i=0.028907563025210085
+01-Mar 11:29:15:INFO:root:simzel start from a=0.028907563025210085 to a=1.0
+01-Mar 11:29:26:INFO:root:simzel dim 1
+01-Mar 11:29:33:INFO:root:simzel dim 2
+01-Mar 11:29:39:INFO:root:simzel dim 3
+01-Mar 11:29:51:INFO:root:simzel end
+01-Mar 11:29:53:INFO:root:backoptzel step=1 mdx=5.4773874
+01-Mar 11:29:53:INFO:root:backoptzel a_i=0.028739495798319328
+01-Mar 11:29:54:INFO:root:simzel start from a=0.028739495798319328 to a=1.0
+01-Mar 11:30:05:INFO:root:simzel dim 1
+01-Mar 11:30:12:INFO:root:simzel dim 2
+01-Mar 11:30:19:INFO:root:simzel dim 3
+01-Mar 11:30:31:INFO:root:simzel end
+01-Mar 11:30:33:INFO:root:backoptzel step=1 mdx=5.3719997
+01-Mar 11:30:33:INFO:root:backoptzel a_i=0.02857142857142857
+01-Mar 11:30:34:INFO:root:simzel start from a=0.02857142857142857 to a=1.0
+01-Mar 11:30:45:INFO:root:simzel dim 1
+01-Mar 11:30:52:INFO:root:simzel dim 2
+01-Mar 11:30:59:INFO:root:simzel dim 3
+01-Mar 11:31:10:INFO:root:simzel end
+01-Mar 11:31:13:INFO:root:backoptzel step=1 mdx=5.2736425
+01-Mar 11:31:13:INFO:root:backoptzel a_i=0.028403361344537813
+01-Mar 11:31:13:INFO:root:simzel start from a=0.028403361344537813 to a=1.0
+01-Mar 11:31:25:INFO:root:simzel dim 1
+01-Mar 11:31:32:INFO:root:simzel dim 2
+01-Mar 11:31:38:INFO:root:simzel dim 3
+01-Mar 11:31:50:INFO:root:simzel end
+01-Mar 11:31:52:INFO:root:backoptzel step=1 mdx=5.181464
+01-Mar 11:31:52:INFO:root:backoptzel a_i=0.02823529411764706
+01-Mar 11:31:53:INFO:root:simzel start from a=0.02823529411764706 to a=1.0
+01-Mar 11:32:04:INFO:root:simzel dim 1
+01-Mar 11:32:11:INFO:root:simzel dim 2
+01-Mar 11:32:18:INFO:root:simzel dim 3
+01-Mar 11:32:29:INFO:root:simzel end
+01-Mar 11:32:32:INFO:root:backoptzel step=1 mdx=5.095485
+01-Mar 11:32:32:INFO:root:backoptzel a_i=0.028067226890756303
+01-Mar 11:32:32:INFO:root:simzel start from a=0.028067226890756303 to a=1.0
+01-Mar 11:32:44:INFO:root:simzel dim 1
+01-Mar 11:32:50:INFO:root:simzel dim 2
+01-Mar 11:32:57:INFO:root:simzel dim 3
+01-Mar 11:33:08:INFO:root:simzel end
+01-Mar 11:33:11:INFO:root:backoptzel step=1 mdx=5.015223
+01-Mar 11:33:11:INFO:root:backoptzel a_i=0.027899159663865546
+01-Mar 11:33:11:INFO:root:simzel start from a=0.027899159663865546 to a=1.0
+01-Mar 11:33:23:INFO:root:simzel dim 1
+01-Mar 11:33:30:INFO:root:simzel dim 2
+01-Mar 11:33:36:INFO:root:simzel dim 3
+01-Mar 11:33:47:INFO:root:simzel end
+01-Mar 11:33:50:INFO:root:backoptzel step=1 mdx=4.939832
+01-Mar 11:33:50:INFO:root:backoptzel a_i=0.02773109243697479
+01-Mar 11:33:50:INFO:root:simzel start from a=0.02773109243697479 to a=1.0
+01-Mar 11:34:02:INFO:root:simzel dim 1
+01-Mar 11:34:09:INFO:root:simzel dim 2
+01-Mar 11:34:16:INFO:root:simzel dim 3
+01-Mar 11:34:27:INFO:root:simzel end
+01-Mar 11:34:29:INFO:root:backoptzel step=1 mdx=4.8694057
+01-Mar 11:34:29:INFO:root:backoptzel a_i=0.027563025210084035
+01-Mar 11:34:30:INFO:root:simzel start from a=0.027563025210084035 to a=1.0
+01-Mar 11:34:41:INFO:root:simzel dim 1
+01-Mar 11:34:49:INFO:root:simzel dim 2
+01-Mar 11:34:55:INFO:root:simzel dim 3
+01-Mar 11:35:06:INFO:root:simzel end
+01-Mar 11:35:08:INFO:root:backoptzel step=1 mdx=4.8033557
+01-Mar 11:35:08:INFO:root:backoptzel a_i=0.027394957983193278
+01-Mar 11:35:09:INFO:root:simzel start from a=0.027394957983193278 to a=1.0
+01-Mar 11:35:21:INFO:root:simzel dim 1
+01-Mar 11:35:28:INFO:root:simzel dim 2
+01-Mar 11:35:34:INFO:root:simzel dim 3
+01-Mar 11:35:46:INFO:root:simzel end
+01-Mar 11:35:48:INFO:root:backoptzel step=1 mdx=4.7419567
+01-Mar 11:35:48:INFO:root:backoptzel a_i=0.02722689075630252
+01-Mar 11:35:49:INFO:root:simzel start from a=0.02722689075630252 to a=1.0
+01-Mar 11:36:00:INFO:root:simzel dim 1
+01-Mar 11:36:07:INFO:root:simzel dim 2
+01-Mar 11:36:13:INFO:root:simzel dim 3
+01-Mar 11:36:25:INFO:root:simzel end
+01-Mar 11:36:27:INFO:root:backoptzel step=1 mdx=4.6840944
+01-Mar 11:36:27:INFO:root:backoptzel a_i=0.027058823529411764
+01-Mar 11:36:27:INFO:root:simzel start from a=0.027058823529411764 to a=1.0
+01-Mar 11:36:39:INFO:root:simzel dim 1
+01-Mar 11:36:46:INFO:root:simzel dim 2
+01-Mar 11:36:52:INFO:root:simzel dim 3
+01-Mar 11:37:04:INFO:root:simzel end
+01-Mar 11:37:06:INFO:root:backoptzel step=1 mdx=4.629808
+01-Mar 11:37:06:INFO:root:backoptzel a_i=0.02689075630252101
+01-Mar 11:37:06:INFO:root:simzel start from a=0.02689075630252101 to a=1.0
+01-Mar 11:37:18:INFO:root:simzel dim 1
+01-Mar 11:37:25:INFO:root:simzel dim 2
+01-Mar 11:37:31:INFO:root:simzel dim 3
+01-Mar 11:37:43:INFO:root:simzel end
+01-Mar 11:37:45:INFO:root:backoptzel step=1 mdx=4.578941
+01-Mar 11:37:45:INFO:root:backoptzel a_i=0.026722689075630253
+01-Mar 11:37:45:INFO:root:simzel start from a=0.026722689075630253 to a=1.0
+01-Mar 11:37:57:INFO:root:simzel dim 1
+01-Mar 11:38:04:INFO:root:simzel dim 2
+01-Mar 11:38:10:INFO:root:simzel dim 3
+01-Mar 11:38:21:INFO:root:simzel end
+01-Mar 11:38:24:INFO:root:backoptzel step=1 mdx=4.531037
+01-Mar 11:38:24:INFO:root:backoptzel a_i=0.026554621848739496
+01-Mar 11:38:25:INFO:root:simzel start from a=0.026554621848739496 to a=1.0
+01-Mar 11:38:36:INFO:root:simzel dim 1
+01-Mar 11:38:43:INFO:root:simzel dim 2
+01-Mar 11:38:50:INFO:root:simzel dim 3
+01-Mar 11:39:01:INFO:root:simzel end
+01-Mar 11:39:03:INFO:root:backoptzel step=1 mdx=4.4862857
+01-Mar 11:39:03:INFO:root:backoptzel a_i=0.02638655462184874
+01-Mar 11:39:04:INFO:root:simzel start from a=0.02638655462184874 to a=1.0
+01-Mar 11:39:15:INFO:root:simzel dim 1
+01-Mar 11:39:23:INFO:root:simzel dim 2
+01-Mar 11:39:30:INFO:root:simzel dim 3
+01-Mar 11:39:41:INFO:root:simzel end
+01-Mar 11:39:44:INFO:root:backoptzel step=1 mdx=4.444128
+01-Mar 11:39:44:INFO:root:backoptzel a_i=0.02621848739495798
+01-Mar 11:39:44:INFO:root:simzel start from a=0.02621848739495798 to a=1.0
+01-Mar 11:39:56:INFO:root:simzel dim 1
+01-Mar 11:40:03:INFO:root:simzel dim 2
+01-Mar 11:40:10:INFO:root:simzel dim 3
+01-Mar 11:40:22:INFO:root:simzel end
+01-Mar 11:40:24:INFO:root:backoptzel step=1 mdx=4.40469
+01-Mar 11:40:24:INFO:root:backoptzel a_i=0.026050420168067228
+01-Mar 11:40:25:INFO:root:simzel start from a=0.026050420168067228 to a=1.0
+01-Mar 11:40:36:INFO:root:simzel dim 1
+01-Mar 11:40:43:INFO:root:simzel dim 2
+01-Mar 11:40:50:INFO:root:simzel dim 3
+01-Mar 11:41:02:INFO:root:simzel end
+01-Mar 11:41:04:INFO:root:backoptzel step=1 mdx=4.3673778
+01-Mar 11:41:04:INFO:root:backoptzel a_i=0.02588235294117647
+01-Mar 11:41:05:INFO:root:simzel start from a=0.02588235294117647 to a=1.0
+01-Mar 11:41:17:INFO:root:simzel dim 1
+01-Mar 11:41:24:INFO:root:simzel dim 2
+01-Mar 11:41:31:INFO:root:simzel dim 3
+01-Mar 11:41:43:INFO:root:simzel end
+01-Mar 11:41:45:INFO:root:backoptzel step=1 mdx=4.332291
+01-Mar 11:41:45:INFO:root:backoptzel a_i=0.025714285714285714
+01-Mar 11:41:46:INFO:root:simzel start from a=0.025714285714285714 to a=1.0
+01-Mar 11:41:57:INFO:root:simzel dim 1
+01-Mar 11:42:04:INFO:root:simzel dim 2
+01-Mar 11:42:12:INFO:root:simzel dim 3
+01-Mar 11:42:23:INFO:root:simzel end
+01-Mar 11:42:25:INFO:root:backoptzel step=1 mdx=4.299392
+01-Mar 11:42:25:INFO:root:backoptzel a_i=0.025546218487394957
+01-Mar 11:42:26:INFO:root:simzel start from a=0.025546218487394957 to a=1.0
+01-Mar 11:42:38:INFO:root:simzel dim 1
+01-Mar 11:42:45:INFO:root:simzel dim 2
+01-Mar 11:42:51:INFO:root:simzel dim 3
+01-Mar 11:43:03:INFO:root:simzel end
+01-Mar 11:43:05:INFO:root:backoptzel step=1 mdx=4.268342
+01-Mar 11:43:05:INFO:root:backoptzel a_i=0.025378151260504203
+01-Mar 11:43:06:INFO:root:simzel start from a=0.025378151260504203 to a=1.0
+01-Mar 11:43:17:INFO:root:simzel dim 1
+01-Mar 11:43:24:INFO:root:simzel dim 2
+01-Mar 11:43:31:INFO:root:simzel dim 3
+01-Mar 11:43:43:INFO:root:simzel end
+01-Mar 11:43:45:INFO:root:backoptzel step=1 mdx=4.2391367
+01-Mar 11:43:45:INFO:root:backoptzel a_i=0.025210084033613446
+01-Mar 11:43:45:INFO:root:simzel start from a=0.025210084033613446 to a=1.0
+01-Mar 11:43:57:INFO:root:simzel dim 1
+01-Mar 11:44:04:INFO:root:simzel dim 2
+01-Mar 11:44:11:INFO:root:simzel dim 3
+01-Mar 11:44:23:INFO:root:simzel end
+01-Mar 11:44:25:INFO:root:backoptzel step=1 mdx=4.2114964
+01-Mar 11:44:25:INFO:root:backoptzel a_i=0.02504201680672269
+01-Mar 11:44:26:INFO:root:simzel start from a=0.02504201680672269 to a=1.0
+01-Mar 11:44:37:INFO:root:simzel dim 1
+01-Mar 11:44:44:INFO:root:simzel dim 2
+01-Mar 11:44:51:INFO:root:simzel dim 3
+01-Mar 11:45:02:INFO:root:simzel end
+01-Mar 11:45:04:INFO:root:backoptzel step=1 mdx=4.185612
+01-Mar 11:45:04:INFO:root:backoptzel a_i=0.024873949579831932
+01-Mar 11:45:05:INFO:root:simzel start from a=0.024873949579831932 to a=1.0
+01-Mar 11:45:17:INFO:root:simzel dim 1
+01-Mar 11:45:23:INFO:root:simzel dim 2
+01-Mar 11:45:30:INFO:root:simzel dim 3
+01-Mar 11:45:41:INFO:root:simzel end
+01-Mar 11:45:43:INFO:root:backoptzel step=1 mdx=4.160836
+01-Mar 11:45:43:INFO:root:backoptzel a_i=0.024705882352941175
+01-Mar 11:45:44:INFO:root:simzel start from a=0.024705882352941175 to a=1.0
+01-Mar 11:45:56:INFO:root:simzel dim 1
+01-Mar 11:46:02:INFO:root:simzel dim 2
+01-Mar 11:46:09:INFO:root:simzel dim 3
+01-Mar 11:46:20:INFO:root:simzel end
+01-Mar 11:46:23:INFO:root:backoptzel step=1 mdx=4.137604
+01-Mar 11:46:23:INFO:root:backoptzel a_i=0.02453781512605042
+01-Mar 11:46:23:INFO:root:simzel start from a=0.02453781512605042 to a=1.0
+01-Mar 11:46:35:INFO:root:simzel dim 1
+01-Mar 11:46:42:INFO:root:simzel dim 2
+01-Mar 11:46:49:INFO:root:simzel dim 3
+01-Mar 11:47:00:INFO:root:simzel end
+01-Mar 11:47:02:INFO:root:backoptzel step=1 mdx=4.1156917
+01-Mar 11:47:02:INFO:root:backoptzel a_i=0.024369747899159664
+01-Mar 11:47:03:INFO:root:simzel start from a=0.024369747899159664 to a=1.0
+01-Mar 11:47:14:INFO:root:simzel dim 1
+01-Mar 11:47:21:INFO:root:simzel dim 2
+01-Mar 11:47:28:INFO:root:simzel dim 3
+01-Mar 11:47:40:INFO:root:simzel end
+01-Mar 11:47:42:INFO:root:backoptzel step=1 mdx=4.0949407
+01-Mar 11:47:42:INFO:root:backoptzel a_i=0.024201680672268907
+01-Mar 11:47:43:INFO:root:simzel start from a=0.024201680672268907 to a=1.0
+01-Mar 11:47:54:INFO:root:simzel dim 1
+01-Mar 11:48:01:INFO:root:simzel dim 2
+01-Mar 11:48:08:INFO:root:simzel dim 3
+01-Mar 11:48:19:INFO:root:simzel end
+01-Mar 11:48:21:INFO:root:backoptzel step=1 mdx=4.0753064
+01-Mar 11:48:21:INFO:root:backoptzel a_i=0.02403361344537815
+01-Mar 11:48:22:INFO:root:simzel start from a=0.02403361344537815 to a=1.0
+01-Mar 11:48:34:INFO:root:simzel dim 1
+01-Mar 11:48:41:INFO:root:simzel dim 2
+01-Mar 11:48:47:INFO:root:simzel dim 3
+01-Mar 11:48:59:INFO:root:simzel end
+01-Mar 11:49:01:INFO:root:backoptzel step=1 mdx=4.056983
+01-Mar 11:49:01:INFO:root:backoptzel a_i=0.023865546218487396
+01-Mar 11:49:02:INFO:root:simzel start from a=0.023865546218487396 to a=1.0
+01-Mar 11:49:14:INFO:root:simzel dim 1
+01-Mar 11:49:20:INFO:root:simzel dim 2
+01-Mar 11:49:27:INFO:root:simzel dim 3
+01-Mar 11:49:38:INFO:root:simzel end
+01-Mar 11:49:40:INFO:root:backoptzel step=1 mdx=4.039199
+01-Mar 11:49:40:INFO:root:backoptzel a_i=0.02369747899159664
+01-Mar 11:49:41:INFO:root:simzel start from a=0.02369747899159664 to a=1.0
+01-Mar 11:49:53:INFO:root:simzel dim 1
+01-Mar 11:49:59:INFO:root:simzel dim 2
+01-Mar 11:50:06:INFO:root:simzel dim 3
+01-Mar 11:50:17:INFO:root:simzel end
+01-Mar 11:50:19:INFO:root:backoptzel step=1 mdx=4.0225058
+01-Mar 11:50:19:INFO:root:backoptzel a_i=0.023529411764705882
+01-Mar 11:50:20:INFO:root:simzel start from a=0.023529411764705882 to a=1.0
+01-Mar 11:50:32:INFO:root:simzel dim 1
+01-Mar 11:50:39:INFO:root:simzel dim 2
+01-Mar 11:50:46:INFO:root:simzel dim 3
+01-Mar 11:50:57:INFO:root:simzel end
+01-Mar 11:51:00:INFO:root:backoptzel step=1 mdx=4.006571
+01-Mar 11:51:00:INFO:root:backoptzel a_i=0.023361344537815125
+01-Mar 11:51:00:INFO:root:simzel start from a=0.023361344537815125 to a=1.0
+01-Mar 11:51:12:INFO:root:simzel dim 1
+01-Mar 11:51:19:INFO:root:simzel dim 2
+01-Mar 11:51:25:INFO:root:simzel dim 3
+01-Mar 11:51:37:INFO:root:simzel end
+01-Mar 11:51:39:INFO:root:backoptzel step=1 mdx=3.9915721
+01-Mar 11:51:39:INFO:root:backoptzel a_i=0.02319327731092437
+01-Mar 11:51:40:INFO:root:simzel start from a=0.02319327731092437 to a=1.0
+01-Mar 11:51:51:INFO:root:simzel dim 1
+01-Mar 11:51:58:INFO:root:simzel dim 2
+01-Mar 11:52:05:INFO:root:simzel dim 3
+01-Mar 11:52:16:INFO:root:simzel end
+01-Mar 11:52:18:INFO:root:backoptzel step=1 mdx=3.9773107
+01-Mar 11:52:18:INFO:root:backoptzel a_i=0.023025210084033614
+01-Mar 11:52:19:INFO:root:simzel start from a=0.023025210084033614 to a=1.0
+01-Mar 11:52:31:INFO:root:simzel dim 1
+01-Mar 11:52:37:INFO:root:simzel dim 2
+01-Mar 11:52:44:INFO:root:simzel dim 3
+01-Mar 11:52:56:INFO:root:simzel end
+01-Mar 11:52:58:INFO:root:backoptzel step=1 mdx=3.9637654
+01-Mar 11:52:58:INFO:root:backoptzel a_i=0.022857142857142857
+01-Mar 11:52:59:INFO:root:simzel start from a=0.022857142857142857 to a=1.0
+01-Mar 11:53:10:INFO:root:simzel dim 1
+01-Mar 11:53:17:INFO:root:simzel dim 2
+01-Mar 11:53:24:INFO:root:simzel dim 3
+01-Mar 11:53:35:INFO:root:simzel end
+01-Mar 11:53:37:INFO:root:backoptzel step=1 mdx=3.9510777
+01-Mar 11:53:37:INFO:root:backoptzel a_i=0.0226890756302521
+01-Mar 11:53:38:INFO:root:simzel start from a=0.0226890756302521 to a=1.0
+01-Mar 11:53:50:INFO:root:simzel dim 1
+01-Mar 11:53:56:INFO:root:simzel dim 2
+01-Mar 11:54:03:INFO:root:simzel dim 3
+01-Mar 11:54:14:INFO:root:simzel end
+01-Mar 11:54:17:INFO:root:backoptzel step=1 mdx=3.9386065
+01-Mar 11:54:17:INFO:root:backoptzel a_i=0.022521008403361343
+01-Mar 11:54:17:INFO:root:simzel start from a=0.022521008403361343 to a=1.0
+01-Mar 11:54:29:INFO:root:simzel dim 1
+01-Mar 11:54:36:INFO:root:simzel dim 2
+01-Mar 11:54:42:INFO:root:simzel dim 3
+01-Mar 11:54:54:INFO:root:simzel end
+01-Mar 11:54:56:INFO:root:backoptzel step=1 mdx=3.9271274
+01-Mar 11:54:56:INFO:root:backoptzel a_i=0.02235294117647059
+01-Mar 11:54:57:INFO:root:simzel start from a=0.02235294117647059 to a=1.0
+01-Mar 11:55:08:INFO:root:simzel dim 1
+01-Mar 11:55:15:INFO:root:simzel dim 2
+01-Mar 11:55:21:INFO:root:simzel dim 3
+01-Mar 11:55:33:INFO:root:simzel end
+01-Mar 11:55:35:INFO:root:backoptzel step=1 mdx=3.9158666
+01-Mar 11:55:35:INFO:root:backoptzel a_i=0.022184873949579832
+01-Mar 11:55:35:INFO:root:simzel start from a=0.022184873949579832 to a=1.0
+01-Mar 11:55:47:INFO:root:simzel dim 1
+01-Mar 11:55:54:INFO:root:simzel dim 2
+01-Mar 11:56:01:INFO:root:simzel dim 3
+01-Mar 11:56:12:INFO:root:simzel end
+01-Mar 11:56:14:INFO:root:backoptzel step=1 mdx=3.905307
+01-Mar 11:56:14:INFO:root:backoptzel a_i=0.022016806722689075
+01-Mar 11:56:15:INFO:root:simzel start from a=0.022016806722689075 to a=1.0
+01-Mar 11:56:27:INFO:root:simzel dim 1
+01-Mar 11:56:34:INFO:root:simzel dim 2
+01-Mar 11:56:40:INFO:root:simzel dim 3
+01-Mar 11:56:52:INFO:root:simzel end
+01-Mar 11:56:54:INFO:root:backoptzel step=1 mdx=3.8951507
+01-Mar 11:56:54:INFO:root:backoptzel a_i=0.021848739495798318
+01-Mar 11:56:55:INFO:root:simzel start from a=0.021848739495798318 to a=1.0
+01-Mar 11:57:07:INFO:root:simzel dim 1
+01-Mar 11:57:13:INFO:root:simzel dim 2
+01-Mar 11:57:20:INFO:root:simzel dim 3
+01-Mar 11:57:32:INFO:root:simzel end
+01-Mar 11:57:34:INFO:root:backoptzel step=1 mdx=3.886153
+01-Mar 11:57:34:INFO:root:backoptzel a_i=0.021680672268907564
+01-Mar 11:57:35:INFO:root:simzel start from a=0.021680672268907564 to a=1.0
+01-Mar 11:57:46:INFO:root:simzel dim 1
+01-Mar 11:57:54:INFO:root:simzel dim 2
+01-Mar 11:58:01:INFO:root:simzel dim 3
+01-Mar 11:58:13:INFO:root:simzel end
+01-Mar 11:58:15:INFO:root:backoptzel step=1 mdx=3.8763218
+01-Mar 11:58:15:INFO:root:backoptzel a_i=0.021512605042016807
+01-Mar 11:58:16:INFO:root:simzel start from a=0.021512605042016807 to a=1.0
+01-Mar 11:58:27:INFO:root:simzel dim 1
+01-Mar 11:58:34:INFO:root:simzel dim 2
+01-Mar 11:58:41:INFO:root:simzel dim 3
+01-Mar 11:58:53:INFO:root:simzel end
+01-Mar 11:58:55:INFO:root:backoptzel step=1 mdx=3.8677113
+01-Mar 11:58:55:INFO:root:backoptzel a_i=0.02134453781512605
+01-Mar 11:58:56:INFO:root:simzel start from a=0.02134453781512605 to a=1.0
+01-Mar 11:59:08:INFO:root:simzel dim 1
+01-Mar 11:59:14:INFO:root:simzel dim 2
+01-Mar 11:59:21:INFO:root:simzel dim 3
+01-Mar 11:59:33:INFO:root:simzel end
+01-Mar 11:59:35:INFO:root:backoptzel step=1 mdx=3.8596706
+01-Mar 11:59:35:INFO:root:backoptzel a_i=0.021176470588235293
+01-Mar 11:59:36:INFO:root:simzel start from a=0.021176470588235293 to a=1.0
+01-Mar 11:59:47:INFO:root:simzel dim 1
+01-Mar 11:59:54:INFO:root:simzel dim 2
+01-Mar 12:00:00:INFO:root:simzel dim 3
+01-Mar 12:00:12:INFO:root:simzel end
+01-Mar 12:00:14:INFO:root:backoptzel step=1 mdx=3.8514166
+01-Mar 12:00:14:INFO:root:backoptzel a_i=0.02100840336134454
+01-Mar 12:00:15:INFO:root:simzel start from a=0.02100840336134454 to a=1.0
+01-Mar 12:00:27:INFO:root:simzel dim 1
+01-Mar 12:00:33:INFO:root:simzel dim 2
+01-Mar 12:00:40:INFO:root:simzel dim 3
+01-Mar 12:00:51:INFO:root:simzel end
+01-Mar 12:00:53:INFO:root:backoptzel step=1 mdx=3.8438637
+01-Mar 12:00:53:INFO:root:backoptzel a_i=0.020840336134453782
+01-Mar 12:00:54:INFO:root:simzel start from a=0.020840336134453782 to a=1.0
+01-Mar 12:01:06:INFO:root:simzel dim 1
+01-Mar 12:01:12:INFO:root:simzel dim 2
+01-Mar 12:01:19:INFO:root:simzel dim 3
+01-Mar 12:01:31:INFO:root:simzel end
+01-Mar 12:01:33:INFO:root:backoptzel step=1 mdx=3.836649
+01-Mar 12:01:33:INFO:root:backoptzel a_i=0.020672268907563025
+01-Mar 12:01:34:INFO:root:simzel start from a=0.020672268907563025 to a=1.0
+01-Mar 12:01:45:INFO:root:simzel dim 1
+01-Mar 12:01:52:INFO:root:simzel dim 2
+01-Mar 12:01:59:INFO:root:simzel dim 3
+01-Mar 12:02:10:INFO:root:simzel end
+01-Mar 12:02:12:INFO:root:backoptzel step=1 mdx=3.82983
+01-Mar 12:02:12:INFO:root:backoptzel a_i=0.020504201680672268
+01-Mar 12:02:13:INFO:root:simzel start from a=0.020504201680672268 to a=1.0
+01-Mar 12:02:25:INFO:root:simzel dim 1
+01-Mar 12:02:31:INFO:root:simzel dim 2
+01-Mar 12:02:38:INFO:root:simzel dim 3
+01-Mar 12:02:49:INFO:root:simzel end
+01-Mar 12:02:51:INFO:root:backoptzel step=1 mdx=3.8229406
+01-Mar 12:02:51:INFO:root:backoptzel a_i=0.02033613445378151
+01-Mar 12:02:52:INFO:root:simzel start from a=0.02033613445378151 to a=1.0
+01-Mar 12:03:04:INFO:root:simzel dim 1
+01-Mar 12:03:11:INFO:root:simzel dim 2
+01-Mar 12:03:17:INFO:root:simzel dim 3
+01-Mar 12:03:29:INFO:root:simzel end
+01-Mar 12:03:31:INFO:root:backoptzel step=1 mdx=3.8167398
+01-Mar 12:03:31:INFO:root:backoptzel a_i=0.020168067226890758
+01-Mar 12:03:32:INFO:root:simzel start from a=0.020168067226890758 to a=1.0
+01-Mar 12:03:44:INFO:root:simzel dim 1
+01-Mar 12:03:51:INFO:root:simzel dim 2
+01-Mar 12:03:57:INFO:root:simzel dim 3
+01-Mar 12:04:09:INFO:root:simzel end
+01-Mar 12:04:11:INFO:root:backoptzel step=1 mdx=3.8103132
+01-Mar 12:04:11:INFO:root:backoptzel a_i=0.02
+01-Mar 12:04:12:INFO:root:simzel start from a=0.02 to a=1.0
+01-Mar 12:04:24:INFO:root:simzel dim 1
+01-Mar 12:04:31:INFO:root:simzel dim 2
+01-Mar 12:04:38:INFO:root:simzel dim 3
+01-Mar 12:04:49:INFO:root:simzel end
+01-Mar 12:04:52:INFO:root:backoptzel step=1 mdx=3.8046978
+01-Mar 12:04:52:INFO:root:backoptzel end

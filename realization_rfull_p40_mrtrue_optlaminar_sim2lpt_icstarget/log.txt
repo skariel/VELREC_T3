@@ -1,0 +1,1600 @@
+01-Mar 09:41:21:INFO:root:PROCS_NUM=40
+01-Mar 09:41:21:INFO:root:REALIZATION_TYPE=full
+01-Mar 09:41:21:INFO:root:MASS_REAL=true
+01-Mar 09:41:21:INFO:root:OPT_TYPE=laminar
+01-Mar 09:41:21:INFO:root:SIM_TYPE=2lpt
+01-Mar 09:41:21:INFO:root:ICS=target
+01-Mar 09:42:09:INFO:root:N=150149632 min(m)=10.249871 max(m)=442556.75
+01-Mar 09:42:09:INFO:root:rescaling masses
+01-Mar 09:42:10:INFO:root:N=150149632 min(m)=22.211617 max(m)=959026.75
+01-Mar 09:42:19:INFO:root:backopt2lpt start a_from=0.02 a_to=1.0 end_meandx=350 fracmov=0.15
+01-Mar 09:42:19:INFO:root:backopt2lpt a_i=0.99
+01-Mar 09:42:20:INFO:root:sim2lpt start from a=0.99 to a=1.0
+01-Mar 09:42:33:INFO:root:sim2lpt 1st order dim 1
+01-Mar 09:42:40:INFO:root:sim2lpt 1st order dim 2
+01-Mar 09:42:47:INFO:root:sim2lpt 1st order dim 3
+01-Mar 09:43:06:INFO:root:sim2lpt 2nd order dim 1
+01-Mar 09:43:14:INFO:root:sim2lpt 2nd order dim 2
+01-Mar 09:43:21:INFO:root:sim2lpt 2nd order dim 3
+01-Mar 09:43:33:INFO:root:sim2lpt end
+01-Mar 09:43:36:INFO:root:backopt2lpt step=1 mdx=37.474594
+01-Mar 09:43:36:INFO:root:backopt2lpt a_i=0.9400526315789474
+01-Mar 09:43:36:INFO:root:sim2lpt start from a=0.9400526315789474 to a=1.0
+01-Mar 09:43:49:INFO:root:sim2lpt 1st order dim 1
+01-Mar 09:43:56:INFO:root:sim2lpt 1st order dim 2
+01-Mar 09:44:03:INFO:root:sim2lpt 1st order dim 3
+01-Mar 09:44:22:INFO:root:sim2lpt 2nd order dim 1
+01-Mar 09:44:30:INFO:root:sim2lpt 2nd order dim 2
+01-Mar 09:44:37:INFO:root:sim2lpt 2nd order dim 3
+01-Mar 09:44:49:INFO:root:sim2lpt end
+01-Mar 09:44:51:INFO:root:backopt2lpt step=1 mdx=223.7125
+01-Mar 09:44:51:INFO:root:backopt2lpt a_i=0.8901052631578947
+01-Mar 09:44:52:INFO:root:sim2lpt start from a=0.8901052631578947 to a=1.0
+01-Mar 09:45:04:INFO:root:sim2lpt 1st order dim 1
+01-Mar 09:45:11:INFO:root:sim2lpt 1st order dim 2
+01-Mar 09:45:18:INFO:root:sim2lpt 1st order dim 3
+01-Mar 09:45:37:INFO:root:sim2lpt 2nd order dim 1
+01-Mar 09:45:45:INFO:root:sim2lpt 2nd order dim 2
+01-Mar 09:45:52:INFO:root:sim2lpt 2nd order dim 3
+01-Mar 09:46:04:INFO:root:sim2lpt end
+01-Mar 09:46:06:INFO:root:backopt2lpt step=1 mdx=365.5394
+01-Mar 09:46:07:INFO:root:sim2lpt start from a=0.8901052631578947 to a=1.0
+01-Mar 09:46:19:INFO:root:sim2lpt 1st order dim 1
+01-Mar 09:46:26:INFO:root:sim2lpt 1st order dim 2
+01-Mar 09:46:33:INFO:root:sim2lpt 1st order dim 3
+01-Mar 09:46:53:INFO:root:sim2lpt 2nd order dim 1
+01-Mar 09:47:00:INFO:root:sim2lpt 2nd order dim 2
+01-Mar 09:47:07:INFO:root:sim2lpt 2nd order dim 3
+01-Mar 09:47:19:INFO:root:sim2lpt end
+01-Mar 09:47:21:INFO:root:backopt2lpt step=2 mdx=249.82649
+01-Mar 09:47:21:INFO:root:backopt2lpt a_i=0.8401578947368421
+01-Mar 09:47:22:INFO:root:sim2lpt start from a=0.8401578947368421 to a=1.0
+01-Mar 09:47:34:INFO:root:sim2lpt 1st order dim 1
+01-Mar 09:47:41:INFO:root:sim2lpt 1st order dim 2
+01-Mar 09:47:48:INFO:root:sim2lpt 1st order dim 3
+01-Mar 09:48:08:INFO:root:sim2lpt 2nd order dim 1
+01-Mar 09:48:15:INFO:root:sim2lpt 2nd order dim 2
+01-Mar 09:48:23:INFO:root:sim2lpt 2nd order dim 3
+01-Mar 09:48:35:INFO:root:sim2lpt end
+01-Mar 09:48:37:INFO:root:backopt2lpt step=1 mdx=389.51746
+01-Mar 09:48:37:INFO:root:sim2lpt start from a=0.8401578947368421 to a=1.0
+01-Mar 09:48:50:INFO:root:sim2lpt 1st order dim 1
+01-Mar 09:48:57:INFO:root:sim2lpt 1st order dim 2
+01-Mar 09:49:03:INFO:root:sim2lpt 1st order dim 3
+01-Mar 09:49:23:INFO:root:sim2lpt 2nd order dim 1
+01-Mar 09:49:30:INFO:root:sim2lpt 2nd order dim 2
+01-Mar 09:49:38:INFO:root:sim2lpt 2nd order dim 3
+01-Mar 09:49:50:INFO:root:sim2lpt end
+01-Mar 09:49:52:INFO:root:backopt2lpt step=2 mdx=262.76346
+01-Mar 09:49:52:INFO:root:backopt2lpt a_i=0.7902105263157895
+01-Mar 09:49:52:INFO:root:sim2lpt start from a=0.7902105263157895 to a=1.0
+01-Mar 09:50:05:INFO:root:sim2lpt 1st order dim 1
+01-Mar 09:50:12:INFO:root:sim2lpt 1st order dim 2
+01-Mar 09:50:18:INFO:root:sim2lpt 1st order dim 3
+01-Mar 09:50:38:INFO:root:sim2lpt 2nd order dim 1
+01-Mar 09:50:46:INFO:root:sim2lpt 2nd order dim 2
+01-Mar 09:50:53:INFO:root:sim2lpt 2nd order dim 3
+01-Mar 09:51:05:INFO:root:sim2lpt end
+01-Mar 09:51:07:INFO:root:backopt2lpt step=1 mdx=401.72482
+01-Mar 09:51:08:INFO:root:sim2lpt start from a=0.7902105263157895 to a=1.0
+01-Mar 09:51:20:INFO:root:sim2lpt 1st order dim 1
+01-Mar 09:51:27:INFO:root:sim2lpt 1st order dim 2
+01-Mar 09:51:34:INFO:root:sim2lpt 1st order dim 3
+01-Mar 09:51:53:INFO:root:sim2lpt 2nd order dim 1
+01-Mar 09:52:01:INFO:root:sim2lpt 2nd order dim 2
+01-Mar 09:52:08:INFO:root:sim2lpt 2nd order dim 3
+01-Mar 09:52:20:INFO:root:sim2lpt end
+01-Mar 09:52:22:INFO:root:backopt2lpt step=2 mdx=267.65698
+01-Mar 09:52:22:INFO:root:backopt2lpt a_i=0.7402631578947368
+01-Mar 09:52:23:INFO:root:sim2lpt start from a=0.7402631578947368 to a=1.0
+01-Mar 09:52:35:INFO:root:sim2lpt 1st order dim 1
+01-Mar 09:52:42:INFO:root:sim2lpt 1st order dim 2
+01-Mar 09:52:49:INFO:root:sim2lpt 1st order dim 3
+01-Mar 09:53:09:INFO:root:sim2lpt 2nd order dim 1
+01-Mar 09:53:17:INFO:root:sim2lpt 2nd order dim 2
+01-Mar 09:53:24:INFO:root:sim2lpt 2nd order dim 3
+01-Mar 09:53:36:INFO:root:sim2lpt end
+01-Mar 09:53:38:INFO:root:backopt2lpt step=1 mdx=408.61563
+01-Mar 09:53:39:INFO:root:sim2lpt start from a=0.7402631578947368 to a=1.0
+01-Mar 09:53:51:INFO:root:sim2lpt 1st order dim 1
+01-Mar 09:53:58:INFO:root:sim2lpt 1st order dim 2
+01-Mar 09:54:05:INFO:root:sim2lpt 1st order dim 3
+01-Mar 09:54:24:INFO:root:sim2lpt 2nd order dim 1
+01-Mar 09:54:32:INFO:root:sim2lpt 2nd order dim 2
+01-Mar 09:54:39:INFO:root:sim2lpt 2nd order dim 3
+01-Mar 09:54:51:INFO:root:sim2lpt end
+01-Mar 09:54:53:INFO:root:backopt2lpt step=2 mdx=268.8721
+01-Mar 09:54:53:INFO:root:backopt2lpt a_i=0.6903157894736842
+01-Mar 09:54:54:INFO:root:sim2lpt start from a=0.6903157894736842 to a=1.0
+01-Mar 09:55:06:INFO:root:sim2lpt 1st order dim 1
+01-Mar 09:55:13:INFO:root:sim2lpt 1st order dim 2
+01-Mar 09:55:20:INFO:root:sim2lpt 1st order dim 3
+01-Mar 09:55:40:INFO:root:sim2lpt 2nd order dim 1
+01-Mar 09:55:47:INFO:root:sim2lpt 2nd order dim 2
+01-Mar 09:55:54:INFO:root:sim2lpt 2nd order dim 3
+01-Mar 09:56:06:INFO:root:sim2lpt end
+01-Mar 09:56:08:INFO:root:backopt2lpt step=1 mdx=412.81848
+01-Mar 09:56:09:INFO:root:sim2lpt start from a=0.6903157894736842 to a=1.0
+01-Mar 09:56:21:INFO:root:sim2lpt 1st order dim 1
+01-Mar 09:56:28:INFO:root:sim2lpt 1st order dim 2
+01-Mar 09:56:35:INFO:root:sim2lpt 1st order dim 3
+01-Mar 09:56:55:INFO:root:sim2lpt 2nd order dim 1
+01-Mar 09:57:02:INFO:root:sim2lpt 2nd order dim 2
+01-Mar 09:57:09:INFO:root:sim2lpt 2nd order dim 3
+01-Mar 09:57:21:INFO:root:sim2lpt end
+01-Mar 09:57:23:INFO:root:backopt2lpt step=2 mdx=268.11496
+01-Mar 09:57:23:INFO:root:backopt2lpt a_i=0.6403684210526316
+01-Mar 09:57:24:INFO:root:sim2lpt start from a=0.6403684210526316 to a=1.0
+01-Mar 09:57:36:INFO:root:sim2lpt 1st order dim 1
+01-Mar 09:57:43:INFO:root:sim2lpt 1st order dim 2
+01-Mar 09:57:50:INFO:root:sim2lpt 1st order dim 3
+01-Mar 09:58:10:INFO:root:sim2lpt 2nd order dim 1
+01-Mar 09:58:17:INFO:root:sim2lpt 2nd order dim 2
+01-Mar 09:58:24:INFO:root:sim2lpt 2nd order dim 3
+01-Mar 09:58:36:INFO:root:sim2lpt end
+01-Mar 09:58:38:INFO:root:backopt2lpt step=1 mdx=415.15143
+01-Mar 09:58:39:INFO:root:sim2lpt start from a=0.6403684210526316 to a=1.0
+01-Mar 09:58:51:INFO:root:sim2lpt 1st order dim 1
+01-Mar 09:58:58:INFO:root:sim2lpt 1st order dim 2
+01-Mar 09:59:05:INFO:root:sim2lpt 1st order dim 3
+01-Mar 09:59:25:INFO:root:sim2lpt 2nd order dim 1
+01-Mar 09:59:32:INFO:root:sim2lpt 2nd order dim 2
+01-Mar 09:59:39:INFO:root:sim2lpt 2nd order dim 3
+01-Mar 09:59:51:INFO:root:sim2lpt end
+01-Mar 09:59:53:INFO:root:backopt2lpt step=2 mdx=265.9177
+01-Mar 09:59:53:INFO:root:backopt2lpt a_i=0.590421052631579
+01-Mar 09:59:54:INFO:root:sim2lpt start from a=0.590421052631579 to a=1.0
+01-Mar 10:00:07:INFO:root:sim2lpt 1st order dim 1
+01-Mar 10:00:13:INFO:root:sim2lpt 1st order dim 2
+01-Mar 10:00:20:INFO:root:sim2lpt 1st order dim 3
+01-Mar 10:00:40:INFO:root:sim2lpt 2nd order dim 1
+01-Mar 10:00:47:INFO:root:sim2lpt 2nd order dim 2
+01-Mar 10:00:55:INFO:root:sim2lpt 2nd order dim 3
+01-Mar 10:01:07:INFO:root:sim2lpt end
+01-Mar 10:01:09:INFO:root:backopt2lpt step=1 mdx=415.67282
+01-Mar 10:01:09:INFO:root:sim2lpt start from a=0.590421052631579 to a=1.0
+01-Mar 10:01:22:INFO:root:sim2lpt 1st order dim 1
+01-Mar 10:01:29:INFO:root:sim2lpt 1st order dim 2
+01-Mar 10:01:35:INFO:root:sim2lpt 1st order dim 3
+01-Mar 10:01:55:INFO:root:sim2lpt 2nd order dim 1
+01-Mar 10:02:03:INFO:root:sim2lpt 2nd order dim 2
+01-Mar 10:02:10:INFO:root:sim2lpt 2nd order dim 3
+01-Mar 10:02:22:INFO:root:sim2lpt end
+01-Mar 10:02:24:INFO:root:backopt2lpt step=2 mdx=262.393
+01-Mar 10:02:24:INFO:root:backopt2lpt a_i=0.5404736842105263
+01-Mar 10:02:25:INFO:root:sim2lpt start from a=0.5404736842105263 to a=1.0
+01-Mar 10:02:37:INFO:root:sim2lpt 1st order dim 1
+01-Mar 10:02:44:INFO:root:sim2lpt 1st order dim 2
+01-Mar 10:02:51:INFO:root:sim2lpt 1st order dim 3
+01-Mar 10:03:11:INFO:root:sim2lpt 2nd order dim 1
+01-Mar 10:03:19:INFO:root:sim2lpt 2nd order dim 2
+01-Mar 10:03:26:INFO:root:sim2lpt 2nd order dim 3
+01-Mar 10:03:38:INFO:root:sim2lpt end
+01-Mar 10:03:40:INFO:root:backopt2lpt step=1 mdx=414.24338
+01-Mar 10:03:40:INFO:root:sim2lpt start from a=0.5404736842105263 to a=1.0
+01-Mar 10:03:53:INFO:root:sim2lpt 1st order dim 1
+01-Mar 10:04:00:INFO:root:sim2lpt 1st order dim 2
+01-Mar 10:04:07:INFO:root:sim2lpt 1st order dim 3
+01-Mar 10:04:26:INFO:root:sim2lpt 2nd order dim 1
+01-Mar 10:04:34:INFO:root:sim2lpt 2nd order dim 2
+01-Mar 10:04:41:INFO:root:sim2lpt 2nd order dim 3
+01-Mar 10:04:53:INFO:root:sim2lpt end
+01-Mar 10:04:55:INFO:root:backopt2lpt step=2 mdx=257.53912
+01-Mar 10:04:55:INFO:root:backopt2lpt a_i=0.4905263157894737
+01-Mar 10:04:56:INFO:root:sim2lpt start from a=0.4905263157894737 to a=1.0
+01-Mar 10:05:08:INFO:root:sim2lpt 1st order dim 1
+01-Mar 10:05:15:INFO:root:sim2lpt 1st order dim 2
+01-Mar 10:05:22:INFO:root:sim2lpt 1st order dim 3
+01-Mar 10:05:42:INFO:root:sim2lpt 2nd order dim 1
+01-Mar 10:05:49:INFO:root:sim2lpt 2nd order dim 2
+01-Mar 10:05:56:INFO:root:sim2lpt 2nd order dim 3
+01-Mar 10:06:08:INFO:root:sim2lpt end
+01-Mar 10:06:10:INFO:root:backopt2lpt step=1 mdx=410.71393
+01-Mar 10:06:11:INFO:root:sim2lpt start from a=0.4905263157894737 to a=1.0
+01-Mar 10:06:23:INFO:root:sim2lpt 1st order dim 1
+01-Mar 10:06:30:INFO:root:sim2lpt 1st order dim 2
+01-Mar 10:06:37:INFO:root:sim2lpt 1st order dim 3
+01-Mar 10:06:57:INFO:root:sim2lpt 2nd order dim 1
+01-Mar 10:07:04:INFO:root:sim2lpt 2nd order dim 2
+01-Mar 10:07:11:INFO:root:sim2lpt 2nd order dim 3
+01-Mar 10:07:23:INFO:root:sim2lpt end
+01-Mar 10:07:25:INFO:root:backopt2lpt step=2 mdx=251.32175
+01-Mar 10:07:25:INFO:root:backopt2lpt a_i=0.44057894736842107
+01-Mar 10:07:26:INFO:root:sim2lpt start from a=0.44057894736842107 to a=1.0
+01-Mar 10:07:39:INFO:root:sim2lpt 1st order dim 1
+01-Mar 10:07:45:INFO:root:sim2lpt 1st order dim 2
+01-Mar 10:07:52:INFO:root:sim2lpt 1st order dim 3
+01-Mar 10:08:12:INFO:root:sim2lpt 2nd order dim 1
+01-Mar 10:08:19:INFO:root:sim2lpt 2nd order dim 2
+01-Mar 10:08:27:INFO:root:sim2lpt 2nd order dim 3
+01-Mar 10:08:39:INFO:root:sim2lpt end
+01-Mar 10:08:41:INFO:root:backopt2lpt step=1 mdx=404.88107
+01-Mar 10:08:42:INFO:root:sim2lpt start from a=0.44057894736842107 to a=1.0
+01-Mar 10:08:54:INFO:root:sim2lpt 1st order dim 1
+01-Mar 10:09:01:INFO:root:sim2lpt 1st order dim 2
+01-Mar 10:09:08:INFO:root:sim2lpt 1st order dim 3
+01-Mar 10:09:28:INFO:root:sim2lpt 2nd order dim 1
+01-Mar 10:09:35:INFO:root:sim2lpt 2nd order dim 2
+01-Mar 10:09:42:INFO:root:sim2lpt 2nd order dim 3
+01-Mar 10:09:54:INFO:root:sim2lpt end
+01-Mar 10:09:56:INFO:root:backopt2lpt step=2 mdx=243.6407
+01-Mar 10:09:56:INFO:root:backopt2lpt a_i=0.39063157894736844
+01-Mar 10:09:57:INFO:root:sim2lpt start from a=0.39063157894736844 to a=1.0
+01-Mar 10:10:09:INFO:root:sim2lpt 1st order dim 1
+01-Mar 10:10:16:INFO:root:sim2lpt 1st order dim 2
+01-Mar 10:10:23:INFO:root:sim2lpt 1st order dim 3
+01-Mar 10:10:43:INFO:root:sim2lpt 2nd order dim 1
+01-Mar 10:10:50:INFO:root:sim2lpt 2nd order dim 2
+01-Mar 10:10:57:INFO:root:sim2lpt 2nd order dim 3
+01-Mar 10:11:09:INFO:root:sim2lpt end
+01-Mar 10:11:11:INFO:root:backopt2lpt step=1 mdx=396.63132
+01-Mar 10:11:12:INFO:root:sim2lpt start from a=0.39063157894736844 to a=1.0
+01-Mar 10:11:24:INFO:root:sim2lpt 1st order dim 1
+01-Mar 10:11:31:INFO:root:sim2lpt 1st order dim 2
+01-Mar 10:11:38:INFO:root:sim2lpt 1st order dim 3
+01-Mar 10:11:58:INFO:root:sim2lpt 2nd order dim 1
+01-Mar 10:12:05:INFO:root:sim2lpt 2nd order dim 2
+01-Mar 10:12:13:INFO:root:sim2lpt 2nd order dim 3
+01-Mar 10:12:25:INFO:root:sim2lpt end
+01-Mar 10:12:27:INFO:root:backopt2lpt step=2 mdx=234.55772
+01-Mar 10:12:27:INFO:root:backopt2lpt a_i=0.3406842105263158
+01-Mar 10:12:27:INFO:root:sim2lpt start from a=0.3406842105263158 to a=1.0
+01-Mar 10:12:40:INFO:root:sim2lpt 1st order dim 1
+01-Mar 10:12:47:INFO:root:sim2lpt 1st order dim 2
+01-Mar 10:12:54:INFO:root:sim2lpt 1st order dim 3
+01-Mar 10:13:13:INFO:root:sim2lpt 2nd order dim 1
+01-Mar 10:13:21:INFO:root:sim2lpt 2nd order dim 2
+01-Mar 10:13:28:INFO:root:sim2lpt 2nd order dim 3
+01-Mar 10:13:40:INFO:root:sim2lpt end
+01-Mar 10:13:42:INFO:root:backopt2lpt step=1 mdx=386.07947
+01-Mar 10:13:43:INFO:root:sim2lpt start from a=0.3406842105263158 to a=1.0
+01-Mar 10:13:55:INFO:root:sim2lpt 1st order dim 1
+01-Mar 10:14:02:INFO:root:sim2lpt 1st order dim 2
+01-Mar 10:14:09:INFO:root:sim2lpt 1st order dim 3
+01-Mar 10:14:28:INFO:root:sim2lpt 2nd order dim 1
+01-Mar 10:14:36:INFO:root:sim2lpt 2nd order dim 2
+01-Mar 10:14:43:INFO:root:sim2lpt 2nd order dim 3
+01-Mar 10:14:55:INFO:root:sim2lpt end
+01-Mar 10:14:57:INFO:root:backopt2lpt step=2 mdx=224.24373
+01-Mar 10:14:57:INFO:root:backopt2lpt a_i=0.2907368421052632
+01-Mar 10:14:58:INFO:root:sim2lpt start from a=0.2907368421052632 to a=1.0
+01-Mar 10:15:10:INFO:root:sim2lpt 1st order dim 1
+01-Mar 10:15:17:INFO:root:sim2lpt 1st order dim 2
+01-Mar 10:15:24:INFO:root:sim2lpt 1st order dim 3
+01-Mar 10:15:43:INFO:root:sim2lpt 2nd order dim 1
+01-Mar 10:15:51:INFO:root:sim2lpt 2nd order dim 2
+01-Mar 10:15:58:INFO:root:sim2lpt 2nd order dim 3
+01-Mar 10:16:10:INFO:root:sim2lpt end
+01-Mar 10:16:12:INFO:root:backopt2lpt step=1 mdx=373.48868
+01-Mar 10:16:13:INFO:root:sim2lpt start from a=0.2907368421052632 to a=1.0
+01-Mar 10:16:25:INFO:root:sim2lpt 1st order dim 1
+01-Mar 10:16:32:INFO:root:sim2lpt 1st order dim 2
+01-Mar 10:16:39:INFO:root:sim2lpt 1st order dim 3
+01-Mar 10:16:58:INFO:root:sim2lpt 2nd order dim 1
+01-Mar 10:17:06:INFO:root:sim2lpt 2nd order dim 2
+01-Mar 10:17:13:INFO:root:sim2lpt 2nd order dim 3
+01-Mar 10:17:25:INFO:root:sim2lpt end
+01-Mar 10:17:27:INFO:root:backopt2lpt step=2 mdx=253.76547
+01-Mar 10:17:27:INFO:root:backopt2lpt a_i=0.24078947368421053
+01-Mar 10:17:28:INFO:root:sim2lpt start from a=0.24078947368421053 to a=1.0
+01-Mar 10:17:40:INFO:root:sim2lpt 1st order dim 1
+01-Mar 10:17:47:INFO:root:sim2lpt 1st order dim 2
+01-Mar 10:17:54:INFO:root:sim2lpt 1st order dim 3
+01-Mar 10:18:14:INFO:root:sim2lpt 2nd order dim 1
+01-Mar 10:18:21:INFO:root:sim2lpt 2nd order dim 2
+01-Mar 10:18:28:INFO:root:sim2lpt 2nd order dim 3
+01-Mar 10:18:40:INFO:root:sim2lpt end
+01-Mar 10:18:42:INFO:root:backopt2lpt step=1 mdx=411.33145
+01-Mar 10:18:43:INFO:root:sim2lpt start from a=0.24078947368421053 to a=1.0
+01-Mar 10:18:56:INFO:root:sim2lpt 1st order dim 1
+01-Mar 10:19:03:INFO:root:sim2lpt 1st order dim 2
+01-Mar 10:19:09:INFO:root:sim2lpt 1st order dim 3
+01-Mar 10:19:29:INFO:root:sim2lpt 2nd order dim 1
+01-Mar 10:19:37:INFO:root:sim2lpt 2nd order dim 2
+01-Mar 10:19:44:INFO:root:sim2lpt 2nd order dim 3
+01-Mar 10:19:56:INFO:root:sim2lpt end
+01-Mar 10:19:58:INFO:root:backopt2lpt step=2 mdx=275.151
+01-Mar 10:19:58:INFO:root:backopt2lpt a_i=0.1908421052631579
+01-Mar 10:19:59:INFO:root:sim2lpt start from a=0.1908421052631579 to a=1.0
+01-Mar 10:20:11:INFO:root:sim2lpt 1st order dim 1
+01-Mar 10:20:18:INFO:root:sim2lpt 1st order dim 2
+01-Mar 10:20:25:INFO:root:sim2lpt 1st order dim 3
+01-Mar 10:20:45:INFO:root:sim2lpt 2nd order dim 1
+01-Mar 10:20:52:INFO:root:sim2lpt 2nd order dim 2
+01-Mar 10:21:00:INFO:root:sim2lpt 2nd order dim 3
+01-Mar 10:21:12:INFO:root:sim2lpt end
+01-Mar 10:21:14:INFO:root:backopt2lpt step=1 mdx=418.4811
+01-Mar 10:21:14:INFO:root:sim2lpt start from a=0.1908421052631579 to a=1.0
+01-Mar 10:21:27:INFO:root:sim2lpt 1st order dim 1
+01-Mar 10:21:33:INFO:root:sim2lpt 1st order dim 2
+01-Mar 10:21:40:INFO:root:sim2lpt 1st order dim 3
+01-Mar 10:22:00:INFO:root:sim2lpt 2nd order dim 1
+01-Mar 10:22:07:INFO:root:sim2lpt 2nd order dim 2
+01-Mar 10:22:14:INFO:root:sim2lpt 2nd order dim 3
+01-Mar 10:22:27:INFO:root:sim2lpt end
+01-Mar 10:22:28:INFO:root:backopt2lpt step=2 mdx=276.57654
+01-Mar 10:22:28:INFO:root:backopt2lpt a_i=0.14089473684210527
+01-Mar 10:22:29:INFO:root:sim2lpt start from a=0.14089473684210527 to a=1.0
+01-Mar 10:22:42:INFO:root:sim2lpt 1st order dim 1
+01-Mar 10:22:49:INFO:root:sim2lpt 1st order dim 2
+01-Mar 10:22:55:INFO:root:sim2lpt 1st order dim 3
+01-Mar 10:23:15:INFO:root:sim2lpt 2nd order dim 1
+01-Mar 10:23:22:INFO:root:sim2lpt 2nd order dim 2
+01-Mar 10:23:30:INFO:root:sim2lpt 2nd order dim 3
+01-Mar 10:23:42:INFO:root:sim2lpt end
+01-Mar 10:23:43:INFO:root:backopt2lpt step=1 mdx=410.57263
+01-Mar 10:23:44:INFO:root:sim2lpt start from a=0.14089473684210527 to a=1.0
+01-Mar 10:23:57:INFO:root:sim2lpt 1st order dim 1
+01-Mar 10:24:03:INFO:root:sim2lpt 1st order dim 2
+01-Mar 10:24:10:INFO:root:sim2lpt 1st order dim 3
+01-Mar 10:24:30:INFO:root:sim2lpt 2nd order dim 1
+01-Mar 10:24:37:INFO:root:sim2lpt 2nd order dim 2
+01-Mar 10:24:45:INFO:root:sim2lpt 2nd order dim 3
+01-Mar 10:24:57:INFO:root:sim2lpt end
+01-Mar 10:24:59:INFO:root:backopt2lpt step=2 mdx=268.27036
+01-Mar 10:24:59:INFO:root:backopt2lpt a_i=0.09094736842105264
+01-Mar 10:24:59:INFO:root:sim2lpt start from a=0.09094736842105264 to a=1.0
+01-Mar 10:25:12:INFO:root:sim2lpt 1st order dim 1
+01-Mar 10:25:19:INFO:root:sim2lpt 1st order dim 2
+01-Mar 10:25:25:INFO:root:sim2lpt 1st order dim 3
+01-Mar 10:25:45:INFO:root:sim2lpt 2nd order dim 1
+01-Mar 10:25:52:INFO:root:sim2lpt 2nd order dim 2
+01-Mar 10:25:59:INFO:root:sim2lpt 2nd order dim 3
+01-Mar 10:26:11:INFO:root:sim2lpt end
+01-Mar 10:26:13:INFO:root:backopt2lpt step=1 mdx=395.5272
+01-Mar 10:26:14:INFO:root:sim2lpt start from a=0.09094736842105264 to a=1.0
+01-Mar 10:26:27:INFO:root:sim2lpt 1st order dim 1
+01-Mar 10:26:33:INFO:root:sim2lpt 1st order dim 2
+01-Mar 10:26:40:INFO:root:sim2lpt 1st order dim 3
+01-Mar 10:27:00:INFO:root:sim2lpt 2nd order dim 1
+01-Mar 10:27:08:INFO:root:sim2lpt 2nd order dim 2
+01-Mar 10:27:15:INFO:root:sim2lpt 2nd order dim 3
+01-Mar 10:27:27:INFO:root:sim2lpt end
+01-Mar 10:27:29:INFO:root:backopt2lpt step=2 mdx=324.97003
+01-Mar 10:27:29:INFO:root:backopt2lpt a_i=0.041
+01-Mar 10:27:30:INFO:root:sim2lpt start from a=0.041 to a=1.0
+01-Mar 10:27:42:INFO:root:sim2lpt 1st order dim 1
+01-Mar 10:27:49:INFO:root:sim2lpt 1st order dim 2
+01-Mar 10:27:56:INFO:root:sim2lpt 1st order dim 3
+01-Mar 10:28:15:INFO:root:sim2lpt 2nd order dim 1
+01-Mar 10:28:23:INFO:root:sim2lpt 2nd order dim 2
+01-Mar 10:28:30:INFO:root:sim2lpt 2nd order dim 3
+01-Mar 10:28:42:INFO:root:sim2lpt end
+01-Mar 10:28:44:INFO:root:backopt2lpt step=1 mdx=480.65985
+01-Mar 10:28:45:INFO:root:sim2lpt start from a=0.041 to a=1.0
+01-Mar 10:28:57:INFO:root:sim2lpt 1st order dim 1
+01-Mar 10:29:04:INFO:root:sim2lpt 1st order dim 2
+01-Mar 10:29:11:INFO:root:sim2lpt 1st order dim 3
+01-Mar 10:29:31:INFO:root:sim2lpt 2nd order dim 1
+01-Mar 10:29:38:INFO:root:sim2lpt 2nd order dim 2
+01-Mar 10:29:46:INFO:root:sim2lpt 2nd order dim 3
+01-Mar 10:29:58:INFO:root:sim2lpt end
+01-Mar 10:30:00:INFO:root:backopt2lpt step=2 mdx=435.91443
+01-Mar 10:30:00:INFO:root:sim2lpt start from a=0.041 to a=1.0
+01-Mar 10:30:13:INFO:root:sim2lpt 1st order dim 1
+01-Mar 10:30:20:INFO:root:sim2lpt 1st order dim 2
+01-Mar 10:30:27:INFO:root:sim2lpt 1st order dim 3
+01-Mar 10:30:46:INFO:root:sim2lpt 2nd order dim 1
+01-Mar 10:30:54:INFO:root:sim2lpt 2nd order dim 2
+01-Mar 10:31:01:INFO:root:sim2lpt 2nd order dim 3
+01-Mar 10:31:13:INFO:root:sim2lpt end
+01-Mar 10:31:15:INFO:root:backopt2lpt step=3 mdx=397.7705
+01-Mar 10:31:16:INFO:root:sim2lpt start from a=0.041 to a=1.0
+01-Mar 10:31:28:INFO:root:sim2lpt 1st order dim 1
+01-Mar 10:31:35:INFO:root:sim2lpt 1st order dim 2
+01-Mar 10:31:42:INFO:root:sim2lpt 1st order dim 3
+01-Mar 10:32:02:INFO:root:sim2lpt 2nd order dim 1
+01-Mar 10:32:09:INFO:root:sim2lpt 2nd order dim 2
+01-Mar 10:32:16:INFO:root:sim2lpt 2nd order dim 3
+01-Mar 10:32:28:INFO:root:sim2lpt end
+01-Mar 10:32:30:INFO:root:backopt2lpt step=4 mdx=365.04086
+01-Mar 10:32:31:INFO:root:sim2lpt start from a=0.041 to a=1.0
+01-Mar 10:32:44:INFO:root:sim2lpt 1st order dim 1
+01-Mar 10:32:50:INFO:root:sim2lpt 1st order dim 2
+01-Mar 10:32:57:INFO:root:sim2lpt 1st order dim 3
+01-Mar 10:33:17:INFO:root:sim2lpt 2nd order dim 1
+01-Mar 10:33:25:INFO:root:sim2lpt 2nd order dim 2
+01-Mar 10:33:32:INFO:root:sim2lpt 2nd order dim 3
+01-Mar 10:33:44:INFO:root:sim2lpt end
+01-Mar 10:33:46:INFO:root:backopt2lpt step=5 mdx=336.78665
+01-Mar 10:33:46:INFO:root:backopt2lpt a_i=0.04
+01-Mar 10:33:46:INFO:root:sim2lpt start from a=0.04 to a=1.0
+01-Mar 10:33:59:INFO:root:sim2lpt 1st order dim 1
+01-Mar 10:34:06:INFO:root:sim2lpt 1st order dim 2
+01-Mar 10:34:13:INFO:root:sim2lpt 1st order dim 3
+01-Mar 10:34:32:INFO:root:sim2lpt 2nd order dim 1
+01-Mar 10:34:40:INFO:root:sim2lpt 2nd order dim 2
+01-Mar 10:34:47:INFO:root:sim2lpt 2nd order dim 3
+01-Mar 10:34:59:INFO:root:sim2lpt end
+01-Mar 10:35:01:INFO:root:backopt2lpt step=1 mdx=316.30447
+01-Mar 10:35:01:INFO:root:backopt2lpt a_i=0.039831932773109244
+01-Mar 10:35:02:INFO:root:sim2lpt start from a=0.039831932773109244 to a=1.0
+01-Mar 10:35:15:INFO:root:sim2lpt 1st order dim 1
+01-Mar 10:35:22:INFO:root:sim2lpt 1st order dim 2
+01-Mar 10:35:28:INFO:root:sim2lpt 1st order dim 3
+01-Mar 10:35:48:INFO:root:sim2lpt 2nd order dim 1
+01-Mar 10:35:55:INFO:root:sim2lpt 2nd order dim 2
+01-Mar 10:36:03:INFO:root:sim2lpt 2nd order dim 3
+01-Mar 10:36:15:INFO:root:sim2lpt end
+01-Mar 10:36:17:INFO:root:backopt2lpt step=1 mdx=288.9113
+01-Mar 10:36:17:INFO:root:backopt2lpt a_i=0.03966386554621849
+01-Mar 10:36:17:INFO:root:sim2lpt start from a=0.03966386554621849 to a=1.0
+01-Mar 10:36:30:INFO:root:sim2lpt 1st order dim 1
+01-Mar 10:36:37:INFO:root:sim2lpt 1st order dim 2
+01-Mar 10:36:44:INFO:root:sim2lpt 1st order dim 3
+01-Mar 10:37:03:INFO:root:sim2lpt 2nd order dim 1
+01-Mar 10:37:11:INFO:root:sim2lpt 2nd order dim 2
+01-Mar 10:37:18:INFO:root:sim2lpt 2nd order dim 3
+01-Mar 10:37:30:INFO:root:sim2lpt end
+01-Mar 10:37:32:INFO:root:backopt2lpt step=1 mdx=264.2399
+01-Mar 10:37:32:INFO:root:backopt2lpt a_i=0.03949579831932773
+01-Mar 10:37:33:INFO:root:sim2lpt start from a=0.03949579831932773 to a=1.0
+01-Mar 10:37:45:INFO:root:sim2lpt 1st order dim 1
+01-Mar 10:37:52:INFO:root:sim2lpt 1st order dim 2
+01-Mar 10:37:59:INFO:root:sim2lpt 1st order dim 3
+01-Mar 10:38:19:INFO:root:sim2lpt 2nd order dim 1
+01-Mar 10:38:26:INFO:root:sim2lpt 2nd order dim 2
+01-Mar 10:38:33:INFO:root:sim2lpt 2nd order dim 3
+01-Mar 10:38:45:INFO:root:sim2lpt end
+01-Mar 10:38:47:INFO:root:backopt2lpt step=1 mdx=242.00337
+01-Mar 10:38:47:INFO:root:backopt2lpt a_i=0.03932773109243697
+01-Mar 10:38:48:INFO:root:sim2lpt start from a=0.03932773109243697 to a=1.0
+01-Mar 10:39:00:INFO:root:sim2lpt 1st order dim 1
+01-Mar 10:39:07:INFO:root:sim2lpt 1st order dim 2
+01-Mar 10:39:14:INFO:root:sim2lpt 1st order dim 3
+01-Mar 10:39:34:INFO:root:sim2lpt 2nd order dim 1
+01-Mar 10:39:41:INFO:root:sim2lpt 2nd order dim 2
+01-Mar 10:39:48:INFO:root:sim2lpt 2nd order dim 3
+01-Mar 10:40:00:INFO:root:sim2lpt end
+01-Mar 10:40:02:INFO:root:backopt2lpt step=1 mdx=221.94583
+01-Mar 10:40:02:INFO:root:backopt2lpt a_i=0.039159663865546215
+01-Mar 10:40:03:INFO:root:sim2lpt start from a=0.039159663865546215 to a=1.0
+01-Mar 10:40:16:INFO:root:sim2lpt 1st order dim 1
+01-Mar 10:40:22:INFO:root:sim2lpt 1st order dim 2
+01-Mar 10:40:29:INFO:root:sim2lpt 1st order dim 3
+01-Mar 10:40:49:INFO:root:sim2lpt 2nd order dim 1
+01-Mar 10:40:56:INFO:root:sim2lpt 2nd order dim 2
+01-Mar 10:41:03:INFO:root:sim2lpt 2nd order dim 3
+01-Mar 10:41:16:INFO:root:sim2lpt end
+01-Mar 10:41:17:INFO:root:backopt2lpt step=1 mdx=203.83856
+01-Mar 10:41:17:INFO:root:backopt2lpt a_i=0.038991596638655465
+01-Mar 10:41:18:INFO:root:sim2lpt start from a=0.038991596638655465 to a=1.0
+01-Mar 10:41:31:INFO:root:sim2lpt 1st order dim 1
+01-Mar 10:41:37:INFO:root:sim2lpt 1st order dim 2
+01-Mar 10:41:44:INFO:root:sim2lpt 1st order dim 3
+01-Mar 10:42:04:INFO:root:sim2lpt 2nd order dim 1
+01-Mar 10:42:11:INFO:root:sim2lpt 2nd order dim 2
+01-Mar 10:42:19:INFO:root:sim2lpt 2nd order dim 3
+01-Mar 10:42:31:INFO:root:sim2lpt end
+01-Mar 10:42:33:INFO:root:backopt2lpt step=1 mdx=187.4821
+01-Mar 10:42:33:INFO:root:backopt2lpt a_i=0.03882352941176471
+01-Mar 10:42:33:INFO:root:sim2lpt start from a=0.03882352941176471 to a=1.0
+01-Mar 10:42:46:INFO:root:sim2lpt 1st order dim 1
+01-Mar 10:42:53:INFO:root:sim2lpt 1st order dim 2
+01-Mar 10:43:00:INFO:root:sim2lpt 1st order dim 3
+01-Mar 10:43:20:INFO:root:sim2lpt 2nd order dim 1
+01-Mar 10:43:27:INFO:root:sim2lpt 2nd order dim 2
+01-Mar 10:43:35:INFO:root:sim2lpt 2nd order dim 3
+01-Mar 10:43:47:INFO:root:sim2lpt end
+01-Mar 10:43:49:INFO:root:backopt2lpt step=1 mdx=172.69534
+01-Mar 10:43:49:INFO:root:backopt2lpt a_i=0.03865546218487395
+01-Mar 10:43:50:INFO:root:sim2lpt start from a=0.03865546218487395 to a=1.0
+01-Mar 10:44:02:INFO:root:sim2lpt 1st order dim 1
+01-Mar 10:44:09:INFO:root:sim2lpt 1st order dim 2
+01-Mar 10:44:16:INFO:root:sim2lpt 1st order dim 3
+01-Mar 10:44:35:INFO:root:sim2lpt 2nd order dim 1
+01-Mar 10:44:43:INFO:root:sim2lpt 2nd order dim 2
+01-Mar 10:44:50:INFO:root:sim2lpt 2nd order dim 3
+01-Mar 10:45:05:INFO:root:sim2lpt end
+01-Mar 10:45:06:INFO:root:backopt2lpt step=1 mdx=159.31825
+01-Mar 10:45:06:INFO:root:backopt2lpt a_i=0.038487394957983194
+01-Mar 10:45:07:INFO:root:sim2lpt start from a=0.038487394957983194 to a=1.0
+01-Mar 10:45:20:INFO:root:sim2lpt 1st order dim 1
+01-Mar 10:45:26:INFO:root:sim2lpt 1st order dim 2
+01-Mar 10:45:33:INFO:root:sim2lpt 1st order dim 3
+01-Mar 10:45:53:INFO:root:sim2lpt 2nd order dim 1
+01-Mar 10:46:00:INFO:root:sim2lpt 2nd order dim 2
+01-Mar 10:46:08:INFO:root:sim2lpt 2nd order dim 3
+01-Mar 10:46:20:INFO:root:sim2lpt end
+01-Mar 10:46:22:INFO:root:backopt2lpt step=1 mdx=147.20638
+01-Mar 10:46:22:INFO:root:backopt2lpt a_i=0.03831932773109244
+01-Mar 10:46:22:INFO:root:sim2lpt start from a=0.03831932773109244 to a=1.0
+01-Mar 10:46:35:INFO:root:sim2lpt 1st order dim 1
+01-Mar 10:46:41:INFO:root:sim2lpt 1st order dim 2
+01-Mar 10:46:48:INFO:root:sim2lpt 1st order dim 3
+01-Mar 10:47:08:INFO:root:sim2lpt 2nd order dim 1
+01-Mar 10:47:15:INFO:root:sim2lpt 2nd order dim 2
+01-Mar 10:47:23:INFO:root:sim2lpt 2nd order dim 3
+01-Mar 10:47:35:INFO:root:sim2lpt end
+01-Mar 10:47:37:INFO:root:backopt2lpt step=1 mdx=136.23193
+01-Mar 10:47:37:INFO:root:backopt2lpt a_i=0.03815126050420168
+01-Mar 10:47:38:INFO:root:sim2lpt start from a=0.03815126050420168 to a=1.0
+01-Mar 10:47:50:INFO:root:sim2lpt 1st order dim 1
+01-Mar 10:47:57:INFO:root:sim2lpt 1st order dim 2
+01-Mar 10:48:03:INFO:root:sim2lpt 1st order dim 3
+01-Mar 10:48:23:INFO:root:sim2lpt 2nd order dim 1
+01-Mar 10:48:31:INFO:root:sim2lpt 2nd order dim 2
+01-Mar 10:48:38:INFO:root:sim2lpt 2nd order dim 3
+01-Mar 10:48:50:INFO:root:sim2lpt end
+01-Mar 10:48:52:INFO:root:backopt2lpt step=1 mdx=126.27909
+01-Mar 10:48:52:INFO:root:backopt2lpt a_i=0.03798319327731092
+01-Mar 10:48:53:INFO:root:sim2lpt start from a=0.03798319327731092 to a=1.0
+01-Mar 10:49:06:INFO:root:sim2lpt 1st order dim 1
+01-Mar 10:49:12:INFO:root:sim2lpt 1st order dim 2
+01-Mar 10:49:19:INFO:root:sim2lpt 1st order dim 3
+01-Mar 10:49:39:INFO:root:sim2lpt 2nd order dim 1
+01-Mar 10:49:46:INFO:root:sim2lpt 2nd order dim 2
+01-Mar 10:49:54:INFO:root:sim2lpt 2nd order dim 3
+01-Mar 10:50:06:INFO:root:sim2lpt end
+01-Mar 10:50:08:INFO:root:backopt2lpt step=1 mdx=117.243706
+01-Mar 10:50:08:INFO:root:backopt2lpt a_i=0.037815126050420166
+01-Mar 10:50:09:INFO:root:sim2lpt start from a=0.037815126050420166 to a=1.0
+01-Mar 10:50:21:INFO:root:sim2lpt 1st order dim 1
+01-Mar 10:50:28:INFO:root:sim2lpt 1st order dim 2
+01-Mar 10:50:35:INFO:root:sim2lpt 1st order dim 3
+01-Mar 10:50:55:INFO:root:sim2lpt 2nd order dim 1
+01-Mar 10:51:02:INFO:root:sim2lpt 2nd order dim 2
+01-Mar 10:51:10:INFO:root:sim2lpt 2nd order dim 3
+01-Mar 10:51:22:INFO:root:sim2lpt end
+01-Mar 10:51:24:INFO:root:backopt2lpt step=1 mdx=109.03463
+01-Mar 10:51:24:INFO:root:backopt2lpt a_i=0.03764705882352941
+01-Mar 10:51:24:INFO:root:sim2lpt start from a=0.03764705882352941 to a=1.0
+01-Mar 10:51:37:INFO:root:sim2lpt 1st order dim 1
+01-Mar 10:51:43:INFO:root:sim2lpt 1st order dim 2
+01-Mar 10:51:50:INFO:root:sim2lpt 1st order dim 3
+01-Mar 10:52:10:INFO:root:sim2lpt 2nd order dim 1
+01-Mar 10:52:18:INFO:root:sim2lpt 2nd order dim 2
+01-Mar 10:52:25:INFO:root:sim2lpt 2nd order dim 3
+01-Mar 10:52:37:INFO:root:sim2lpt end
+01-Mar 10:52:39:INFO:root:backopt2lpt step=1 mdx=101.57052
+01-Mar 10:52:39:INFO:root:backopt2lpt a_i=0.03747899159663866
+01-Mar 10:52:40:INFO:root:sim2lpt start from a=0.03747899159663866 to a=1.0
+01-Mar 10:52:52:INFO:root:sim2lpt 1st order dim 1
+01-Mar 10:52:59:INFO:root:sim2lpt 1st order dim 2
+01-Mar 10:53:06:INFO:root:sim2lpt 1st order dim 3
+01-Mar 10:53:26:INFO:root:sim2lpt 2nd order dim 1
+01-Mar 10:53:33:INFO:root:sim2lpt 2nd order dim 2
+01-Mar 10:53:40:INFO:root:sim2lpt 2nd order dim 3
+01-Mar 10:53:52:INFO:root:sim2lpt end
+01-Mar 10:53:54:INFO:root:backopt2lpt step=1 mdx=94.7775
+01-Mar 10:53:54:INFO:root:backopt2lpt a_i=0.0373109243697479
+01-Mar 10:53:55:INFO:root:sim2lpt start from a=0.0373109243697479 to a=1.0
+01-Mar 10:54:07:INFO:root:sim2lpt 1st order dim 1
+01-Mar 10:54:14:INFO:root:sim2lpt 1st order dim 2
+01-Mar 10:54:21:INFO:root:sim2lpt 1st order dim 3
+01-Mar 10:54:41:INFO:root:sim2lpt 2nd order dim 1
+01-Mar 10:54:49:INFO:root:sim2lpt 2nd order dim 2
+01-Mar 10:54:56:INFO:root:sim2lpt 2nd order dim 3
+01-Mar 10:55:08:INFO:root:sim2lpt end
+01-Mar 10:55:10:INFO:root:backopt2lpt step=1 mdx=88.58838
+01-Mar 10:55:10:INFO:root:backopt2lpt a_i=0.037142857142857144
+01-Mar 10:55:11:INFO:root:sim2lpt start from a=0.037142857142857144 to a=1.0
+01-Mar 10:55:23:INFO:root:sim2lpt 1st order dim 1
+01-Mar 10:55:30:INFO:root:sim2lpt 1st order dim 2
+01-Mar 10:55:36:INFO:root:sim2lpt 1st order dim 3
+01-Mar 10:55:56:INFO:root:sim2lpt 2nd order dim 1
+01-Mar 10:56:03:INFO:root:sim2lpt 2nd order dim 2
+01-Mar 10:56:11:INFO:root:sim2lpt 2nd order dim 3
+01-Mar 10:56:23:INFO:root:sim2lpt end
+01-Mar 10:56:25:INFO:root:backopt2lpt step=1 mdx=82.94468
+01-Mar 10:56:25:INFO:root:backopt2lpt a_i=0.03697478991596639
+01-Mar 10:56:26:INFO:root:sim2lpt start from a=0.03697478991596639 to a=1.0
+01-Mar 10:56:38:INFO:root:sim2lpt 1st order dim 1
+01-Mar 10:56:45:INFO:root:sim2lpt 1st order dim 2
+01-Mar 10:56:52:INFO:root:sim2lpt 1st order dim 3
+01-Mar 10:57:12:INFO:root:sim2lpt 2nd order dim 1
+01-Mar 10:57:19:INFO:root:sim2lpt 2nd order dim 2
+01-Mar 10:57:27:INFO:root:sim2lpt 2nd order dim 3
+01-Mar 10:57:39:INFO:root:sim2lpt end
+01-Mar 10:57:41:INFO:root:backopt2lpt step=1 mdx=77.7928
+01-Mar 10:57:41:INFO:root:backopt2lpt a_i=0.03680672268907563
+01-Mar 10:57:41:INFO:root:sim2lpt start from a=0.03680672268907563 to a=1.0
+01-Mar 10:57:54:INFO:root:sim2lpt 1st order dim 1
+01-Mar 10:58:01:INFO:root:sim2lpt 1st order dim 2
+01-Mar 10:58:07:INFO:root:sim2lpt 1st order dim 3
+01-Mar 10:58:27:INFO:root:sim2lpt 2nd order dim 1
+01-Mar 10:58:34:INFO:root:sim2lpt 2nd order dim 2
+01-Mar 10:58:41:INFO:root:sim2lpt 2nd order dim 3
+01-Mar 10:58:53:INFO:root:sim2lpt end
+01-Mar 10:58:55:INFO:root:backopt2lpt step=1 mdx=73.08408
+01-Mar 10:58:55:INFO:root:backopt2lpt a_i=0.03663865546218487
+01-Mar 10:58:56:INFO:root:sim2lpt start from a=0.03663865546218487 to a=1.0
+01-Mar 10:59:08:INFO:root:sim2lpt 1st order dim 1
+01-Mar 10:59:15:INFO:root:sim2lpt 1st order dim 2
+01-Mar 10:59:22:INFO:root:sim2lpt 1st order dim 3
+01-Mar 10:59:42:INFO:root:sim2lpt 2nd order dim 1
+01-Mar 10:59:50:INFO:root:sim2lpt 2nd order dim 2
+01-Mar 10:59:57:INFO:root:sim2lpt 2nd order dim 3
+01-Mar 11:00:09:INFO:root:sim2lpt end
+01-Mar 11:00:11:INFO:root:backopt2lpt step=1 mdx=68.77675
+01-Mar 11:00:11:INFO:root:backopt2lpt a_i=0.036470588235294116
+01-Mar 11:00:12:INFO:root:sim2lpt start from a=0.036470588235294116 to a=1.0
+01-Mar 11:00:24:INFO:root:sim2lpt 1st order dim 1
+01-Mar 11:00:31:INFO:root:sim2lpt 1st order dim 2
+01-Mar 11:00:38:INFO:root:sim2lpt 1st order dim 3
+01-Mar 11:00:58:INFO:root:sim2lpt 2nd order dim 1
+01-Mar 11:01:05:INFO:root:sim2lpt 2nd order dim 2
+01-Mar 11:01:12:INFO:root:sim2lpt 2nd order dim 3
+01-Mar 11:01:25:INFO:root:sim2lpt end
+01-Mar 11:01:27:INFO:root:backopt2lpt step=1 mdx=64.83277
+01-Mar 11:01:27:INFO:root:backopt2lpt a_i=0.03630252100840336
+01-Mar 11:01:27:INFO:root:sim2lpt start from a=0.03630252100840336 to a=1.0
+01-Mar 11:01:40:INFO:root:sim2lpt 1st order dim 1
+01-Mar 11:01:47:INFO:root:sim2lpt 1st order dim 2
+01-Mar 11:01:53:INFO:root:sim2lpt 1st order dim 3
+01-Mar 11:02:13:INFO:root:sim2lpt 2nd order dim 1
+01-Mar 11:02:20:INFO:root:sim2lpt 2nd order dim 2
+01-Mar 11:02:28:INFO:root:sim2lpt 2nd order dim 3
+01-Mar 11:02:40:INFO:root:sim2lpt end
+01-Mar 11:02:42:INFO:root:backopt2lpt step=1 mdx=61.217537
+01-Mar 11:02:42:INFO:root:backopt2lpt a_i=0.03613445378151261
+01-Mar 11:02:42:INFO:root:sim2lpt start from a=0.03613445378151261 to a=1.0
+01-Mar 11:02:55:INFO:root:sim2lpt 1st order dim 1
+01-Mar 11:03:02:INFO:root:sim2lpt 1st order dim 2
+01-Mar 11:03:08:INFO:root:sim2lpt 1st order dim 3
+01-Mar 11:03:28:INFO:root:sim2lpt 2nd order dim 1
+01-Mar 11:03:36:INFO:root:sim2lpt 2nd order dim 2
+01-Mar 11:03:43:INFO:root:sim2lpt 2nd order dim 3
+01-Mar 11:03:55:INFO:root:sim2lpt end
+01-Mar 11:03:57:INFO:root:backopt2lpt step=1 mdx=57.89942
+01-Mar 11:03:57:INFO:root:backopt2lpt a_i=0.03596638655462185
+01-Mar 11:03:58:INFO:root:sim2lpt start from a=0.03596638655462185 to a=1.0
+01-Mar 11:04:10:INFO:root:sim2lpt 1st order dim 1
+01-Mar 11:04:17:INFO:root:sim2lpt 1st order dim 2
+01-Mar 11:04:24:INFO:root:sim2lpt 1st order dim 3
+01-Mar 11:04:44:INFO:root:sim2lpt 2nd order dim 1
+01-Mar 11:04:51:INFO:root:sim2lpt 2nd order dim 2
+01-Mar 11:04:58:INFO:root:sim2lpt 2nd order dim 3
+01-Mar 11:05:11:INFO:root:sim2lpt end
+01-Mar 11:05:12:INFO:root:backopt2lpt step=1 mdx=54.85045
+01-Mar 11:05:12:INFO:root:backopt2lpt a_i=0.035798319327731094
+01-Mar 11:05:13:INFO:root:sim2lpt start from a=0.035798319327731094 to a=1.0
+01-Mar 11:05:26:INFO:root:sim2lpt 1st order dim 1
+01-Mar 11:05:32:INFO:root:sim2lpt 1st order dim 2
+01-Mar 11:05:39:INFO:root:sim2lpt 1st order dim 3
+01-Mar 11:05:59:INFO:root:sim2lpt 2nd order dim 1
+01-Mar 11:06:06:INFO:root:sim2lpt 2nd order dim 2
+01-Mar 11:06:14:INFO:root:sim2lpt 2nd order dim 3
+01-Mar 11:06:26:INFO:root:sim2lpt end
+01-Mar 11:06:28:INFO:root:backopt2lpt step=1 mdx=52.045975
+01-Mar 11:06:28:INFO:root:backopt2lpt a_i=0.03563025210084034
+01-Mar 11:06:29:INFO:root:sim2lpt start from a=0.03563025210084034 to a=1.0
+01-Mar 11:06:41:INFO:root:sim2lpt 1st order dim 1
+01-Mar 11:06:48:INFO:root:sim2lpt 1st order dim 2
+01-Mar 11:06:55:INFO:root:sim2lpt 1st order dim 3
+01-Mar 11:07:14:INFO:root:sim2lpt 2nd order dim 1
+01-Mar 11:07:22:INFO:root:sim2lpt 2nd order dim 2
+01-Mar 11:07:29:INFO:root:sim2lpt 2nd order dim 3
+01-Mar 11:07:41:INFO:root:sim2lpt end
+01-Mar 11:07:43:INFO:root:backopt2lpt step=1 mdx=49.462753
+01-Mar 11:07:43:INFO:root:backopt2lpt a_i=0.03546218487394958
+01-Mar 11:07:44:INFO:root:sim2lpt start from a=0.03546218487394958 to a=1.0
+01-Mar 11:07:56:INFO:root:sim2lpt 1st order dim 1
+01-Mar 11:08:03:INFO:root:sim2lpt 1st order dim 2
+01-Mar 11:08:10:INFO:root:sim2lpt 1st order dim 3
+01-Mar 11:08:30:INFO:root:sim2lpt 2nd order dim 1
+01-Mar 11:08:38:INFO:root:sim2lpt 2nd order dim 2
+01-Mar 11:08:45:INFO:root:sim2lpt 2nd order dim 3
+01-Mar 11:08:57:INFO:root:sim2lpt end
+01-Mar 11:08:59:INFO:root:backopt2lpt step=1 mdx=47.081238
+01-Mar 11:08:59:INFO:root:backopt2lpt a_i=0.03529411764705882
+01-Mar 11:09:00:INFO:root:sim2lpt start from a=0.03529411764705882 to a=1.0
+01-Mar 11:09:13:INFO:root:sim2lpt 1st order dim 1
+01-Mar 11:09:20:INFO:root:sim2lpt 1st order dim 2
+01-Mar 11:09:26:INFO:root:sim2lpt 1st order dim 3
+01-Mar 11:09:46:INFO:root:sim2lpt 2nd order dim 1
+01-Mar 11:09:54:INFO:root:sim2lpt 2nd order dim 2
+01-Mar 11:10:01:INFO:root:sim2lpt 2nd order dim 3
+01-Mar 11:10:13:INFO:root:sim2lpt end
+01-Mar 11:10:15:INFO:root:backopt2lpt step=1 mdx=44.882843
+01-Mar 11:10:15:INFO:root:backopt2lpt a_i=0.035126050420168066
+01-Mar 11:10:15:INFO:root:sim2lpt start from a=0.035126050420168066 to a=1.0
+01-Mar 11:10:28:INFO:root:sim2lpt 1st order dim 1
+01-Mar 11:10:34:INFO:root:sim2lpt 1st order dim 2
+01-Mar 11:10:41:INFO:root:sim2lpt 1st order dim 3
+01-Mar 11:11:01:INFO:root:sim2lpt 2nd order dim 1
+01-Mar 11:11:08:INFO:root:sim2lpt 2nd order dim 2
+01-Mar 11:11:16:INFO:root:sim2lpt 2nd order dim 3
+01-Mar 11:11:28:INFO:root:sim2lpt end
+01-Mar 11:11:30:INFO:root:backopt2lpt step=1 mdx=42.851048
+01-Mar 11:11:30:INFO:root:backopt2lpt a_i=0.03495798319327731
+01-Mar 11:11:31:INFO:root:sim2lpt start from a=0.03495798319327731 to a=1.0
+01-Mar 11:11:43:INFO:root:sim2lpt 1st order dim 1
+01-Mar 11:11:50:INFO:root:sim2lpt 1st order dim 2
+01-Mar 11:11:56:INFO:root:sim2lpt 1st order dim 3
+01-Mar 11:12:16:INFO:root:sim2lpt 2nd order dim 1
+01-Mar 11:12:24:INFO:root:sim2lpt 2nd order dim 2
+01-Mar 11:12:31:INFO:root:sim2lpt 2nd order dim 3
+01-Mar 11:12:43:INFO:root:sim2lpt end
+01-Mar 11:12:45:INFO:root:backopt2lpt step=1 mdx=40.970486
+01-Mar 11:12:45:INFO:root:backopt2lpt a_i=0.03478991596638655
+01-Mar 11:12:46:INFO:root:sim2lpt start from a=0.03478991596638655 to a=1.0
+01-Mar 11:12:58:INFO:root:sim2lpt 1st order dim 1
+01-Mar 11:13:05:INFO:root:sim2lpt 1st order dim 2
+01-Mar 11:13:12:INFO:root:sim2lpt 1st order dim 3
+01-Mar 11:13:32:INFO:root:sim2lpt 2nd order dim 1
+01-Mar 11:13:39:INFO:root:sim2lpt 2nd order dim 2
+01-Mar 11:13:47:INFO:root:sim2lpt 2nd order dim 3
+01-Mar 11:13:59:INFO:root:sim2lpt end
+01-Mar 11:14:01:INFO:root:backopt2lpt step=1 mdx=39.22823
+01-Mar 11:14:01:INFO:root:backopt2lpt a_i=0.0346218487394958
+01-Mar 11:14:01:INFO:root:sim2lpt start from a=0.0346218487394958 to a=1.0
+01-Mar 11:14:14:INFO:root:sim2lpt 1st order dim 1
+01-Mar 11:14:21:INFO:root:sim2lpt 1st order dim 2
+01-Mar 11:14:28:INFO:root:sim2lpt 1st order dim 3
+01-Mar 11:14:47:INFO:root:sim2lpt 2nd order dim 1
+01-Mar 11:14:55:INFO:root:sim2lpt 2nd order dim 2
+01-Mar 11:15:02:INFO:root:sim2lpt 2nd order dim 3
+01-Mar 11:15:14:INFO:root:sim2lpt end
+01-Mar 11:15:16:INFO:root:backopt2lpt step=1 mdx=37.61206
+01-Mar 11:15:16:INFO:root:backopt2lpt a_i=0.034453781512605045
+01-Mar 11:15:17:INFO:root:sim2lpt start from a=0.034453781512605045 to a=1.0
+01-Mar 11:15:29:INFO:root:sim2lpt 1st order dim 1
+01-Mar 11:15:36:INFO:root:sim2lpt 1st order dim 2
+01-Mar 11:15:43:INFO:root:sim2lpt 1st order dim 3
+01-Mar 11:16:03:INFO:root:sim2lpt 2nd order dim 1
+01-Mar 11:16:10:INFO:root:sim2lpt 2nd order dim 2
+01-Mar 11:16:17:INFO:root:sim2lpt 2nd order dim 3
+01-Mar 11:16:30:INFO:root:sim2lpt end
+01-Mar 11:16:32:INFO:root:backopt2lpt step=1 mdx=36.11133
+01-Mar 11:16:32:INFO:root:backopt2lpt a_i=0.03428571428571429
+01-Mar 11:16:33:INFO:root:sim2lpt start from a=0.03428571428571429 to a=1.0
+01-Mar 11:16:45:INFO:root:sim2lpt 1st order dim 1
+01-Mar 11:16:52:INFO:root:sim2lpt 1st order dim 2
+01-Mar 11:16:59:INFO:root:sim2lpt 1st order dim 3
+01-Mar 11:17:19:INFO:root:sim2lpt 2nd order dim 1
+01-Mar 11:17:26:INFO:root:sim2lpt 2nd order dim 2
+01-Mar 11:17:33:INFO:root:sim2lpt 2nd order dim 3
+01-Mar 11:17:45:INFO:root:sim2lpt end
+01-Mar 11:17:47:INFO:root:backopt2lpt step=1 mdx=34.71542
+01-Mar 11:17:47:INFO:root:backopt2lpt a_i=0.03411764705882353
+01-Mar 11:17:48:INFO:root:sim2lpt start from a=0.03411764705882353 to a=1.0
+01-Mar 11:18:00:INFO:root:sim2lpt 1st order dim 1
+01-Mar 11:18:07:INFO:root:sim2lpt 1st order dim 2
+01-Mar 11:18:14:INFO:root:sim2lpt 1st order dim 3
+01-Mar 11:18:34:INFO:root:sim2lpt 2nd order dim 1
+01-Mar 11:18:41:INFO:root:sim2lpt 2nd order dim 2
+01-Mar 11:18:49:INFO:root:sim2lpt 2nd order dim 3
+01-Mar 11:19:01:INFO:root:sim2lpt end
+01-Mar 11:19:03:INFO:root:backopt2lpt step=1 mdx=33.415676
+01-Mar 11:19:03:INFO:root:backopt2lpt a_i=0.03394957983193277
+01-Mar 11:19:03:INFO:root:sim2lpt start from a=0.03394957983193277 to a=1.0
+01-Mar 11:19:16:INFO:root:sim2lpt 1st order dim 1
+01-Mar 11:19:23:INFO:root:sim2lpt 1st order dim 2
+01-Mar 11:19:30:INFO:root:sim2lpt 1st order dim 3
+01-Mar 11:19:50:INFO:root:sim2lpt 2nd order dim 1
+01-Mar 11:19:57:INFO:root:sim2lpt 2nd order dim 2
+01-Mar 11:20:04:INFO:root:sim2lpt 2nd order dim 3
+01-Mar 11:20:16:INFO:root:sim2lpt end
+01-Mar 11:20:18:INFO:root:backopt2lpt step=1 mdx=32.204357
+01-Mar 11:20:18:INFO:root:backopt2lpt a_i=0.033781512605042016
+01-Mar 11:20:19:INFO:root:sim2lpt start from a=0.033781512605042016 to a=1.0
+01-Mar 11:20:32:INFO:root:sim2lpt 1st order dim 1
+01-Mar 11:20:38:INFO:root:sim2lpt 1st order dim 2
+01-Mar 11:20:45:INFO:root:sim2lpt 1st order dim 3
+01-Mar 11:21:05:INFO:root:sim2lpt 2nd order dim 1
+01-Mar 11:21:12:INFO:root:sim2lpt 2nd order dim 2
+01-Mar 11:21:20:INFO:root:sim2lpt 2nd order dim 3
+01-Mar 11:21:32:INFO:root:sim2lpt end
+01-Mar 11:21:34:INFO:root:backopt2lpt step=1 mdx=31.073982
+01-Mar 11:21:34:INFO:root:backopt2lpt a_i=0.03361344537815126
+01-Mar 11:21:34:INFO:root:sim2lpt start from a=0.03361344537815126 to a=1.0
+01-Mar 11:21:47:INFO:root:sim2lpt 1st order dim 1
+01-Mar 11:21:54:INFO:root:sim2lpt 1st order dim 2
+01-Mar 11:22:01:INFO:root:sim2lpt 1st order dim 3
+01-Mar 11:22:21:INFO:root:sim2lpt 2nd order dim 1
+01-Mar 11:22:28:INFO:root:sim2lpt 2nd order dim 2
+01-Mar 11:22:35:INFO:root:sim2lpt 2nd order dim 3
+01-Mar 11:22:47:INFO:root:sim2lpt end
+01-Mar 11:22:49:INFO:root:backopt2lpt step=1 mdx=30.018126
+01-Mar 11:22:49:INFO:root:backopt2lpt a_i=0.0334453781512605
+01-Mar 11:22:50:INFO:root:sim2lpt start from a=0.0334453781512605 to a=1.0
+01-Mar 11:23:03:INFO:root:sim2lpt 1st order dim 1
+01-Mar 11:23:09:INFO:root:sim2lpt 1st order dim 2
+01-Mar 11:23:16:INFO:root:sim2lpt 1st order dim 3
+01-Mar 11:23:36:INFO:root:sim2lpt 2nd order dim 1
+01-Mar 11:23:43:INFO:root:sim2lpt 2nd order dim 2
+01-Mar 11:23:51:INFO:root:sim2lpt 2nd order dim 3
+01-Mar 11:24:03:INFO:root:sim2lpt end
+01-Mar 11:24:05:INFO:root:backopt2lpt step=1 mdx=29.030727
+01-Mar 11:24:05:INFO:root:backopt2lpt a_i=0.033277310924369745
+01-Mar 11:24:06:INFO:root:sim2lpt start from a=0.033277310924369745 to a=1.0
+01-Mar 11:24:18:INFO:root:sim2lpt 1st order dim 1
+01-Mar 11:24:25:INFO:root:sim2lpt 1st order dim 2
+01-Mar 11:24:32:INFO:root:sim2lpt 1st order dim 3
+01-Mar 11:24:52:INFO:root:sim2lpt 2nd order dim 1
+01-Mar 11:24:59:INFO:root:sim2lpt 2nd order dim 2
+01-Mar 11:25:06:INFO:root:sim2lpt 2nd order dim 3
+01-Mar 11:25:18:INFO:root:sim2lpt end
+01-Mar 11:25:20:INFO:root:backopt2lpt step=1 mdx=28.107021
+01-Mar 11:25:20:INFO:root:backopt2lpt a_i=0.033109243697478995
+01-Mar 11:25:21:INFO:root:sim2lpt start from a=0.033109243697478995 to a=1.0
+01-Mar 11:25:34:INFO:root:sim2lpt 1st order dim 1
+01-Mar 11:25:40:INFO:root:sim2lpt 1st order dim 2
+01-Mar 11:25:47:INFO:root:sim2lpt 1st order dim 3
+01-Mar 11:26:07:INFO:root:sim2lpt 2nd order dim 1
+01-Mar 11:26:15:INFO:root:sim2lpt 2nd order dim 2
+01-Mar 11:26:22:INFO:root:sim2lpt 2nd order dim 3
+01-Mar 11:26:34:INFO:root:sim2lpt end
+01-Mar 11:26:36:INFO:root:backopt2lpt step=1 mdx=27.239992
+01-Mar 11:26:36:INFO:root:backopt2lpt a_i=0.03294117647058824
+01-Mar 11:26:37:INFO:root:sim2lpt start from a=0.03294117647058824 to a=1.0
+01-Mar 11:26:49:INFO:root:sim2lpt 1st order dim 1
+01-Mar 11:26:56:INFO:root:sim2lpt 1st order dim 2
+01-Mar 11:27:03:INFO:root:sim2lpt 1st order dim 3
+01-Mar 11:27:23:INFO:root:sim2lpt 2nd order dim 1
+01-Mar 11:27:30:INFO:root:sim2lpt 2nd order dim 2
+01-Mar 11:27:38:INFO:root:sim2lpt 2nd order dim 3
+01-Mar 11:27:50:INFO:root:sim2lpt end
+01-Mar 11:27:52:INFO:root:backopt2lpt step=1 mdx=26.42687
+01-Mar 11:27:52:INFO:root:backopt2lpt a_i=0.03277310924369748
+01-Mar 11:27:52:INFO:root:sim2lpt start from a=0.03277310924369748 to a=1.0
+01-Mar 11:28:05:INFO:root:sim2lpt 1st order dim 1
+01-Mar 11:28:12:INFO:root:sim2lpt 1st order dim 2
+01-Mar 11:28:18:INFO:root:sim2lpt 1st order dim 3
+01-Mar 11:28:38:INFO:root:sim2lpt 2nd order dim 1
+01-Mar 11:28:46:INFO:root:sim2lpt 2nd order dim 2
+01-Mar 11:28:53:INFO:root:sim2lpt 2nd order dim 3
+01-Mar 11:29:05:INFO:root:sim2lpt end
+01-Mar 11:29:07:INFO:root:backopt2lpt step=1 mdx=25.663055
+01-Mar 11:29:07:INFO:root:backopt2lpt a_i=0.03260504201680672
+01-Mar 11:29:08:INFO:root:sim2lpt start from a=0.03260504201680672 to a=1.0
+01-Mar 11:29:20:INFO:root:sim2lpt 1st order dim 1
+01-Mar 11:29:27:INFO:root:sim2lpt 1st order dim 2
+01-Mar 11:29:34:INFO:root:sim2lpt 1st order dim 3
+01-Mar 11:29:53:INFO:root:sim2lpt 2nd order dim 1
+01-Mar 11:30:01:INFO:root:sim2lpt 2nd order dim 2
+01-Mar 11:30:08:INFO:root:sim2lpt 2nd order dim 3
+01-Mar 11:30:20:INFO:root:sim2lpt end
+01-Mar 11:30:22:INFO:root:backopt2lpt step=1 mdx=24.944836
+01-Mar 11:30:22:INFO:root:backopt2lpt a_i=0.032436974789915966
+01-Mar 11:30:23:INFO:root:sim2lpt start from a=0.032436974789915966 to a=1.0
+01-Mar 11:30:35:INFO:root:sim2lpt 1st order dim 1
+01-Mar 11:30:42:INFO:root:sim2lpt 1st order dim 2
+01-Mar 11:30:49:INFO:root:sim2lpt 1st order dim 3
+01-Mar 11:31:09:INFO:root:sim2lpt 2nd order dim 1
+01-Mar 11:31:16:INFO:root:sim2lpt 2nd order dim 2
+01-Mar 11:31:23:INFO:root:sim2lpt 2nd order dim 3
+01-Mar 11:31:35:INFO:root:sim2lpt end
+01-Mar 11:31:37:INFO:root:backopt2lpt step=1 mdx=24.268806
+01-Mar 11:31:37:INFO:root:backopt2lpt a_i=0.03226890756302521
+01-Mar 11:31:38:INFO:root:sim2lpt start from a=0.03226890756302521 to a=1.0
+01-Mar 11:31:51:INFO:root:sim2lpt 1st order dim 1
+01-Mar 11:31:57:INFO:root:sim2lpt 1st order dim 2
+01-Mar 11:32:04:INFO:root:sim2lpt 1st order dim 3
+01-Mar 11:32:24:INFO:root:sim2lpt 2nd order dim 1
+01-Mar 11:32:31:INFO:root:sim2lpt 2nd order dim 2
+01-Mar 11:32:39:INFO:root:sim2lpt 2nd order dim 3
+01-Mar 11:32:51:INFO:root:sim2lpt end
+01-Mar 11:32:53:INFO:root:backopt2lpt step=1 mdx=23.631866
+01-Mar 11:32:53:INFO:root:backopt2lpt a_i=0.03210084033613445
+01-Mar 11:32:53:INFO:root:sim2lpt start from a=0.03210084033613445 to a=1.0
+01-Mar 11:33:06:INFO:root:sim2lpt 1st order dim 1
+01-Mar 11:33:13:INFO:root:sim2lpt 1st order dim 2
+01-Mar 11:33:19:INFO:root:sim2lpt 1st order dim 3
+01-Mar 11:33:39:INFO:root:sim2lpt 2nd order dim 1
+01-Mar 11:33:46:INFO:root:sim2lpt 2nd order dim 2
+01-Mar 11:33:54:INFO:root:sim2lpt 2nd order dim 3
+01-Mar 11:34:06:INFO:root:sim2lpt end
+01-Mar 11:34:08:INFO:root:backopt2lpt step=1 mdx=23.031395
+01-Mar 11:34:08:INFO:root:backopt2lpt a_i=0.031932773109243695
+01-Mar 11:34:08:INFO:root:sim2lpt start from a=0.031932773109243695 to a=1.0
+01-Mar 11:34:21:INFO:root:sim2lpt 1st order dim 1
+01-Mar 11:34:28:INFO:root:sim2lpt 1st order dim 2
+01-Mar 11:34:35:INFO:root:sim2lpt 1st order dim 3
+01-Mar 11:34:54:INFO:root:sim2lpt 2nd order dim 1
+01-Mar 11:35:02:INFO:root:sim2lpt 2nd order dim 2
+01-Mar 11:35:09:INFO:root:sim2lpt 2nd order dim 3
+01-Mar 11:35:21:INFO:root:sim2lpt end
+01-Mar 11:35:23:INFO:root:backopt2lpt step=1 mdx=22.464523
+01-Mar 11:35:23:INFO:root:backopt2lpt a_i=0.03176470588235294
+01-Mar 11:35:24:INFO:root:sim2lpt start from a=0.03176470588235294 to a=1.0
+01-Mar 11:35:36:INFO:root:sim2lpt 1st order dim 1
+01-Mar 11:35:43:INFO:root:sim2lpt 1st order dim 2
+01-Mar 11:35:50:INFO:root:sim2lpt 1st order dim 3
+01-Mar 11:36:10:INFO:root:sim2lpt 2nd order dim 1
+01-Mar 11:36:17:INFO:root:sim2lpt 2nd order dim 2
+01-Mar 11:36:24:INFO:root:sim2lpt 2nd order dim 3
+01-Mar 11:36:36:INFO:root:sim2lpt end
+01-Mar 11:36:38:INFO:root:backopt2lpt step=1 mdx=21.929165
+01-Mar 11:36:38:INFO:root:backopt2lpt a_i=0.03159663865546219
+01-Mar 11:36:39:INFO:root:sim2lpt start from a=0.03159663865546219 to a=1.0
+01-Mar 11:36:52:INFO:root:sim2lpt 1st order dim 1
+01-Mar 11:36:59:INFO:root:sim2lpt 1st order dim 2
+01-Mar 11:37:06:INFO:root:sim2lpt 1st order dim 3
+01-Mar 11:37:25:INFO:root:sim2lpt 2nd order dim 1
+01-Mar 11:37:33:INFO:root:sim2lpt 2nd order dim 2
+01-Mar 11:37:40:INFO:root:sim2lpt 2nd order dim 3
+01-Mar 11:37:52:INFO:root:sim2lpt end
+01-Mar 11:37:54:INFO:root:backopt2lpt step=1 mdx=21.422892
+01-Mar 11:37:54:INFO:root:backopt2lpt a_i=0.03142857142857143
+01-Mar 11:37:54:INFO:root:sim2lpt start from a=0.03142857142857143 to a=1.0
+01-Mar 11:38:07:INFO:root:sim2lpt 1st order dim 1
+01-Mar 11:38:14:INFO:root:sim2lpt 1st order dim 2
+01-Mar 11:38:20:INFO:root:sim2lpt 1st order dim 3
+01-Mar 11:38:40:INFO:root:sim2lpt 2nd order dim 1
+01-Mar 11:38:47:INFO:root:sim2lpt 2nd order dim 2
+01-Mar 11:38:55:INFO:root:sim2lpt 2nd order dim 3
+01-Mar 11:39:07:INFO:root:sim2lpt end
+01-Mar 11:39:09:INFO:root:backopt2lpt step=1 mdx=20.943905
+01-Mar 11:39:09:INFO:root:backopt2lpt a_i=0.031260504201680674
+01-Mar 11:39:10:INFO:root:sim2lpt start from a=0.031260504201680674 to a=1.0
+01-Mar 11:39:22:INFO:root:sim2lpt 1st order dim 1
+01-Mar 11:39:29:INFO:root:sim2lpt 1st order dim 2
+01-Mar 11:39:36:INFO:root:sim2lpt 1st order dim 3
+01-Mar 11:39:55:INFO:root:sim2lpt 2nd order dim 1
+01-Mar 11:40:03:INFO:root:sim2lpt 2nd order dim 2
+01-Mar 11:40:10:INFO:root:sim2lpt 2nd order dim 3
+01-Mar 11:40:22:INFO:root:sim2lpt end
+01-Mar 11:40:24:INFO:root:backopt2lpt step=1 mdx=20.490458
+01-Mar 11:40:24:INFO:root:backopt2lpt a_i=0.031092436974789917
+01-Mar 11:40:25:INFO:root:sim2lpt start from a=0.031092436974789917 to a=1.0
+01-Mar 11:40:37:INFO:root:sim2lpt 1st order dim 1
+01-Mar 11:40:44:INFO:root:sim2lpt 1st order dim 2
+01-Mar 11:40:51:INFO:root:sim2lpt 1st order dim 3
+01-Mar 11:41:10:INFO:root:sim2lpt 2nd order dim 1
+01-Mar 11:41:18:INFO:root:sim2lpt 2nd order dim 2
+01-Mar 11:41:25:INFO:root:sim2lpt 2nd order dim 3
+01-Mar 11:41:37:INFO:root:sim2lpt end
+01-Mar 11:41:39:INFO:root:backopt2lpt step=1 mdx=20.060532
+01-Mar 11:41:39:INFO:root:backopt2lpt a_i=0.03092436974789916
+01-Mar 11:41:40:INFO:root:sim2lpt start from a=0.03092436974789916 to a=1.0
+01-Mar 11:41:52:INFO:root:sim2lpt 1st order dim 1
+01-Mar 11:41:59:INFO:root:sim2lpt 1st order dim 2
+01-Mar 11:42:06:INFO:root:sim2lpt 1st order dim 3
+01-Mar 11:42:25:INFO:root:sim2lpt 2nd order dim 1
+01-Mar 11:42:33:INFO:root:sim2lpt 2nd order dim 2
+01-Mar 11:42:40:INFO:root:sim2lpt 2nd order dim 3
+01-Mar 11:42:52:INFO:root:sim2lpt end
+01-Mar 11:42:54:INFO:root:backopt2lpt step=1 mdx=19.652866
+01-Mar 11:42:54:INFO:root:backopt2lpt a_i=0.030756302521008402
+01-Mar 11:42:55:INFO:root:sim2lpt start from a=0.030756302521008402 to a=1.0
+01-Mar 11:43:07:INFO:root:sim2lpt 1st order dim 1
+01-Mar 11:43:14:INFO:root:sim2lpt 1st order dim 2
+01-Mar 11:43:21:INFO:root:sim2lpt 1st order dim 3
+01-Mar 11:43:41:INFO:root:sim2lpt 2nd order dim 1
+01-Mar 11:43:49:INFO:root:sim2lpt 2nd order dim 2
+01-Mar 11:43:56:INFO:root:sim2lpt 2nd order dim 3
+01-Mar 11:44:08:INFO:root:sim2lpt end
+01-Mar 11:44:10:INFO:root:backopt2lpt step=1 mdx=19.265274
+01-Mar 11:44:10:INFO:root:backopt2lpt a_i=0.03058823529411765
+01-Mar 11:44:11:INFO:root:sim2lpt start from a=0.03058823529411765 to a=1.0
+01-Mar 11:44:23:INFO:root:sim2lpt 1st order dim 1
+01-Mar 11:44:30:INFO:root:sim2lpt 1st order dim 2
+01-Mar 11:44:37:INFO:root:sim2lpt 1st order dim 3
+01-Mar 11:44:57:INFO:root:sim2lpt 2nd order dim 1
+01-Mar 11:45:04:INFO:root:sim2lpt 2nd order dim 2
+01-Mar 11:45:12:INFO:root:sim2lpt 2nd order dim 3
+01-Mar 11:45:24:INFO:root:sim2lpt end
+01-Mar 11:45:26:INFO:root:backopt2lpt step=1 mdx=18.897127
+01-Mar 11:45:26:INFO:root:backopt2lpt a_i=0.03042016806722689
+01-Mar 11:45:26:INFO:root:sim2lpt start from a=0.03042016806722689 to a=1.0
+01-Mar 11:45:39:INFO:root:sim2lpt 1st order dim 1
+01-Mar 11:45:46:INFO:root:sim2lpt 1st order dim 2
+01-Mar 11:45:53:INFO:root:sim2lpt 1st order dim 3
+01-Mar 11:46:12:INFO:root:sim2lpt 2nd order dim 1
+01-Mar 11:46:20:INFO:root:sim2lpt 2nd order dim 2
+01-Mar 11:46:27:INFO:root:sim2lpt 2nd order dim 3
+01-Mar 11:46:39:INFO:root:sim2lpt end
+01-Mar 11:46:41:INFO:root:backopt2lpt step=1 mdx=18.547213
+01-Mar 11:46:41:INFO:root:backopt2lpt a_i=0.030252100840336135
+01-Mar 11:46:42:INFO:root:sim2lpt start from a=0.030252100840336135 to a=1.0
+01-Mar 11:46:54:INFO:root:sim2lpt 1st order dim 1
+01-Mar 11:47:01:INFO:root:sim2lpt 1st order dim 2
+01-Mar 11:47:08:INFO:root:sim2lpt 1st order dim 3
+01-Mar 11:47:28:INFO:root:sim2lpt 2nd order dim 1
+01-Mar 11:47:35:INFO:root:sim2lpt 2nd order dim 2
+01-Mar 11:47:42:INFO:root:sim2lpt 2nd order dim 3
+01-Mar 11:47:54:INFO:root:sim2lpt end
+01-Mar 11:47:56:INFO:root:backopt2lpt step=1 mdx=18.21367
+01-Mar 11:47:56:INFO:root:backopt2lpt a_i=0.030084033613445377
+01-Mar 11:47:57:INFO:root:sim2lpt start from a=0.030084033613445377 to a=1.0
+01-Mar 11:48:09:INFO:root:sim2lpt 1st order dim 1
+01-Mar 11:48:16:INFO:root:sim2lpt 1st order dim 2
+01-Mar 11:48:23:INFO:root:sim2lpt 1st order dim 3
+01-Mar 11:48:43:INFO:root:sim2lpt 2nd order dim 1
+01-Mar 11:48:50:INFO:root:sim2lpt 2nd order dim 2
+01-Mar 11:48:58:INFO:root:sim2lpt 2nd order dim 3
+01-Mar 11:49:10:INFO:root:sim2lpt end
+01-Mar 11:49:12:INFO:root:backopt2lpt step=1 mdx=17.896399
+01-Mar 11:49:12:INFO:root:backopt2lpt a_i=0.02991596638655462
+01-Mar 11:49:13:INFO:root:sim2lpt start from a=0.02991596638655462 to a=1.0
+01-Mar 11:49:25:INFO:root:sim2lpt 1st order dim 1
+01-Mar 11:49:32:INFO:root:sim2lpt 1st order dim 2
+01-Mar 11:49:39:INFO:root:sim2lpt 1st order dim 3
+01-Mar 11:49:59:INFO:root:sim2lpt 2nd order dim 1
+01-Mar 11:50:06:INFO:root:sim2lpt 2nd order dim 2
+01-Mar 11:50:13:INFO:root:sim2lpt 2nd order dim 3
+01-Mar 11:50:25:INFO:root:sim2lpt end
+01-Mar 11:50:27:INFO:root:backopt2lpt step=1 mdx=17.593773
+01-Mar 11:50:27:INFO:root:backopt2lpt a_i=0.029747899159663867
+01-Mar 11:50:28:INFO:root:sim2lpt start from a=0.029747899159663867 to a=1.0
+01-Mar 11:50:41:INFO:root:sim2lpt 1st order dim 1
+01-Mar 11:50:48:INFO:root:sim2lpt 1st order dim 2
+01-Mar 11:50:54:INFO:root:sim2lpt 1st order dim 3
+01-Mar 11:51:14:INFO:root:sim2lpt 2nd order dim 1
+01-Mar 11:51:22:INFO:root:sim2lpt 2nd order dim 2
+01-Mar 11:51:29:INFO:root:sim2lpt 2nd order dim 3
+01-Mar 11:51:41:INFO:root:sim2lpt end
+01-Mar 11:51:43:INFO:root:backopt2lpt step=1 mdx=17.304827
+01-Mar 11:51:43:INFO:root:backopt2lpt a_i=0.02957983193277311
+01-Mar 11:51:44:INFO:root:sim2lpt start from a=0.02957983193277311 to a=1.0
+01-Mar 11:51:56:INFO:root:sim2lpt 1st order dim 1
+01-Mar 11:52:03:INFO:root:sim2lpt 1st order dim 2
+01-Mar 11:52:10:INFO:root:sim2lpt 1st order dim 3
+01-Mar 11:52:30:INFO:root:sim2lpt 2nd order dim 1
+01-Mar 11:52:37:INFO:root:sim2lpt 2nd order dim 2
+01-Mar 11:52:44:INFO:root:sim2lpt 2nd order dim 3
+01-Mar 11:52:56:INFO:root:sim2lpt end
+01-Mar 11:52:58:INFO:root:backopt2lpt step=1 mdx=17.02905
+01-Mar 11:52:58:INFO:root:backopt2lpt a_i=0.029411764705882353
+01-Mar 11:52:59:INFO:root:sim2lpt start from a=0.029411764705882353 to a=1.0
+01-Mar 11:53:11:INFO:root:sim2lpt 1st order dim 1
+01-Mar 11:53:18:INFO:root:sim2lpt 1st order dim 2
+01-Mar 11:53:25:INFO:root:sim2lpt 1st order dim 3
+01-Mar 11:53:45:INFO:root:sim2lpt 2nd order dim 1
+01-Mar 11:53:52:INFO:root:sim2lpt 2nd order dim 2
+01-Mar 11:53:59:INFO:root:sim2lpt 2nd order dim 3
+01-Mar 11:54:11:INFO:root:sim2lpt end
+01-Mar 11:54:13:INFO:root:backopt2lpt step=1 mdx=16.765759
+01-Mar 11:54:13:INFO:root:backopt2lpt a_i=0.029243697478991595
+01-Mar 11:54:14:INFO:root:sim2lpt start from a=0.029243697478991595 to a=1.0
+01-Mar 11:54:27:INFO:root:sim2lpt 1st order dim 1
+01-Mar 11:54:33:INFO:root:sim2lpt 1st order dim 2
+01-Mar 11:54:40:INFO:root:sim2lpt 1st order dim 3
+01-Mar 11:55:00:INFO:root:sim2lpt 2nd order dim 1
+01-Mar 11:55:07:INFO:root:sim2lpt 2nd order dim 2
+01-Mar 11:55:15:INFO:root:sim2lpt 2nd order dim 3
+01-Mar 11:55:27:INFO:root:sim2lpt end
+01-Mar 11:55:29:INFO:root:backopt2lpt step=1 mdx=16.514149
+01-Mar 11:55:29:INFO:root:backopt2lpt a_i=0.029075630252100842
+01-Mar 11:55:29:INFO:root:sim2lpt start from a=0.029075630252100842 to a=1.0
+01-Mar 11:55:42:INFO:root:sim2lpt 1st order dim 1
+01-Mar 11:55:49:INFO:root:sim2lpt 1st order dim 2
+01-Mar 11:55:56:INFO:root:sim2lpt 1st order dim 3
+01-Mar 11:56:15:INFO:root:sim2lpt 2nd order dim 1
+01-Mar 11:56:23:INFO:root:sim2lpt 2nd order dim 2
+01-Mar 11:56:30:INFO:root:sim2lpt 2nd order dim 3
+01-Mar 11:56:42:INFO:root:sim2lpt end
+01-Mar 11:56:44:INFO:root:backopt2lpt step=1 mdx=16.273338
+01-Mar 11:56:44:INFO:root:backopt2lpt a_i=0.028907563025210085
+01-Mar 11:56:45:INFO:root:sim2lpt start from a=0.028907563025210085 to a=1.0
+01-Mar 11:56:58:INFO:root:sim2lpt 1st order dim 1
+01-Mar 11:57:04:INFO:root:sim2lpt 1st order dim 2
+01-Mar 11:57:11:INFO:root:sim2lpt 1st order dim 3
+01-Mar 11:57:31:INFO:root:sim2lpt 2nd order dim 1
+01-Mar 11:57:38:INFO:root:sim2lpt 2nd order dim 2
+01-Mar 11:57:46:INFO:root:sim2lpt 2nd order dim 3
+01-Mar 11:57:58:INFO:root:sim2lpt end
+01-Mar 11:58:00:INFO:root:backopt2lpt step=1 mdx=16.042768
+01-Mar 11:58:00:INFO:root:backopt2lpt a_i=0.028739495798319328
+01-Mar 11:58:00:INFO:root:sim2lpt start from a=0.028739495798319328 to a=1.0
+01-Mar 11:58:13:INFO:root:sim2lpt 1st order dim 1
+01-Mar 11:58:20:INFO:root:sim2lpt 1st order dim 2
+01-Mar 11:58:27:INFO:root:sim2lpt 1st order dim 3
+01-Mar 11:58:46:INFO:root:sim2lpt 2nd order dim 1
+01-Mar 11:58:54:INFO:root:sim2lpt 2nd order dim 2
+01-Mar 11:59:01:INFO:root:sim2lpt 2nd order dim 3
+01-Mar 11:59:13:INFO:root:sim2lpt end
+01-Mar 11:59:15:INFO:root:backopt2lpt step=1 mdx=15.82181
+01-Mar 11:59:15:INFO:root:backopt2lpt a_i=0.02857142857142857
+01-Mar 11:59:16:INFO:root:sim2lpt start from a=0.02857142857142857 to a=1.0
+01-Mar 11:59:28:INFO:root:sim2lpt 1st order dim 1
+01-Mar 11:59:35:INFO:root:sim2lpt 1st order dim 2
+01-Mar 11:59:42:INFO:root:sim2lpt 1st order dim 3
+01-Mar 12:00:01:INFO:root:sim2lpt 2nd order dim 1
+01-Mar 12:00:09:INFO:root:sim2lpt 2nd order dim 2
+01-Mar 12:00:16:INFO:root:sim2lpt 2nd order dim 3
+01-Mar 12:00:28:INFO:root:sim2lpt end
+01-Mar 12:00:30:INFO:root:backopt2lpt step=1 mdx=15.610047
+01-Mar 12:00:30:INFO:root:backopt2lpt a_i=0.028403361344537813
+01-Mar 12:00:31:INFO:root:sim2lpt start from a=0.028403361344537813 to a=1.0
+01-Mar 12:00:43:INFO:root:sim2lpt 1st order dim 1
+01-Mar 12:00:50:INFO:root:sim2lpt 1st order dim 2
+01-Mar 12:00:57:INFO:root:sim2lpt 1st order dim 3
+01-Mar 12:01:17:INFO:root:sim2lpt 2nd order dim 1
+01-Mar 12:01:24:INFO:root:sim2lpt 2nd order dim 2
+01-Mar 12:01:32:INFO:root:sim2lpt 2nd order dim 3
+01-Mar 12:01:44:INFO:root:sim2lpt end
+01-Mar 12:01:46:INFO:root:backopt2lpt step=1 mdx=15.406784
+01-Mar 12:01:46:INFO:root:backopt2lpt a_i=0.02823529411764706
+01-Mar 12:01:46:INFO:root:sim2lpt start from a=0.02823529411764706 to a=1.0
+01-Mar 12:01:59:INFO:root:sim2lpt 1st order dim 1
+01-Mar 12:02:06:INFO:root:sim2lpt 1st order dim 2
+01-Mar 12:02:12:INFO:root:sim2lpt 1st order dim 3
+01-Mar 12:02:32:INFO:root:sim2lpt 2nd order dim 1
+01-Mar 12:02:40:INFO:root:sim2lpt 2nd order dim 2
+01-Mar 12:02:47:INFO:root:sim2lpt 2nd order dim 3
+01-Mar 12:02:59:INFO:root:sim2lpt end
+01-Mar 12:03:01:INFO:root:backopt2lpt step=1 mdx=15.211887
+01-Mar 12:03:01:INFO:root:backopt2lpt a_i=0.028067226890756303
+01-Mar 12:03:02:INFO:root:sim2lpt start from a=0.028067226890756303 to a=1.0
+01-Mar 12:03:14:INFO:root:sim2lpt 1st order dim 1
+01-Mar 12:03:21:INFO:root:sim2lpt 1st order dim 2
+01-Mar 12:03:28:INFO:root:sim2lpt 1st order dim 3
+01-Mar 12:03:47:INFO:root:sim2lpt 2nd order dim 1
+01-Mar 12:03:55:INFO:root:sim2lpt 2nd order dim 2
+01-Mar 12:04:02:INFO:root:sim2lpt 2nd order dim 3
+01-Mar 12:04:14:INFO:root:sim2lpt end
+01-Mar 12:04:16:INFO:root:backopt2lpt step=1 mdx=15.024397
+01-Mar 12:04:16:INFO:root:backopt2lpt a_i=0.027899159663865546
+01-Mar 12:04:17:INFO:root:sim2lpt start from a=0.027899159663865546 to a=1.0
+01-Mar 12:04:29:INFO:root:sim2lpt 1st order dim 1
+01-Mar 12:04:36:INFO:root:sim2lpt 1st order dim 2
+01-Mar 12:04:43:INFO:root:sim2lpt 1st order dim 3
+01-Mar 12:05:02:INFO:root:sim2lpt 2nd order dim 1
+01-Mar 12:05:10:INFO:root:sim2lpt 2nd order dim 2
+01-Mar 12:05:17:INFO:root:sim2lpt 2nd order dim 3
+01-Mar 12:05:29:INFO:root:sim2lpt end
+01-Mar 12:05:31:INFO:root:backopt2lpt step=1 mdx=14.844098
+01-Mar 12:05:31:INFO:root:backopt2lpt a_i=0.02773109243697479
+01-Mar 12:05:32:INFO:root:sim2lpt start from a=0.02773109243697479 to a=1.0
+01-Mar 12:05:44:INFO:root:sim2lpt 1st order dim 1
+01-Mar 12:05:51:INFO:root:sim2lpt 1st order dim 2
+01-Mar 12:05:58:INFO:root:sim2lpt 1st order dim 3
+01-Mar 12:06:17:INFO:root:sim2lpt 2nd order dim 1
+01-Mar 12:06:25:INFO:root:sim2lpt 2nd order dim 2
+01-Mar 12:06:32:INFO:root:sim2lpt 2nd order dim 3
+01-Mar 12:06:44:INFO:root:sim2lpt end
+01-Mar 12:06:46:INFO:root:backopt2lpt step=1 mdx=14.670831
+01-Mar 12:06:46:INFO:root:backopt2lpt a_i=0.027563025210084035
+01-Mar 12:06:47:INFO:root:sim2lpt start from a=0.027563025210084035 to a=1.0
+01-Mar 12:06:59:INFO:root:sim2lpt 1st order dim 1
+01-Mar 12:07:06:INFO:root:sim2lpt 1st order dim 2
+01-Mar 12:07:13:INFO:root:sim2lpt 1st order dim 3
+01-Mar 12:07:33:INFO:root:sim2lpt 2nd order dim 1
+01-Mar 12:07:40:INFO:root:sim2lpt 2nd order dim 2
+01-Mar 12:07:48:INFO:root:sim2lpt 2nd order dim 3
+01-Mar 12:08:00:INFO:root:sim2lpt end
+01-Mar 12:08:02:INFO:root:backopt2lpt step=1 mdx=14.503496
+01-Mar 12:08:02:INFO:root:backopt2lpt a_i=0.027394957983193278
+01-Mar 12:08:02:INFO:root:sim2lpt start from a=0.027394957983193278 to a=1.0
+01-Mar 12:08:15:INFO:root:sim2lpt 1st order dim 1
+01-Mar 12:08:22:INFO:root:sim2lpt 1st order dim 2
+01-Mar 12:08:29:INFO:root:sim2lpt 1st order dim 3
+01-Mar 12:08:48:INFO:root:sim2lpt 2nd order dim 1
+01-Mar 12:08:56:INFO:root:sim2lpt 2nd order dim 2
+01-Mar 12:09:03:INFO:root:sim2lpt 2nd order dim 3
+01-Mar 12:09:15:INFO:root:sim2lpt end
+01-Mar 12:09:17:INFO:root:backopt2lpt step=1 mdx=14.342573
+01-Mar 12:09:17:INFO:root:backopt2lpt a_i=0.02722689075630252
+01-Mar 12:09:18:INFO:root:sim2lpt start from a=0.02722689075630252 to a=1.0
+01-Mar 12:09:30:INFO:root:sim2lpt 1st order dim 1
+01-Mar 12:09:37:INFO:root:sim2lpt 1st order dim 2
+01-Mar 12:09:44:INFO:root:sim2lpt 1st order dim 3
+01-Mar 12:10:04:INFO:root:sim2lpt 2nd order dim 1
+01-Mar 12:10:11:INFO:root:sim2lpt 2nd order dim 2
+01-Mar 12:10:18:INFO:root:sim2lpt 2nd order dim 3
+01-Mar 12:10:31:INFO:root:sim2lpt end
+01-Mar 12:10:33:INFO:root:backopt2lpt step=1 mdx=14.18745
+01-Mar 12:10:33:INFO:root:backopt2lpt a_i=0.027058823529411764
+01-Mar 12:10:33:INFO:root:sim2lpt start from a=0.027058823529411764 to a=1.0
+01-Mar 12:10:46:INFO:root:sim2lpt 1st order dim 1
+01-Mar 12:10:53:INFO:root:sim2lpt 1st order dim 2
+01-Mar 12:10:59:INFO:root:sim2lpt 1st order dim 3
+01-Mar 12:11:19:INFO:root:sim2lpt 2nd order dim 1
+01-Mar 12:11:27:INFO:root:sim2lpt 2nd order dim 2
+01-Mar 12:11:34:INFO:root:sim2lpt 2nd order dim 3
+01-Mar 12:11:46:INFO:root:sim2lpt end
+01-Mar 12:11:48:INFO:root:backopt2lpt step=1 mdx=14.037791
+01-Mar 12:11:48:INFO:root:backopt2lpt a_i=0.02689075630252101
+01-Mar 12:11:49:INFO:root:sim2lpt start from a=0.02689075630252101 to a=1.0
+01-Mar 12:12:01:INFO:root:sim2lpt 1st order dim 1
+01-Mar 12:12:08:INFO:root:sim2lpt 1st order dim 2
+01-Mar 12:12:15:INFO:root:sim2lpt 1st order dim 3
+01-Mar 12:12:35:INFO:root:sim2lpt 2nd order dim 1
+01-Mar 12:12:42:INFO:root:sim2lpt 2nd order dim 2
+01-Mar 12:12:50:INFO:root:sim2lpt 2nd order dim 3
+01-Mar 12:13:02:INFO:root:sim2lpt end
+01-Mar 12:13:04:INFO:root:backopt2lpt step=1 mdx=13.893364
+01-Mar 12:13:04:INFO:root:backopt2lpt a_i=0.026722689075630253
+01-Mar 12:13:05:INFO:root:sim2lpt start from a=0.026722689075630253 to a=1.0
+01-Mar 12:13:17:INFO:root:sim2lpt 1st order dim 1
+01-Mar 12:13:24:INFO:root:sim2lpt 1st order dim 2
+01-Mar 12:13:31:INFO:root:sim2lpt 1st order dim 3
+01-Mar 12:13:51:INFO:root:sim2lpt 2nd order dim 1
+01-Mar 12:13:58:INFO:root:sim2lpt 2nd order dim 2
+01-Mar 12:14:05:INFO:root:sim2lpt 2nd order dim 3
+01-Mar 12:14:18:INFO:root:sim2lpt end
+01-Mar 12:14:20:INFO:root:backopt2lpt step=1 mdx=13.753814
+01-Mar 12:14:20:INFO:root:backopt2lpt a_i=0.026554621848739496
+01-Mar 12:14:20:INFO:root:sim2lpt start from a=0.026554621848739496 to a=1.0
+01-Mar 12:14:33:INFO:root:sim2lpt 1st order dim 1
+01-Mar 12:14:39:INFO:root:sim2lpt 1st order dim 2
+01-Mar 12:14:46:INFO:root:sim2lpt 1st order dim 3
+01-Mar 12:15:06:INFO:root:sim2lpt 2nd order dim 1
+01-Mar 12:15:13:INFO:root:sim2lpt 2nd order dim 2
+01-Mar 12:15:21:INFO:root:sim2lpt 2nd order dim 3
+01-Mar 12:15:33:INFO:root:sim2lpt end
+01-Mar 12:15:35:INFO:root:backopt2lpt step=1 mdx=13.618762
+01-Mar 12:15:35:INFO:root:backopt2lpt a_i=0.02638655462184874
+01-Mar 12:15:35:INFO:root:sim2lpt start from a=0.02638655462184874 to a=1.0
+01-Mar 12:15:48:INFO:root:sim2lpt 1st order dim 1
+01-Mar 12:15:55:INFO:root:sim2lpt 1st order dim 2
+01-Mar 12:16:02:INFO:root:sim2lpt 1st order dim 3
+01-Mar 12:16:21:INFO:root:sim2lpt 2nd order dim 1
+01-Mar 12:16:29:INFO:root:sim2lpt 2nd order dim 2
+01-Mar 12:16:36:INFO:root:sim2lpt 2nd order dim 3
+01-Mar 12:16:48:INFO:root:sim2lpt end
+01-Mar 12:16:50:INFO:root:backopt2lpt step=1 mdx=13.488336
+01-Mar 12:16:50:INFO:root:backopt2lpt a_i=0.02621848739495798
+01-Mar 12:16:51:INFO:root:sim2lpt start from a=0.02621848739495798 to a=1.0
+01-Mar 12:17:04:INFO:root:sim2lpt 1st order dim 1
+01-Mar 12:17:11:INFO:root:sim2lpt 1st order dim 2
+01-Mar 12:17:17:INFO:root:sim2lpt 1st order dim 3
+01-Mar 12:17:37:INFO:root:sim2lpt 2nd order dim 1
+01-Mar 12:17:45:INFO:root:sim2lpt 2nd order dim 2
+01-Mar 12:17:52:INFO:root:sim2lpt 2nd order dim 3
+01-Mar 12:18:04:INFO:root:sim2lpt end
+01-Mar 12:18:06:INFO:root:backopt2lpt step=1 mdx=13.362011
+01-Mar 12:18:06:INFO:root:backopt2lpt a_i=0.026050420168067228
+01-Mar 12:18:07:INFO:root:sim2lpt start from a=0.026050420168067228 to a=1.0
+01-Mar 12:18:19:INFO:root:sim2lpt 1st order dim 1
+01-Mar 12:18:26:INFO:root:sim2lpt 1st order dim 2
+01-Mar 12:18:33:INFO:root:sim2lpt 1st order dim 3
+01-Mar 12:18:53:INFO:root:sim2lpt 2nd order dim 1
+01-Mar 12:19:01:INFO:root:sim2lpt 2nd order dim 2
+01-Mar 12:19:08:INFO:root:sim2lpt 2nd order dim 3
+01-Mar 12:19:20:INFO:root:sim2lpt end
+01-Mar 12:19:22:INFO:root:backopt2lpt step=1 mdx=13.239796
+01-Mar 12:19:22:INFO:root:backopt2lpt a_i=0.02588235294117647
+01-Mar 12:19:23:INFO:root:sim2lpt start from a=0.02588235294117647 to a=1.0
+01-Mar 12:19:35:INFO:root:sim2lpt 1st order dim 1
+01-Mar 12:19:42:INFO:root:sim2lpt 1st order dim 2
+01-Mar 12:19:49:INFO:root:sim2lpt 1st order dim 3
+01-Mar 12:20:09:INFO:root:sim2lpt 2nd order dim 1
+01-Mar 12:20:16:INFO:root:sim2lpt 2nd order dim 2
+01-Mar 12:20:24:INFO:root:sim2lpt 2nd order dim 3
+01-Mar 12:20:36:INFO:root:sim2lpt end
+01-Mar 12:20:38:INFO:root:backopt2lpt step=1 mdx=13.121524
+01-Mar 12:20:38:INFO:root:backopt2lpt a_i=0.025714285714285714
+01-Mar 12:20:38:INFO:root:sim2lpt start from a=0.025714285714285714 to a=1.0
+01-Mar 12:20:51:INFO:root:sim2lpt 1st order dim 1
+01-Mar 12:20:58:INFO:root:sim2lpt 1st order dim 2
+01-Mar 12:21:04:INFO:root:sim2lpt 1st order dim 3
+01-Mar 12:21:24:INFO:root:sim2lpt 2nd order dim 1
+01-Mar 12:21:31:INFO:root:sim2lpt 2nd order dim 2
+01-Mar 12:21:39:INFO:root:sim2lpt 2nd order dim 3
+01-Mar 12:21:51:INFO:root:sim2lpt end
+01-Mar 12:21:53:INFO:root:backopt2lpt step=1 mdx=13.00687
+01-Mar 12:21:53:INFO:root:backopt2lpt a_i=0.025546218487394957
+01-Mar 12:21:54:INFO:root:sim2lpt start from a=0.025546218487394957 to a=1.0
+01-Mar 12:22:06:INFO:root:sim2lpt 1st order dim 1
+01-Mar 12:22:13:INFO:root:sim2lpt 1st order dim 2
+01-Mar 12:22:20:INFO:root:sim2lpt 1st order dim 3
+01-Mar 12:22:39:INFO:root:sim2lpt 2nd order dim 1
+01-Mar 12:22:47:INFO:root:sim2lpt 2nd order dim 2
+01-Mar 12:22:54:INFO:root:sim2lpt 2nd order dim 3
+01-Mar 12:23:06:INFO:root:sim2lpt end
+01-Mar 12:23:08:INFO:root:backopt2lpt step=1 mdx=12.895813
+01-Mar 12:23:08:INFO:root:backopt2lpt a_i=0.025378151260504203
+01-Mar 12:23:09:INFO:root:sim2lpt start from a=0.025378151260504203 to a=1.0
+01-Mar 12:23:21:INFO:root:sim2lpt 1st order dim 1
+01-Mar 12:23:28:INFO:root:sim2lpt 1st order dim 2
+01-Mar 12:23:35:INFO:root:sim2lpt 1st order dim 3
+01-Mar 12:23:55:INFO:root:sim2lpt 2nd order dim 1
+01-Mar 12:24:03:INFO:root:sim2lpt 2nd order dim 2
+01-Mar 12:24:11:INFO:root:sim2lpt 2nd order dim 3
+01-Mar 12:24:23:INFO:root:sim2lpt end
+01-Mar 12:24:25:INFO:root:backopt2lpt step=1 mdx=12.788347
+01-Mar 12:24:25:INFO:root:backopt2lpt a_i=0.025210084033613446
+01-Mar 12:24:25:INFO:root:sim2lpt start from a=0.025210084033613446 to a=1.0
+01-Mar 12:24:38:INFO:root:sim2lpt 1st order dim 1
+01-Mar 12:24:44:INFO:root:sim2lpt 1st order dim 2
+01-Mar 12:24:51:INFO:root:sim2lpt 1st order dim 3
+01-Mar 12:25:11:INFO:root:sim2lpt 2nd order dim 1
+01-Mar 12:25:18:INFO:root:sim2lpt 2nd order dim 2
+01-Mar 12:25:26:INFO:root:sim2lpt 2nd order dim 3
+01-Mar 12:25:38:INFO:root:sim2lpt end
+01-Mar 12:25:40:INFO:root:backopt2lpt step=1 mdx=12.684046
+01-Mar 12:25:40:INFO:root:backopt2lpt a_i=0.02504201680672269
+01-Mar 12:25:40:INFO:root:sim2lpt start from a=0.02504201680672269 to a=1.0
+01-Mar 12:25:53:INFO:root:sim2lpt 1st order dim 1
+01-Mar 12:26:00:INFO:root:sim2lpt 1st order dim 2
+01-Mar 12:26:06:INFO:root:sim2lpt 1st order dim 3
+01-Mar 12:26:26:INFO:root:sim2lpt 2nd order dim 1
+01-Mar 12:26:34:INFO:root:sim2lpt 2nd order dim 2
+01-Mar 12:26:41:INFO:root:sim2lpt 2nd order dim 3
+01-Mar 12:26:53:INFO:root:sim2lpt end
+01-Mar 12:26:55:INFO:root:backopt2lpt step=1 mdx=12.58277
+01-Mar 12:26:55:INFO:root:backopt2lpt a_i=0.024873949579831932
+01-Mar 12:26:56:INFO:root:sim2lpt start from a=0.024873949579831932 to a=1.0
+01-Mar 12:27:08:INFO:root:sim2lpt 1st order dim 1
+01-Mar 12:27:15:INFO:root:sim2lpt 1st order dim 2
+01-Mar 12:27:22:INFO:root:sim2lpt 1st order dim 3
+01-Mar 12:27:41:INFO:root:sim2lpt 2nd order dim 1
+01-Mar 12:27:49:INFO:root:sim2lpt 2nd order dim 2
+01-Mar 12:27:56:INFO:root:sim2lpt 2nd order dim 3
+01-Mar 12:28:08:INFO:root:sim2lpt end
+01-Mar 12:28:10:INFO:root:backopt2lpt step=1 mdx=12.484428
+01-Mar 12:28:10:INFO:root:backopt2lpt a_i=0.024705882352941175
+01-Mar 12:28:11:INFO:root:sim2lpt start from a=0.024705882352941175 to a=1.0
+01-Mar 12:28:23:INFO:root:sim2lpt 1st order dim 1
+01-Mar 12:28:30:INFO:root:sim2lpt 1st order dim 2
+01-Mar 12:28:37:INFO:root:sim2lpt 1st order dim 3
+01-Mar 12:28:57:INFO:root:sim2lpt 2nd order dim 1
+01-Mar 12:29:04:INFO:root:sim2lpt 2nd order dim 2
+01-Mar 12:29:12:INFO:root:sim2lpt 2nd order dim 3
+01-Mar 12:29:24:INFO:root:sim2lpt end
+01-Mar 12:29:26:INFO:root:backopt2lpt step=1 mdx=12.388912
+01-Mar 12:29:26:INFO:root:backopt2lpt a_i=0.02453781512605042
+01-Mar 12:29:27:INFO:root:sim2lpt start from a=0.02453781512605042 to a=1.0
+01-Mar 12:29:39:INFO:root:sim2lpt 1st order dim 1
+01-Mar 12:29:46:INFO:root:sim2lpt 1st order dim 2
+01-Mar 12:29:53:INFO:root:sim2lpt 1st order dim 3
+01-Mar 12:30:13:INFO:root:sim2lpt 2nd order dim 1
+01-Mar 12:30:20:INFO:root:sim2lpt 2nd order dim 2
+01-Mar 12:30:27:INFO:root:sim2lpt 2nd order dim 3
+01-Mar 12:30:40:INFO:root:sim2lpt end
+01-Mar 12:30:42:INFO:root:backopt2lpt step=1 mdx=12.29611
+01-Mar 12:30:42:INFO:root:backopt2lpt a_i=0.024369747899159664
+01-Mar 12:30:42:INFO:root:sim2lpt start from a=0.024369747899159664 to a=1.0
+01-Mar 12:30:55:INFO:root:sim2lpt 1st order dim 1
+01-Mar 12:31:02:INFO:root:sim2lpt 1st order dim 2
+01-Mar 12:31:08:INFO:root:sim2lpt 1st order dim 3
+01-Mar 12:31:28:INFO:root:sim2lpt 2nd order dim 1
+01-Mar 12:31:36:INFO:root:sim2lpt 2nd order dim 2
+01-Mar 12:31:43:INFO:root:sim2lpt 2nd order dim 3
+01-Mar 12:31:55:INFO:root:sim2lpt end
+01-Mar 12:31:57:INFO:root:backopt2lpt step=1 mdx=12.205925
+01-Mar 12:31:57:INFO:root:backopt2lpt a_i=0.024201680672268907
+01-Mar 12:31:58:INFO:root:sim2lpt start from a=0.024201680672268907 to a=1.0
+01-Mar 12:32:10:INFO:root:sim2lpt 1st order dim 1
+01-Mar 12:32:17:INFO:root:sim2lpt 1st order dim 2
+01-Mar 12:32:24:INFO:root:sim2lpt 1st order dim 3
+01-Mar 12:32:44:INFO:root:sim2lpt 2nd order dim 1
+01-Mar 12:32:51:INFO:root:sim2lpt 2nd order dim 2
+01-Mar 12:32:59:INFO:root:sim2lpt 2nd order dim 3
+01-Mar 12:33:11:INFO:root:sim2lpt end
+01-Mar 12:33:13:INFO:root:backopt2lpt step=1 mdx=12.118206
+01-Mar 12:33:13:INFO:root:backopt2lpt a_i=0.02403361344537815
+01-Mar 12:33:13:INFO:root:sim2lpt start from a=0.02403361344537815 to a=1.0
+01-Mar 12:33:26:INFO:root:sim2lpt 1st order dim 1
+01-Mar 12:33:33:INFO:root:sim2lpt 1st order dim 2
+01-Mar 12:33:39:INFO:root:sim2lpt 1st order dim 3
+01-Mar 12:33:59:INFO:root:sim2lpt 2nd order dim 1
+01-Mar 12:34:07:INFO:root:sim2lpt 2nd order dim 2
+01-Mar 12:34:14:INFO:root:sim2lpt 2nd order dim 3
+01-Mar 12:34:26:INFO:root:sim2lpt end
+01-Mar 12:34:28:INFO:root:backopt2lpt step=1 mdx=12.032882
+01-Mar 12:34:28:INFO:root:backopt2lpt a_i=0.023865546218487396
+01-Mar 12:34:29:INFO:root:sim2lpt start from a=0.023865546218487396 to a=1.0
+01-Mar 12:34:41:INFO:root:sim2lpt 1st order dim 1
+01-Mar 12:34:48:INFO:root:sim2lpt 1st order dim 2
+01-Mar 12:34:55:INFO:root:sim2lpt 1st order dim 3
+01-Mar 12:35:15:INFO:root:sim2lpt 2nd order dim 1
+01-Mar 12:35:22:INFO:root:sim2lpt 2nd order dim 2
+01-Mar 12:35:29:INFO:root:sim2lpt 2nd order dim 3
+01-Mar 12:35:42:INFO:root:sim2lpt end
+01-Mar 12:35:44:INFO:root:backopt2lpt step=1 mdx=11.949846
+01-Mar 12:35:44:INFO:root:backopt2lpt a_i=0.02369747899159664
+01-Mar 12:35:44:INFO:root:sim2lpt start from a=0.02369747899159664 to a=1.0
+01-Mar 12:35:57:INFO:root:sim2lpt 1st order dim 1
+01-Mar 12:36:04:INFO:root:sim2lpt 1st order dim 2
+01-Mar 12:36:10:INFO:root:sim2lpt 1st order dim 3
+01-Mar 12:36:30:INFO:root:sim2lpt 2nd order dim 1
+01-Mar 12:36:37:INFO:root:sim2lpt 2nd order dim 2
+01-Mar 12:36:45:INFO:root:sim2lpt 2nd order dim 3
+01-Mar 12:36:57:INFO:root:sim2lpt end
+01-Mar 12:36:59:INFO:root:backopt2lpt step=1 mdx=11.868981
+01-Mar 12:36:59:INFO:root:backopt2lpt a_i=0.023529411764705882
+01-Mar 12:37:00:INFO:root:sim2lpt start from a=0.023529411764705882 to a=1.0
+01-Mar 12:37:12:INFO:root:sim2lpt 1st order dim 1
+01-Mar 12:37:19:INFO:root:sim2lpt 1st order dim 2
+01-Mar 12:37:26:INFO:root:sim2lpt 1st order dim 3
+01-Mar 12:37:46:INFO:root:sim2lpt 2nd order dim 1
+01-Mar 12:37:53:INFO:root:sim2lpt 2nd order dim 2
+01-Mar 12:38:00:INFO:root:sim2lpt 2nd order dim 3
+01-Mar 12:38:12:INFO:root:sim2lpt end
+01-Mar 12:38:14:INFO:root:backopt2lpt step=1 mdx=11.790172
+01-Mar 12:38:14:INFO:root:backopt2lpt a_i=0.023361344537815125
+01-Mar 12:38:15:INFO:root:sim2lpt start from a=0.023361344537815125 to a=1.0
+01-Mar 12:38:28:INFO:root:sim2lpt 1st order dim 1
+01-Mar 12:38:34:INFO:root:sim2lpt 1st order dim 2
+01-Mar 12:38:41:INFO:root:sim2lpt 1st order dim 3
+01-Mar 12:39:01:INFO:root:sim2lpt 2nd order dim 1
+01-Mar 12:39:08:INFO:root:sim2lpt 2nd order dim 2
+01-Mar 12:39:16:INFO:root:sim2lpt 2nd order dim 3
+01-Mar 12:39:28:INFO:root:sim2lpt end
+01-Mar 12:39:30:INFO:root:backopt2lpt step=1 mdx=11.713449
+01-Mar 12:39:30:INFO:root:backopt2lpt a_i=0.02319327731092437
+01-Mar 12:39:31:INFO:root:sim2lpt start from a=0.02319327731092437 to a=1.0
+01-Mar 12:39:43:INFO:root:sim2lpt 1st order dim 1
+01-Mar 12:39:50:INFO:root:sim2lpt 1st order dim 2
+01-Mar 12:39:57:INFO:root:sim2lpt 1st order dim 3
+01-Mar 12:40:16:INFO:root:sim2lpt 2nd order dim 1
+01-Mar 12:40:24:INFO:root:sim2lpt 2nd order dim 2
+01-Mar 12:40:31:INFO:root:sim2lpt 2nd order dim 3
+01-Mar 12:40:43:INFO:root:sim2lpt end
+01-Mar 12:40:45:INFO:root:backopt2lpt step=1 mdx=11.638717
+01-Mar 12:40:45:INFO:root:backopt2lpt a_i=0.023025210084033614
+01-Mar 12:40:46:INFO:root:sim2lpt start from a=0.023025210084033614 to a=1.0
+01-Mar 12:40:59:INFO:root:sim2lpt 1st order dim 1
+01-Mar 12:41:06:INFO:root:sim2lpt 1st order dim 2
+01-Mar 12:41:12:INFO:root:sim2lpt 1st order dim 3
+01-Mar 12:41:32:INFO:root:sim2lpt 2nd order dim 1
+01-Mar 12:41:40:INFO:root:sim2lpt 2nd order dim 2
+01-Mar 12:41:47:INFO:root:sim2lpt 2nd order dim 3
+01-Mar 12:41:59:INFO:root:sim2lpt end
+01-Mar 12:42:01:INFO:root:backopt2lpt step=1 mdx=11.565864
+01-Mar 12:42:01:INFO:root:backopt2lpt a_i=0.022857142857142857
+01-Mar 12:42:02:INFO:root:sim2lpt start from a=0.022857142857142857 to a=1.0
+01-Mar 12:42:14:INFO:root:sim2lpt 1st order dim 1
+01-Mar 12:42:21:INFO:root:sim2lpt 1st order dim 2
+01-Mar 12:42:28:INFO:root:sim2lpt 1st order dim 3
+01-Mar 12:42:48:INFO:root:sim2lpt 2nd order dim 1
+01-Mar 12:42:55:INFO:root:sim2lpt 2nd order dim 2
+01-Mar 12:43:02:INFO:root:sim2lpt 2nd order dim 3
+01-Mar 12:43:14:INFO:root:sim2lpt end
+01-Mar 12:43:16:INFO:root:backopt2lpt step=1 mdx=11.494828
+01-Mar 12:43:16:INFO:root:backopt2lpt a_i=0.0226890756302521
+01-Mar 12:43:17:INFO:root:sim2lpt start from a=0.0226890756302521 to a=1.0
+01-Mar 12:43:29:INFO:root:sim2lpt 1st order dim 1
+01-Mar 12:43:36:INFO:root:sim2lpt 1st order dim 2
+01-Mar 12:43:43:INFO:root:sim2lpt 1st order dim 3
+01-Mar 12:44:03:INFO:root:sim2lpt 2nd order dim 1
+01-Mar 12:44:10:INFO:root:sim2lpt 2nd order dim 2
+01-Mar 12:44:17:INFO:root:sim2lpt 2nd order dim 3
+01-Mar 12:44:29:INFO:root:sim2lpt end
+01-Mar 12:44:31:INFO:root:backopt2lpt step=1 mdx=11.425573
+01-Mar 12:44:31:INFO:root:backopt2lpt a_i=0.022521008403361343
+01-Mar 12:44:32:INFO:root:sim2lpt start from a=0.022521008403361343 to a=1.0
+01-Mar 12:44:44:INFO:root:sim2lpt 1st order dim 1
+01-Mar 12:44:51:INFO:root:sim2lpt 1st order dim 2
+01-Mar 12:44:58:INFO:root:sim2lpt 1st order dim 3
+01-Mar 12:45:18:INFO:root:sim2lpt 2nd order dim 1
+01-Mar 12:45:25:INFO:root:sim2lpt 2nd order dim 2
+01-Mar 12:45:33:INFO:root:sim2lpt 2nd order dim 3
+01-Mar 12:45:45:INFO:root:sim2lpt end
+01-Mar 12:45:47:INFO:root:backopt2lpt step=1 mdx=11.35812
+01-Mar 12:45:47:INFO:root:backopt2lpt a_i=0.02235294117647059
+01-Mar 12:45:47:INFO:root:sim2lpt start from a=0.02235294117647059 to a=1.0
+01-Mar 12:46:00:INFO:root:sim2lpt 1st order dim 1
+01-Mar 12:46:07:INFO:root:sim2lpt 1st order dim 2
+01-Mar 12:46:14:INFO:root:sim2lpt 1st order dim 3
+01-Mar 12:46:33:INFO:root:sim2lpt 2nd order dim 1
+01-Mar 12:46:41:INFO:root:sim2lpt 2nd order dim 2
+01-Mar 12:46:48:INFO:root:sim2lpt 2nd order dim 3
+01-Mar 12:47:00:INFO:root:sim2lpt end
+01-Mar 12:47:02:INFO:root:backopt2lpt step=1 mdx=11.29199
+01-Mar 12:47:02:INFO:root:backopt2lpt a_i=0.022184873949579832
+01-Mar 12:47:03:INFO:root:sim2lpt start from a=0.022184873949579832 to a=1.0
+01-Mar 12:47:15:INFO:root:sim2lpt 1st order dim 1
+01-Mar 12:47:22:INFO:root:sim2lpt 1st order dim 2
+01-Mar 12:47:29:INFO:root:sim2lpt 1st order dim 3
+01-Mar 12:47:49:INFO:root:sim2lpt 2nd order dim 1
+01-Mar 12:47:56:INFO:root:sim2lpt 2nd order dim 2
+01-Mar 12:48:03:INFO:root:sim2lpt 2nd order dim 3
+01-Mar 12:48:15:INFO:root:sim2lpt end
+01-Mar 12:48:17:INFO:root:backopt2lpt step=1 mdx=11.2275715
+01-Mar 12:48:17:INFO:root:backopt2lpt a_i=0.022016806722689075
+01-Mar 12:48:18:INFO:root:sim2lpt start from a=0.022016806722689075 to a=1.0
+01-Mar 12:48:31:INFO:root:sim2lpt 1st order dim 1
+01-Mar 12:48:38:INFO:root:sim2lpt 1st order dim 2
+01-Mar 12:48:44:INFO:root:sim2lpt 1st order dim 3
+01-Mar 12:49:04:INFO:root:sim2lpt 2nd order dim 1
+01-Mar 12:49:11:INFO:root:sim2lpt 2nd order dim 2
+01-Mar 12:49:19:INFO:root:sim2lpt 2nd order dim 3
+01-Mar 12:49:31:INFO:root:sim2lpt end
+01-Mar 12:49:33:INFO:root:backopt2lpt step=1 mdx=11.164738
+01-Mar 12:49:33:INFO:root:backopt2lpt a_i=0.021848739495798318
+01-Mar 12:49:33:INFO:root:sim2lpt start from a=0.021848739495798318 to a=1.0
+01-Mar 12:49:46:INFO:root:sim2lpt 1st order dim 1
+01-Mar 12:49:53:INFO:root:sim2lpt 1st order dim 2
+01-Mar 12:49:59:INFO:root:sim2lpt 1st order dim 3
+01-Mar 12:50:19:INFO:root:sim2lpt 2nd order dim 1
+01-Mar 12:50:27:INFO:root:sim2lpt 2nd order dim 2
+01-Mar 12:50:34:INFO:root:sim2lpt 2nd order dim 3
+01-Mar 12:50:46:INFO:root:sim2lpt end
+01-Mar 12:50:48:INFO:root:backopt2lpt step=1 mdx=11.103315
+01-Mar 12:50:48:INFO:root:backopt2lpt a_i=0.021680672268907564
+01-Mar 12:50:49:INFO:root:sim2lpt start from a=0.021680672268907564 to a=1.0
+01-Mar 12:51:01:INFO:root:sim2lpt 1st order dim 1
+01-Mar 12:51:08:INFO:root:sim2lpt 1st order dim 2
+01-Mar 12:51:15:INFO:root:sim2lpt 1st order dim 3
+01-Mar 12:51:35:INFO:root:sim2lpt 2nd order dim 1
+01-Mar 12:51:42:INFO:root:sim2lpt 2nd order dim 2
+01-Mar 12:51:49:INFO:root:sim2lpt 2nd order dim 3
+01-Mar 12:52:01:INFO:root:sim2lpt end
+01-Mar 12:52:04:INFO:root:backopt2lpt step=1 mdx=11.043344
+01-Mar 12:52:04:INFO:root:backopt2lpt a_i=0.021512605042016807
+01-Mar 12:52:04:INFO:root:sim2lpt start from a=0.021512605042016807 to a=1.0
+01-Mar 12:52:17:INFO:root:sim2lpt 1st order dim 1
+01-Mar 12:52:23:INFO:root:sim2lpt 1st order dim 2
+01-Mar 12:52:30:INFO:root:sim2lpt 1st order dim 3
+01-Mar 12:52:50:INFO:root:sim2lpt 2nd order dim 1
+01-Mar 12:52:57:INFO:root:sim2lpt 2nd order dim 2
+01-Mar 12:53:05:INFO:root:sim2lpt 2nd order dim 3
+01-Mar 12:53:17:INFO:root:sim2lpt end
+01-Mar 12:53:19:INFO:root:backopt2lpt step=1 mdx=10.984793
+01-Mar 12:53:19:INFO:root:backopt2lpt a_i=0.02134453781512605
+01-Mar 12:53:20:INFO:root:sim2lpt start from a=0.02134453781512605 to a=1.0
+01-Mar 12:53:32:INFO:root:sim2lpt 1st order dim 1
+01-Mar 12:53:39:INFO:root:sim2lpt 1st order dim 2
+01-Mar 12:53:46:INFO:root:sim2lpt 1st order dim 3
+01-Mar 12:54:05:INFO:root:sim2lpt 2nd order dim 1
+01-Mar 12:54:13:INFO:root:sim2lpt 2nd order dim 2
+01-Mar 12:54:20:INFO:root:sim2lpt 2nd order dim 3
+01-Mar 12:54:32:INFO:root:sim2lpt end
+01-Mar 12:54:35:INFO:root:backopt2lpt step=1 mdx=10.927434
+01-Mar 12:54:35:INFO:root:backopt2lpt a_i=0.021176470588235293
+01-Mar 12:54:35:INFO:root:sim2lpt start from a=0.021176470588235293 to a=1.0
+01-Mar 12:54:48:INFO:root:sim2lpt 1st order dim 1
+01-Mar 12:54:55:INFO:root:sim2lpt 1st order dim 2
+01-Mar 12:55:01:INFO:root:sim2lpt 1st order dim 3
+01-Mar 12:55:21:INFO:root:sim2lpt 2nd order dim 1
+01-Mar 12:55:29:INFO:root:sim2lpt 2nd order dim 2
+01-Mar 12:55:36:INFO:root:sim2lpt 2nd order dim 3
+01-Mar 12:55:48:INFO:root:sim2lpt end
+01-Mar 12:55:50:INFO:root:backopt2lpt step=1 mdx=10.871417
+01-Mar 12:55:50:INFO:root:backopt2lpt a_i=0.02100840336134454
+01-Mar 12:55:51:INFO:root:sim2lpt start from a=0.02100840336134454 to a=1.0
+01-Mar 12:56:03:INFO:root:sim2lpt 1st order dim 1
+01-Mar 12:56:10:INFO:root:sim2lpt 1st order dim 2
+01-Mar 12:56:17:INFO:root:sim2lpt 1st order dim 3
+01-Mar 12:56:37:INFO:root:sim2lpt 2nd order dim 1
+01-Mar 12:56:44:INFO:root:sim2lpt 2nd order dim 2
+01-Mar 12:56:52:INFO:root:sim2lpt 2nd order dim 3
+01-Mar 12:57:04:INFO:root:sim2lpt end
+01-Mar 12:57:06:INFO:root:backopt2lpt step=1 mdx=10.816555
+01-Mar 12:57:06:INFO:root:backopt2lpt a_i=0.020840336134453782
+01-Mar 12:57:06:INFO:root:sim2lpt start from a=0.020840336134453782 to a=1.0
+01-Mar 12:57:19:INFO:root:sim2lpt 1st order dim 1
+01-Mar 12:57:26:INFO:root:sim2lpt 1st order dim 2
+01-Mar 12:57:33:INFO:root:sim2lpt 1st order dim 3
+01-Mar 12:57:52:INFO:root:sim2lpt 2nd order dim 1
+01-Mar 12:58:00:INFO:root:sim2lpt 2nd order dim 2
+01-Mar 12:58:07:INFO:root:sim2lpt 2nd order dim 3
+01-Mar 12:58:19:INFO:root:sim2lpt end
+01-Mar 12:58:21:INFO:root:backopt2lpt step=1 mdx=10.762914
+01-Mar 12:58:21:INFO:root:backopt2lpt a_i=0.020672268907563025
+01-Mar 12:58:22:INFO:root:sim2lpt start from a=0.020672268907563025 to a=1.0
+01-Mar 12:58:34:INFO:root:sim2lpt 1st order dim 1
+01-Mar 12:58:41:INFO:root:sim2lpt 1st order dim 2
+01-Mar 12:58:48:INFO:root:sim2lpt 1st order dim 3
+01-Mar 12:59:07:INFO:root:sim2lpt 2nd order dim 1
+01-Mar 12:59:15:INFO:root:sim2lpt 2nd order dim 2
+01-Mar 12:59:22:INFO:root:sim2lpt 2nd order dim 3
+01-Mar 12:59:34:INFO:root:sim2lpt end
+01-Mar 12:59:36:INFO:root:backopt2lpt step=1 mdx=10.710411
+01-Mar 12:59:36:INFO:root:backopt2lpt a_i=0.020504201680672268
+01-Mar 12:59:37:INFO:root:sim2lpt start from a=0.020504201680672268 to a=1.0
+01-Mar 12:59:50:INFO:root:sim2lpt 1st order dim 1
+01-Mar 12:59:56:INFO:root:sim2lpt 1st order dim 2
+01-Mar 13:00:03:INFO:root:sim2lpt 1st order dim 3
+01-Mar 13:00:23:INFO:root:sim2lpt 2nd order dim 1
+01-Mar 13:00:31:INFO:root:sim2lpt 2nd order dim 2
+01-Mar 13:00:38:INFO:root:sim2lpt 2nd order dim 3
+01-Mar 13:00:50:INFO:root:sim2lpt end
+01-Mar 13:00:52:INFO:root:backopt2lpt step=1 mdx=10.659029
+01-Mar 13:00:52:INFO:root:backopt2lpt a_i=0.02033613445378151
+01-Mar 13:00:53:INFO:root:sim2lpt start from a=0.02033613445378151 to a=1.0
+01-Mar 13:01:05:INFO:root:sim2lpt 1st order dim 1
+01-Mar 13:01:12:INFO:root:sim2lpt 1st order dim 2
+01-Mar 13:01:19:INFO:root:sim2lpt 1st order dim 3
+01-Mar 13:01:38:INFO:root:sim2lpt 2nd order dim 1
+01-Mar 13:01:46:INFO:root:sim2lpt 2nd order dim 2
+01-Mar 13:01:53:INFO:root:sim2lpt 2nd order dim 3
+01-Mar 13:02:05:INFO:root:sim2lpt end
+01-Mar 13:02:07:INFO:root:backopt2lpt step=1 mdx=10.608793
+01-Mar 13:02:07:INFO:root:backopt2lpt a_i=0.020168067226890758
+01-Mar 13:02:08:INFO:root:sim2lpt start from a=0.020168067226890758 to a=1.0
+01-Mar 13:02:20:INFO:root:sim2lpt 1st order dim 1
+01-Mar 13:02:27:INFO:root:sim2lpt 1st order dim 2
+01-Mar 13:02:34:INFO:root:sim2lpt 1st order dim 3
+01-Mar 13:02:54:INFO:root:sim2lpt 2nd order dim 1
+01-Mar 13:03:01:INFO:root:sim2lpt 2nd order dim 2
+01-Mar 13:03:09:INFO:root:sim2lpt 2nd order dim 3
+01-Mar 13:03:21:INFO:root:sim2lpt end
+01-Mar 13:03:23:INFO:root:backopt2lpt step=1 mdx=10.559599
+01-Mar 13:03:23:INFO:root:backopt2lpt a_i=0.02
+01-Mar 13:03:23:INFO:root:sim2lpt start from a=0.02 to a=1.0
+01-Mar 13:03:36:INFO:root:sim2lpt 1st order dim 1
+01-Mar 13:03:42:INFO:root:sim2lpt 1st order dim 2
+01-Mar 13:03:49:INFO:root:sim2lpt 1st order dim 3
+01-Mar 13:04:09:INFO:root:sim2lpt 2nd order dim 1
+01-Mar 13:04:17:INFO:root:sim2lpt 2nd order dim 2
+01-Mar 13:04:24:INFO:root:sim2lpt 2nd order dim 3
+01-Mar 13:04:36:INFO:root:sim2lpt end
+01-Mar 13:04:38:INFO:root:backopt2lpt step=1 mdx=10.511392
+01-Mar 13:04:38:INFO:root:backopt2lpt end
